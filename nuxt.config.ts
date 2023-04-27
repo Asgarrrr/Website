@@ -29,6 +29,10 @@ const Config: NuxtConfig = {
     host: "0.0.0.0"
   },
 
+  render: {
+    resourceHints: false
+  },
+
   // Constant options
   rootDir: "./",
   srcDir: "src",

@@ -11,3 +11,11 @@ body {
     -webkit-tap-highlight-color: transparent;
   }
 }
+
+// Add a smooth fade in effect to the body
+
+body {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+

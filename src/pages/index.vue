@@ -28,6 +28,7 @@ interface ExperienceObject {
 export default Vue.extend({
   data() {
     return {
+      loading: true,
       showModal: false,
       showExtra: {
         jobs: false,
@@ -226,13 +227,30 @@ export default Vue.extend({
       })
     },
   },
+
+  mounted() {
+
+    window.addEventListener( "load", () => {
+      this.loading =  false
+    })
+
+  },
+  beforeDestroy() {
+
+    window.removeEventListener( "load", () => {
+      console.log( "load" )
+    })
+
+  },
+
 })
+
 </script>
 
 <template>
 
-  <div v-if="false">Loading...</div>
-  <div v-else class="space-y-24 mb-10">
+  <div v-if="loading"></div>
+  <div v-else class="space-y-24 mb-10" id="loading">
     <header
       class="rounded-md flex flex-col-reverse my-16 py-10 md:(flex-row items-center justify-between) justify-center"
     >
@@ -290,6 +308,8 @@ export default Vue.extend({
         <SmartImage
           src="/assets/images/memoji.png"
           class="rounded-full h-64 w-64"
+          width="600px"
+          height="600px"
         />
       </div>
     </header>
