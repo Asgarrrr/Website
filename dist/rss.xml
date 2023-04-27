@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Asgarrrr's Blog</title>
+        <link>https://jeremycaruelle.fr/blog</link>
+        <description> --- </description>
+        <lastBuildDate>Thu, 27 Apr 2023 10:31:07 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[Yeni Alan Adı!]]></title>
+            <link>https://jeremycaruelle.fr/blog/yeni-alan-adi</link>
+            <guid>https://jeremycaruelle.fr/blog/yeni-alan-adi</guid>
+            <pubDate>Wed, 22 Jul 2020 14:03:24 GMT</pubDate>
+            <description><![CDATA[Eski alan adının yenileme ücretinin aşırılığı dolayısıyla, yeni bir alan adı alarak sitenin tamamını oraya taşıma kararı aldım.]]></description>
+            <enclosure url="https://jeremycaruelle.fr/assets/images/posts/yeni-alan-adi.jpg" length="0" type="image/jpg"/>
+        </item>
+    </channel>
+</rss>

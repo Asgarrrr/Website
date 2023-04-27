@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/", {data:[{_img:{"/_ipx/f_webp,fit_cover/assets/images/memoji.png":"\u002F_nuxt\u002Fimage\u002F129046.webp","/_ipx/f_webp,fit_cover/https://proxy.duckduckgo.com/iu/%3Fu=https%253A%2F%2Fi.imgur.com%2FNBc0C4j.png":"\u002F_nuxt\u002Fimage\u002F4a9fa5.webp"}}],fetch:{},mutations:void 0});

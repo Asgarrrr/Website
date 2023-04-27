@@ -1,0 +1,15 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Asgarrrr's Blog",
+    "home_page_url": "https://jeremycaruelle.fr/blog",
+    "description": " --- ",
+    "items": [
+        {
+            "url": "https://jeremycaruelle.fr/blog/yeni-alan-adi",
+            "title": "Yeni Alan Adı!",
+            "summary": "Eski alan adının yenileme ücretinin aşırılığı dolayısıyla, yeni bir alan adı alarak sitenin tamamını oraya taşıma kararı aldım.",
+            "image": "https://jeremycaruelle.fr/assets/images/posts/yeni-alan-adi.jpg",
+            "date_modified": "2020-07-22T14:03:24.368Z"
+        }
+    ]
+}
