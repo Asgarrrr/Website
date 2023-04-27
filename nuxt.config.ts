@@ -23,6 +23,12 @@ import { generateDone } from "./hooks/generate/done"
 const isDev = process.env.NODE_ENV === "development"
 
 const Config: NuxtConfig = {
+
+  server: {
+    port: process.env.PORT || 3000,
+    host: "0.0.0.0"
+  },
+
   // Constant options
   rootDir: "./",
   srcDir: "src",
