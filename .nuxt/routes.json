@@ -4,75 +4,86 @@
     "path": "/blog",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\blog\\\\index.vue",
     "chunkName": "pages/blog/index",
-    "url": "/blog"
+    "url": "/blog",
+    "_name": "_181dacc1"
   },
   {
     "name": "donate",
     "path": "/donate",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\donate.vue",
     "chunkName": "pages/donate",
-    "url": "/donate"
+    "url": "/donate",
+    "_name": "_0e04e1a4"
   },
   {
     "name": "projects",
     "path": "/projects",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\projects\\\\index.vue",
     "chunkName": "pages/projects/index",
-    "url": "/projects"
+    "url": "/projects",
+    "_name": "_90e56f2e"
   },
   {
     "name": "me-contact",
     "path": "/me/contact",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\me\\\\contact.vue",
     "chunkName": "pages/me/contact",
-    "url": "/me/contact"
+    "url": "/me/contact",
+    "_name": "_b5c8394e"
   },
   {
     "name": "me-repos",
     "path": "/me/repos",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\me\\\\repos.vue",
     "chunkName": "pages/me/repos",
-    "url": "/me/repos"
+    "url": "/me/repos",
+    "_name": "_dc65e38c"
   },
   {
     "name": "me-songs",
     "path": "/me/songs",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\me\\\\songs.vue",
     "chunkName": "pages/me/songs",
-    "url": "/me/songs"
+    "url": "/me/songs",
+    "_name": "_852bfb12"
   },
   {
     "name": "projects-premid",
     "path": "/projects/premid",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\projects\\\\premid\\\\index.vue",
     "chunkName": "pages/projects/premid/index",
-    "url": "/projects/premid"
+    "url": "/projects/premid",
+    "_name": "_09bfb404"
   },
   {
     "name": "projects-premid-custom-status",
     "path": "/projects/premid/custom-status",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\projects\\\\premid\\\\custom-status.vue",
     "chunkName": "pages/projects/premid/custom-status",
-    "url": "/projects/premid/custom-status"
+    "url": "/projects/premid/custom-status",
+    "_name": "_07c59100"
   },
   {
     "name": "projects-premid-mdcreator",
     "path": "/projects/premid/mdcreator",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\projects\\\\premid\\\\mdcreator.vue",
     "chunkName": "pages/projects/premid/mdcreator",
-    "url": "/projects/premid/mdcreator"
+    "url": "/projects/premid/mdcreator",
+    "_name": "_787bcf67"
   },
   {
     "name": "blog-slug",
     "path": "/blog/:slug",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\blog\\\\_slug.vue",
-    "chunkName": "pages/blog/_slug"
+    "chunkName": "pages/blog/_slug",
+    "_name": "_16670b79"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "url": "/"
+    "url": "/",
+    "_name": "_42e9203a"
   }
 ]

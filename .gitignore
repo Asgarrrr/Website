@@ -74,9 +74,6 @@ typings/
 # Auto generated components file for WebStorm
 .components.gen.js
 
-# Service worker
-sw.*
-
 # macOS
 .DS_Store
 

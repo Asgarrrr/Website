@@ -8,13 +8,13 @@ import sitemap from "./modules/sitemap"
 import webfontloader from "./modules/webfontloader"
 
 const Modules: NuxtOptionsModule[] = [
+  ["nuxt-webfontloader", webfontloader],
   "@nuxtjs/axios",
   "@nuxtjs/robots",
   ["@nuxtjs/pwa", pwa],
   ["@nuxt/content", content],
   ["@nuxtjs/feed", feed],
   ["@nuxtjs/sitemap", sitemap],
-  ["nuxt-webfontloader", webfontloader],
 ]
 
 export default Modules

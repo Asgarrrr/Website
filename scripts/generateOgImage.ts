@@ -6,8 +6,8 @@ import sharp from "sharp"
 import "isomorphic-unfetch"
 
 // Fonts
-const Inter = readFileSync("./src/assets/fonts/Inter-Regular.ttf")
-const InterBold = readFileSync("./src/assets/fonts/Inter-Bold.ttf")
+const Inter = readFileSync( "./src/static/fonts/Inter-Regular.ttf" )
+const InterBold = readFileSync( "./src/static/fonts/Inter-Bold.ttf" )
 
 interface IMetaImage {
   title: string

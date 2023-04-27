@@ -13,13 +13,13 @@ import { setContext, getLocation, getRouteData, normalizeError } from './utils'
 /* Plugins */
 
 import nuxt_plugin_plugin_3085de74 from 'nuxt_plugin_plugin_3085de74' // Source: .\\components\\plugin.js (mode: 'all')
-import nuxt_plugin_webfontloader_083f6a2e from 'nuxt_plugin_webfontloader_083f6a2e' // Source: .\\webfontloader.js (mode: 'client')
 import nuxt_plugin_pluginclient_34fc9e7c from 'nuxt_plugin_pluginclient_34fc9e7c' // Source: .\\content\\plugin.client.js (mode: 'client')
 import nuxt_plugin_pluginserver_ca93dff8 from 'nuxt_plugin_pluginserver_ca93dff8' // Source: .\\content\\plugin.server.js (mode: 'server')
 import nuxt_plugin_workbox_eca8c676 from 'nuxt_plugin_workbox_eca8c676' // Source: .\\workbox.js (mode: 'client')
 import nuxt_plugin_metaplugin_07e3fc45 from 'nuxt_plugin_metaplugin_07e3fc45' // Source: .\\pwa\\meta.plugin.js (mode: 'all')
 import nuxt_plugin_iconplugin_0c8ba1b9 from 'nuxt_plugin_iconplugin_0c8ba1b9' // Source: .\\pwa\\icon.plugin.js (mode: 'all')
 import nuxt_plugin_axios_b6ba042e from 'nuxt_plugin_axios_b6ba042e' // Source: .\\axios.js (mode: 'all')
+import nuxt_plugin_webfontloader_083f6a2e from 'nuxt_plugin_webfontloader_083f6a2e' // Source: .\\webfontloader.js (mode: 'client')
 import nuxt_plugin_googleanalytics_6703be9d from 'nuxt_plugin_googleanalytics_6703be9d' // Source: .\\google-analytics.js (mode: 'client')
 import nuxt_plugin_pluginserver_dae28840 from 'nuxt_plugin_pluginserver_dae28840' // Source: .\\color-mode\\plugin.server.js (mode: 'server')
 import nuxt_plugin_pluginclient_2cd54a58 from 'nuxt_plugin_pluginclient_2cd54a58' // Source: .\\color-mode\\plugin.client.js (mode: 'client')
@@ -200,10 +200,6 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_plugin_3085de74(app.context, inject)
   }
 
-  if (process.client && typeof nuxt_plugin_webfontloader_083f6a2e === 'function') {
-    await nuxt_plugin_webfontloader_083f6a2e(app.context, inject)
-  }
-
   if (process.client && typeof nuxt_plugin_pluginclient_34fc9e7c === 'function') {
     await nuxt_plugin_pluginclient_34fc9e7c(app.context, inject)
   }
@@ -226,6 +222,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_axios_b6ba042e === 'function') {
     await nuxt_plugin_axios_b6ba042e(app.context, inject)
+  }
+
+  if (process.client && typeof nuxt_plugin_webfontloader_083f6a2e === 'function') {
+    await nuxt_plugin_webfontloader_083f6a2e(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_googleanalytics_6703be9d === 'function') {

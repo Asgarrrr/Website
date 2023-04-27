@@ -230,7 +230,9 @@ export default Vue.extend({
 </script>
 
 <template>
-  <div class="space-y-24 mb-10">
+
+  <div v-if="false">Loading...</div>
+  <div v-else class="space-y-24 mb-10">
     <header
       class="rounded-md flex flex-col-reverse my-16 py-10 md:(flex-row items-center justify-between) justify-center"
     >
