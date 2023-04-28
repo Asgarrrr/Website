@@ -75,7 +75,7 @@ export default Vue.extend({
         {
           title,
           description,
-          image,
+          image: `https://jeremycaruelle.fr${ image }`,
           keywords: `${tags}, Asgarrrr blog`,
           url: href,
         },
