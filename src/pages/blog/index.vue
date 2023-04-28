@@ -1,4 +1,7 @@
 <script lang="ts">
+
+console.log("Hello World!")
+
 import Vue from "vue"
 
 /* Interfaces */
@@ -8,7 +11,7 @@ import type { FetchReturn } from "@nuxt/content/types/query-builder"
 export default Vue.extend({
   data() {
     return {
-      formatter: new Intl.DateTimeFormat("tr-TR", {
+      formatter: new Intl.DateTimeFormat("en-US", {
         month: "short",
         day: "numeric",
       }),
@@ -82,6 +85,7 @@ export default Vue.extend({
 </script>
 
 <template>
+
   <LoadersBlog v-if="$fetchState.pending || $fetchState.error !== null" />
 
   <div v-else class="mt-12 space-y-10">

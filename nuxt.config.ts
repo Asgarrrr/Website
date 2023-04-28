@@ -30,7 +30,7 @@ const Config: NuxtConfig = {
   },
 
   render: {
-    resourceHints: false
+    resourceHints: true,
   },
 
   // Constant options

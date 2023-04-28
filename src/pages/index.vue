@@ -25,6 +25,8 @@ interface ExperienceObject {
   education: Experience[]
 }
 
+let firstLoad = true
+
 export default Vue.extend({
   data() {
     return {
@@ -115,7 +117,7 @@ export default Vue.extend({
             date: "2020-2022",
           },
           {
-            title: "Professional Bachelor's degree in Web and Mobile Application Design and Development",
+            title: "Bachelor's in Web and Mobile Development",
             url: "http://www.insset.u-picardie.fr/",
             position: "INSSET / France, Saint-Quentin",
             date: "2022-2023",
@@ -230,18 +232,15 @@ export default Vue.extend({
 
   mounted() {
 
-    window.addEventListener( "load", () => {
-      this.loading =  false
-    })
-
-  },
-  beforeDestroy() {
-
-    window.removeEventListener( "load", () => {
-      console.log( "load" )
-    })
-
-  },
+    if ( document.styleSheets[0].cssRules.length > 0 ) {
+      this.loading = false
+    } else {
+      window.addEventListener( "load", () => {
+        console.log( "load" )
+        this.loading = false
+      })
+    }
+  }
 
 })
 
@@ -344,7 +343,7 @@ export default Vue.extend({
       </div>
     </section>
 
-    <section id="experiences" class="grid gap-x-8 gap-y-24 md:grid-cols-2">
+    <section id="experiences" class="grid gap-x-4 gap-y-24 md:grid-cols-2">
       <div>
         <div class="flex items-center gap-4 justify-between">
           <Title>Experience</Title>
@@ -353,7 +352,7 @@ export default Vue.extend({
             class="text-black/50 text-sm hover:underline dark:text-white/30"
             @click="showExtra.jobs = !showExtra.jobs"
           >
-            {{ showExtra.jobs ? "show less" : "show more" }}
+<!--            {{ showExtra.jobs ? "show less" : "show more" }}-->
           </button>
         </div>
 
@@ -379,7 +378,7 @@ export default Vue.extend({
             class="text-black/50 text-sm hover:underline dark:text-white/30"
             @click="showExtra.education = !showExtra.education"
           >
-            {{ showExtra.education ? "show less" : "show more" }}
+<!--            {{ showExtra.education ? "show less" : "show more" }}-->
           </button>
         </div>
 

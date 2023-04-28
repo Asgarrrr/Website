@@ -2,8 +2,7 @@ import { NuxtOptionsHead } from "@nuxt/types/config/head"
 
 /* Define constants */
 const image = "/icon.png"
-const description =
-  "Young JavaScript developer from Turkey, interested in languages, gaming, and programming, trying to improve his JavaScript skills!"
+const description = "A French developer, passionate about gaming and programming, who is eager to enhance their JavaScript skills."
 
 const Head: NuxtOptionsHead = {
   title: "Jérémy Caruelle",
@@ -34,7 +33,7 @@ const Head: NuxtOptionsHead = {
     {
       hid: "twitter:title",
       name: "twitter:title",
-      content: "jeremycaruelle.fr",
+      content: "Jérémy Caruelle",
     },
     {
       hid: "twitter:description",
@@ -55,7 +54,7 @@ const Head: NuxtOptionsHead = {
     {
       hid: "og:site_name",
       name: "og:site_name",
-      content: "jeremycaruelle.fr",
+      content: "Jérémy Caruelle",
     },
     {
       hid: "og:description",
