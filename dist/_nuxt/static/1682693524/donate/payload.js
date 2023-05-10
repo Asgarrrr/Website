@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/donate", {data:[{_img:{"/_ipx/f_webp,fit_cover/https://proxy.duckduckgo.com/iu/%3Fu=https%253A%2F%2Fi.imgur.com%2FcxiXNEb.jpg":"\u002F_nuxt\u002Fimage\u002Fb10c51.webp"}}],fetch:{},mutations:void 0});
