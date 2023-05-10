@@ -2,7 +2,7 @@
 import Vue from "vue"
 
 // Types
-import type { Sponsor } from "~/src/types/Response/Sponsors"
+import type { Sponsor } from "@/types/Response/Sponsors"
 
 export default Vue.extend({
   props: {

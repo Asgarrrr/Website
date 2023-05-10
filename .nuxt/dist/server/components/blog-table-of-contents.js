@@ -1,21 +1,21 @@
 exports.ids = [9];
 exports.modules = {
 
-/***/ 116:
+/***/ 107:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Blog/TableOfContents.vue?vue&type=template&id=14c2a81a&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Blog/TableOfContents.vue?vue&type=template&id=5793a1f0&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
     _setup = _vm._self._setupProxy;
   return _vm.toc && _vm.toc.length > 0 ? _c('div', {
-    staticClass: "rounded-md flex flex-col space-y-2 mb-6"
-  }, [_vm._ssrNode("<div class=\"cursor-pointer flex font-medium space-x-1 text-sm transition-colors text-gray-500 items-center dark:text-dark-100 hover:text-gray-700 dark:hover:text-white/40 select-none\">", "</div>", [_vm._ssrNode("<h1 class=\"uppercase\">Başlıklar</h1> "), _c('transition', {
+    staticClass: "rounded-md flex flex-col space-y-2 mb-6 p-4 border-2 border-gray-200 dark:border-dark-200"
+  }, [_vm._ssrNode("<div class=\"cursor-pointer flex font-medium space-x-1 text-sm transition-colors text-gray-500 items-center dark:text-dark-100 hover:text-gray-700 dark:hover:text-white/40 select-none\">", "</div>", [_vm._ssrNode("<h1 class=\"uppercase\">Table of Contents</h1> "), _c('transition', {
     attrs: {
       "name": "fade",
       "mode": "out-in"
@@ -32,15 +32,15 @@ var render = function render() {
     attrs: {
       "down": ""
     }
-  })], 1)], 2), _vm._ssrNode(" <ul class=\"flex flex-wrap gap-2 items-center\"" + _vm._ssrStyle(null, null, {
-    display: _vm.tocToggled === true ? '' : 'none'
-  }) + ">" + _vm._ssrList(_vm.toc || [], function (link) {
-    return "<li class=\"border-b border-gray-300 text-sm transition-colors text-dark-400 dark:border-dark-200 dark:text-white/30 hover:text-dark-700 dark:hover:text-white/60\">" + (link.id ? "<a" + _vm._ssrAttr("href", `#${link.id}`) + ">" + _vm._ssrEscape("\n        " + _vm._s(link.text) + "\n      ") + "</a>" : "<!---->") + "</li>";
-  }) + "</ul>")], 2) : _vm._e();
+  })], 1)], 2), _vm._ssrNode(" " + _vm._ssrList(_vm.toc || [], function (link) {
+    return "<ul class=\"flex flex-wrap gap-2 items-center\"" + _vm._ssrStyle(null, null, {
+      display: _vm.tocToggled === false ? '' : 'none'
+    }) + "><li class=\"border-gray-300 text-sm transition-colors text-dark-400 dark:border-dark-200 dark:text-white/30 hover:text-dark-700 dark:hover:text-white/60\"" + _vm._ssrStyle(null, `padding-left: ${(link.depth - 2) * 1.5}rem`, null) + ">" + (link.id ? "<a" + _vm._ssrAttr("href", `#${link.id}`) + ">" + _vm._ssrEscape("\n        " + _vm._s(link.text) + "\n      ") + "</a>" : "<!---->") + "</li></ul>";
+  }))], 2) : _vm._e();
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/components/Blog/TableOfContents.vue?vue&type=template&id=14c2a81a&
+// CONCATENATED MODULE: ./src/components/Blog/TableOfContents.vue?vue&type=template&id=5793a1f0&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -89,7 +89,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var TableOfContents = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {IconChevron: __webpack_require__(29).default})
+installComponents(component, {IconChevron: __webpack_require__(28).default})
 
 
 /***/ })

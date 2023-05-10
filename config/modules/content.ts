@@ -1,5 +1,6 @@
 import type { IContentOptions } from "@nuxt/content/types/index"
 
+
 const Content: IContentOptions = {
   liveEdit: false,
   dir: "content",

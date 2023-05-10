@@ -24,7 +24,8 @@ const imageOptions = {
     "lastfm.freetls.fastly.net",
     "cdn.jsdelivr.net",
     "avatars.githubusercontent.com",
-    "proxy.duckduckgo.com"
+    "proxy.duckduckgo.com",
+    "cdn.discordapp.com"
   ],
   "alias": {}
 }

@@ -38,6 +38,7 @@ export default Vue.extend({
      * @returns {PostMeta |null}
      */
     getPostMeta(): PostMeta {
+
       if (!this.post) return {}
 
       const image =
@@ -58,6 +59,7 @@ export default Vue.extend({
 </script>
 
 <template>
+
   <!-- Normal -->
   <CardPostNormal v-if="type === 'normal'" :meta="getPostMeta" />
 

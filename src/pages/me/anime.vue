@@ -1,5 +1,7 @@
 <script lang="ts">
 import Vue from "vue"
+import Title from "@/components/Title.vue";
+import {Repository} from "@/types/Response/GitHub";
 
 // Netlify function return type
 interface LastFmUser {
@@ -35,6 +37,7 @@ interface LastFmResponse {
 }
 
 export default Vue.extend({
+  components: {Title},
   data() {
     return {
       lastFm: {} as LastFmResponse,
@@ -42,6 +45,35 @@ export default Vue.extend({
   },
   fetchOnServer: false,
   async fetch() {
+
+    const repos: Object = (
+      await this.$axios.get(
+        "https://myanimelist.net/animelist/Asgarrrr/load.json", {
+          headers: {
+            "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+            "accept-language": "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7",
+            "cache-control": "no-cache",
+            "pragma": "no-cache",
+            "sec-ch-ua": "\"Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\"",
+            "sec-fetch-dest": "document",
+            "sec-fetch-mode": "navigate",
+            "sec-fetch-site": "none",
+            "sec-fetch-user": "?1",
+            "upgrade-insecure-requests": "1",
+            "Access-Control-Allow-Origin": "*",
+          }
+        }
+      )
+    ).data
+
+    console.log(repos)
+
+
+
+
+
     const url =
       process.env.NODE_ENV === "production"
         ? "https://eggsy.xyz/.netlify/functions/getLastFmSongs"
@@ -49,12 +81,13 @@ export default Vue.extend({
 
     const { data: songs }: { data: LastFmResponse } = await this.$axios(url)
 
-    this.lastFm = songs
+    this.lastFm = anime
   },
   head() {
-    const title = "My Songs"
+    const title = "Anime"
     const description =
-      "Songs that I recently listened and the songs that I listened most as well as some more information from Last.fm, all of that information is on this page!"
+      "Anime that I recently watched and the anime that I watched most as well as some more information from MyAnimeList, all of that information is on this page!"
+      // "Songs that I recently listened and the songs that I listened most as well as some more information from Last.fm, all of that information is on this page!"
 
     return {
       title,
@@ -69,10 +102,27 @@ export default Vue.extend({
 
 <template>
   <PageLayout
-    title="Songs"
-    description="My latest activity on Last FM. Check out the Daily Songs page for a fresh new recommendation!"
+    title="Anime"
+    description="Anime that I recently watched and my personal notes about them."
     class="space-y-12"
   >
+
+    <section>
+      <Title class="mb-1">Note</Title>
+      <p class="text-lg text-justify">
+        Animes are often wrongly perceived as exclusively meant for children.
+        However, this notion is far from the truth. Animes tackle a multitude
+        of complex subjects such as politics, psychology, interpersonal relationships,
+        and moral dilemmas. Moreover, they often explore mature themes including violence,
+        sexuality, and existential questions. Animes offer a wide variety of genres and
+        artistic styles, catering to a broad audience and catering to individual preferences.
+        They can be profound, emotionally moving, intellectually stimulating, and captivating,
+        providing a rich and intricate narrative experience. Therefore, animes are a medium
+        that can be appreciated and enjoyed by viewers of all ages, transcending the boundaries
+        of childhood to offer a genuine form of artistic expression.
+      </p>
+    </section>
+
     <LoadersSongs
       v-if="$fetchState.pending === true || $fetchState.error !== null"
     />

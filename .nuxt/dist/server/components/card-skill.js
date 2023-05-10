@@ -1,14 +1,14 @@
-exports.ids = [19];
+exports.ids = [18];
 exports.modules = {
 
-/***/ 120:
+/***/ 111:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Card/Skill.vue?vue&type=template&id=385edbd8&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Card/Skill.vue?vue&type=template&id=58f6bad0&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
@@ -16,13 +16,13 @@ var render = function render() {
   return _c('div', {
     staticClass: "card-base rounded-lg flex items-center space-x-4"
   }, [_vm._ssrNode("<div class=\"rounded-lg flex\">", "</div>", [_vm.image ? _c('SmartImage', {
-    staticClass: "h-5 w-5 flex-shrink-0",
+    staticClass: "h-6 w-6 flex-shrink-0",
     attrs: {
       "src": _vm.image
     }
   }) : _c(_vm.iconPack, {
     tag: "component",
-    staticClass: "flex-shrink-0 h-5 w-5",
+    staticClass: "flex-shrink-0 h-6 w-6",
     attrs: {
       "brand": _vm.title
     }
@@ -30,7 +30,7 @@ var render = function render() {
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/components/Card/Skill.vue?vue&type=template&id=385edbd8&
+// CONCATENATED MODULE: ./src/components/Card/Skill.vue?vue&type=template&id=58f6bad0&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -84,7 +84,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Skill = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SmartImage: __webpack_require__(27).default})
+installComponents(component, {SmartImage: __webpack_require__(26).default})
 
 
 /***/ })

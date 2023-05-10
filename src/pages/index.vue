@@ -40,62 +40,10 @@ export default Vue.extend({
       experiences: {
         jobs: [
           {
-            title: "Google Developer Student Clubs",
+            title: "Coriolis Service",
             url: "https://gdsc.community.dev/mus-alparslan-universitesi",
             position: "Core Team Member",
             date: "2022-",
-          },
-          {
-            title: "EskiYeni Academy Theater",
-            url: "https://eskiyenitiyatro.com",
-            position: "Web Developer & Social Media Manager",
-            date: "2022-",
-          },
-          {
-            title: "Discord Templates",
-            url: "https://discords.com/templates",
-            position: "Web Developer & Co-Founder",
-            date: "2020-2021",
-          },
-          {
-            title: "IZM Game Studios",
-            url: "https://izmgamestudios.com",
-            position: "Solution Partner",
-            date: "2020-2021",
-            isHidden: true,
-          },
-          {
-            title: "TruckersMP",
-            url: "https://truckersmp.com/user/1648033",
-            position: "Community Moderator & Translator",
-            date: "2020-2021",
-            isHidden: true,
-          },
-          {
-            title: "WA Web+ Extension",
-            url: "https://wawplus.com",
-            position: "Translator",
-            date: "2020-2021",
-            isHidden: true,
-          },
-          {
-            title: "Batakköylü Düğün Salonu",
-            url: "https://batakkoylu.netlify.app",
-            position: "Web Developer",
-            date: "2020-2020",
-            isHidden: true,
-          },
-          {
-            title: "EGGSY's Discord Bot",
-            url: "https://top.gg/bot/eggsy",
-            position: "Creator, Developer and Maintainer",
-            date: "2017-2019",
-          },
-          {
-            title: "Discord Bot List",
-            url: "https://top.gg/user/162969778699501569",
-            position: "Website Moderator",
-            date: "2017-2018",
           },
         ],
         education: [
@@ -133,10 +81,10 @@ export default Vue.extend({
             href: "/me/repos",
           },
           {
-            title: "Songs",
+            title: "Anime",
             description:
-              "Trust your taste? Compare your favourite songs and artists with mine!",
-            href: "/me/songs",
+              "Trust your taste? Compare your favourite anime with mine!",
+            href: "/me/anime",
           },
           {
             title: "Contact",
@@ -167,32 +115,35 @@ export default Vue.extend({
         ],
       },
       skills: [
+
         {
           title: "Development",
           items: [
-            "TypeScript",
-            "Vue.js",
-            "React.js",
-            "HTML5",
-            "Tailwind CSS",
+            "HTML",
+            "CSS",
+            "JavaScript",
             "Node.js",
-            "Sass",
+            "Vite.js",
+            "React.js",
+            "PHP",
+            "Symfony",
+            "Python",
+            "Tailwind CSS",
+            "C",
+            "C++",
           ],
         },
         {
           title: "Apps",
           items: [
-            {
-              title: "VS Code",
-              iconPack: "IconBrand",
-            },
-            {
-              title: "Raycast",
-              image: "https://i.imgur.com/NBc0C4j.png",
-            },
-            {
-              title: "Figma",
-            },
+            "WebStorm",
+            "DataGrip",
+            "PhpStorm",
+            "PyCharm",
+            "Visual Studio 2022",
+            "VS Code",
+            "Sketch",
+            "Figma",
           ],
         },
         {
@@ -203,14 +154,24 @@ export default Vue.extend({
               iconPack: "IconBrand",
             },
             {
-              title: "Firebase",
+              title: "Railway",
             },
             {
               title: "Netlify",
               iconPack: "IconBrand",
-            },
+            }, {
+              title: "Vercel",
+            }
           ],
-        },
+        }, {
+          title: "Database",
+          items: [
+            "MySQL",
+            "SQLite",
+            "Redis",
+            "MongoDB",
+          ],
+        }
       ],
     }
   },
@@ -232,11 +193,10 @@ export default Vue.extend({
 
   mounted() {
 
-    if ( document.styleSheets[0].cssRules.length > 0 ) {
+    if ( document?.styleSheets[0]?.cssRules?.length > 0 ) {
       this.loading = false
     } else {
       window.addEventListener( "load", () => {
-        console.log( "load" )
         this.loading = false
       })
     }
@@ -286,11 +246,11 @@ export default Vue.extend({
             class="flex items-center justify-center md:justify-start gap-x-3 gap-y-2 flex-wrap"
           >
             <Button
-              v-for="item in ['TypeScript', 'Vue.js', 'React.js']"
+              v-for="item in ['JavaScript', 'React.js', 'Node.js' ]"
               :key="item"
               class="inline-block"
             >
-              <IconDev :brand="item" class="h-5 w-5" />
+              <IconDev :brand="item" class="h-5 w-5 filter grayscale" />
             </Button>
 
             <Button

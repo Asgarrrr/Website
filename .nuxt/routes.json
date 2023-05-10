@@ -24,6 +24,14 @@
     "_name": "_90e56f2e"
   },
   {
+    "name": "me-anime",
+    "path": "/me/anime",
+    "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\me\\\\anime.vue",
+    "chunkName": "pages/me/anime",
+    "url": "/me/anime",
+    "_name": "_2c9cac26"
+  },
+  {
     "name": "me-contact",
     "path": "/me/contact",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\me\\\\contact.vue",
@@ -40,36 +48,12 @@
     "_name": "_dc65e38c"
   },
   {
-    "name": "me-songs",
-    "path": "/me/songs",
-    "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\me\\\\songs.vue",
-    "chunkName": "pages/me/songs",
-    "url": "/me/songs",
-    "_name": "_852bfb12"
-  },
-  {
-    "name": "projects-premid",
-    "path": "/projects/premid",
-    "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\projects\\\\premid\\\\index.vue",
-    "chunkName": "pages/projects/premid/index",
-    "url": "/projects/premid",
-    "_name": "_09bfb404"
-  },
-  {
-    "name": "projects-premid-custom-status",
-    "path": "/projects/premid/custom-status",
-    "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\projects\\\\premid\\\\custom-status.vue",
-    "chunkName": "pages/projects/premid/custom-status",
-    "url": "/projects/premid/custom-status",
-    "_name": "_07c59100"
-  },
-  {
-    "name": "projects-premid-mdcreator",
-    "path": "/projects/premid/mdcreator",
-    "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\projects\\\\premid\\\\mdcreator.vue",
-    "chunkName": "pages/projects/premid/mdcreator",
-    "url": "/projects/premid/mdcreator",
-    "_name": "_787bcf67"
+    "name": "projects-rogue",
+    "path": "/projects/rogue",
+    "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\projects\\\\rogue\\\\index.vue",
+    "chunkName": "pages/projects/rogue/index",
+    "url": "/projects/rogue",
+    "_name": "_55b629f1"
   },
   {
     "name": "blog-slug",

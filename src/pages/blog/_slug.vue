@@ -1,6 +1,16 @@
 <script lang="ts">
-import Vue from "vue"
 
+import Prism from 'prismjs'
+import 'prismjs/plugins/line-numbers/prism-line-numbers.js'
+
+import 'prismjs/components/prism-bash.js'
+import 'prismjs/components/prism-javascript.js'
+import 'prismjs/components/prism-markup.js'
+import 'prismjs/components/prism-css.js'
+import 'prismjs/components/prism-python.js'
+import 'prismjs/components/prism-json.js'
+
+import Vue from "vue"
 /* Interfaces */
 import type { Post } from "~/src/types/Post"
 
@@ -10,6 +20,7 @@ interface RelatedPost {
 }
 
 export default Vue.extend({
+
   data() {
     return {
       post: {} as Post,
@@ -47,6 +58,7 @@ export default Vue.extend({
     }
   },
   head() {
+
     const post = this.post
     const { getTags } = this as {
       getTags: string[]
@@ -114,11 +126,40 @@ export default Vue.extend({
         if (state.pending === true || state.error !== null) return
         await this.$nextTick()
         this.$applyMediumZoom()
+        Prism.highlightAll()
+
+        document.querySelectorAll(".nuxt-content-highlight").forEach((el) => {
+          // Add a copy button to each code block
+          const button = document.createElement("button")
+          button.className = "copy-button"
+          button.textContent = "copy"
+
+          button.addEventListener("click", () => {
+            const pre = el.querySelector("pre")
+            navigator.clipboard.writeText( pre?.textContent || "" )
+
+            // Sparkle, firework, Flame, Heath emoji array
+
+            button.textContent = [ "✨", "🍾", "🔥", "❤️", "🎉", "🎊" ][ ~~( Math.random() * 6 ) ];
+            setTimeout(() => {
+              button.textContent = "copy"
+              button.classList.remove("decoration-green-500")
+            }, 2000)
+
+
+          })
+
+          el.appendChild(button)
+
+
+        })
+
       },
       deep: true,
     },
   },
   computed: {
+
     getTags(): string[] {
       return this.post?.tags || []
     },
@@ -133,6 +174,7 @@ export default Vue.extend({
     },
   },
 })
+
 </script>
 
 <template>
@@ -143,27 +185,35 @@ export default Vue.extend({
     />
 
     <div v-else class="pt-4 mt-10">
+
       <article>
+
         <header class="space-y-8 leading-relaxed text-center mb-18">
-          <NuxtImg
-            v-if="post.header"
-            :src="post.header"
-            class="object-cover object-top w-full transition-all rounded-lg h-30 ring-1 dark:ring-white/10 ring-black/10 hover:object-bottom duration-2000"
-            alt="Post header"
-          />
 
           <div class="space-y-4">
-            <div
-              class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 dark:text-white/30 text-black/50 sm:text-sm"
-            >
-              <div class="flex items-center space-x-2">
-                <IconCalendar class="w-4 h-4" />
-                <span>{{ getReadableDate }}</span>
+
+            <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 dark:text-white/30 text-black/50 sm:text-sm">
+
+              <div class="flex items-center space-x-2 mb-4" v-for="tag in getTags">
+                <i class="">
+                  # {{ tag }}
+                </i>
+              </div>
+
+              <div class="space-y-8 mb-8">
+
+                <h1 class="block mx-auto text-2xl font-bold text-black md:w-11/12 sm:text-4xl dark:text-white">
+                  {{ post.title }}
+                </h1>
+
+                <p class="mx-auto text-black/50 md:w-9/12 dark:text-white/50">
+                  {{ post.description }}
+                </p>
               </div>
 
               <div class="flex items-center space-x-2">
-                <IconTag class="w-4 h-4" />
-                <span>{{ getTags.join(" － ") }}</span>
+                <IconCalendar class="w-4 h-4" />
+                <span>{{ getReadableDate }}</span>
               </div>
 
               <div class="flex items-center space-x-2">
@@ -172,57 +222,50 @@ export default Vue.extend({
               </div>
             </div>
 
-            <div class="space-y-2">
-              <h1
-                class="block mx-auto text-2xl font-bold text-black md:w-11/12 sm:text-4xl dark:text-white"
-              >
-                {{ post.title }}
-              </h1>
-
-              <p class="mx-auto text-black/50 md:w-9/12 dark:text-white/50">
-                {{ post.description }}
-              </p>
-            </div>
           </div>
+
+          <SmartFigure
+            v-if="post.header"
+            :src="post.header"
+
+            class="object-cover object-top w-full transition-all rounded-lg max-h-xl ring-1 dark:ring-white/10 ring-black/10 hover:object-bottom duration-2000"  alt="Post header"
+          />
+
         </header>
 
         <div class="mt-4">
           <template v-if="!post.indicatorsHidden">
-            <div
-              class="sticky z-10 hidden float-left -ml-20 text-right top-4 md:block"
-            >
-              <BlogShare
-                type="vertical"
-                :title="post.title"
-                :path="$route.path"
-              />
-            </div>
 
-            <div
-              class="sticky z-10 hidden float-right text-left -mr-14 top-4 md:block"
-            >
+            <div class="sticky z-10 hidden float-right text-left -mr-14 top-4 md:block" >
               <BlogReadingIndicator selector=".nuxt-content" />
             </div>
+
           </template>
 
           <BlogTableOfContents :toc="post.toc" />
 
-          <NuxtContent
-            :document="post"
-            class="max-w-full prose prose-black dark:prose-light"
-          />
+          <NuxtContent :document="post" class="max-w-full prose prose-black dark:prose-light" />
         </div>
       </article>
 
-      <Disqus
-        v-if="!$config.isDev"
-        :title="post.title"
-        :url="`https://jeremycaruelle.fr/blog/${post.slug}`"
-        :identifier="`/blog/${post.slug}`"
-        :slug="post.slug"
-        lang="tr"
-        class="mt-10"
-      />
+      <hr class="my-10 border-black/10 dark:border-white/10" />
+
+<!--      <script src="https://giscus.app/client.js"-->
+<!--        data-repo="Asgarrrr/blog_comments"-->
+<!--        data-repo-id="R_kgDOJd9fSg"-->
+<!--        data-category="Announcements"-->
+<!--        data-category-id="DIC_kwDOJd9fSs4CWNQy"-->
+<!--        data-mapping="pathname"-->
+<!--        data-strict="0"-->
+<!--        data-reactions-enabled="1"-->
+<!--        data-emit-metadata="0"-->
+<!--        data-input-position="top"-->
+<!--        data-theme="https://cdn.jsdelivr.net/gh/Asgarrrr/blog_comments/giscus.css"-->
+<!--        data-lang="fr"-->
+<!--        data-loading="lazy"-->
+<!--        crossorigin="anonymous"-->
+<!--        async>-->
+<!--      </script>-->
 
       <div class="mt-16 space-y-10">
         <div v-if="getRelatedPosts.length > 0" class="space-y-2">
@@ -256,52 +299,201 @@ export default Vue.extend({
 </template>
 
 <style lang="scss">
-.dark .prose .nuxt-content-highlight {
-  box-shadow: 0 0 0 100vmax #262626;
-
-  pre {
-    @apply bg-neutral-800;
-  }
-}
-
-.light .nuxt-content-highlight {
-  box-shadow: 0 0 0 100vmax #282c34;
-}
 
 .nuxt-content {
   .nuxt-content-highlight {
-    clip-path: inset(0 -100vmax);
 
-    @apply mb-5 relative;
+    @apply relative;
 
     .filename {
-      @apply font-light mt-3 mr-3 text-xs right-0 text-white/50 z-10 absolute;
+      @apply font-light mt-3 mr-14 text-xs right-0 text-white/50 z-10 absolute;
     }
 
     pre {
-      @apply rounded-none py-4 px-0;
+      @apply rounded-lg border-[0.1px] my-5 p-4 bg-opacity-25 bg-neutral-300 border-neutral-200 dark:(bg-neutral-800/30 border-neutral-800) max-h-35rem overflow-auto;
+    }
+
+    ::-webkit-scrollbar {
+      width: 0.5rem;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 0.5rem;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    ::-webkit-scrollbar-corner {
+      background-color: transparent;
     }
   }
 
-  ol {
-    @apply pl-0;
-  }
-
-  video {
-    @apply rounded-lg;
-  }
-
-  kbd {
-    @apply rounded-lg bg-black/10 dark:(bg-white/10 border-white/30) px-2 py-1 text-sm border-b-2 border-black/30 cursor-default;
-  }
-
-  code {
-    @apply bg-blue-100 py-px px-1 text-blue-600 dark:bg-white/5;
-
-    &::before,
-    &::after {
-      content: "`";
+    code {
+      @apply bg-blue-100 py-px px-1 text-blue-600 dark:bg-white/5 rounded-sm;
     }
-  }
+
 }
+
+.prose code::before,
+.prose code::after {
+  content: none !important;
+}
+
+code[class*="language-"], pre[class*="language-"] {
+  @apply text-shadow-none;
+}
+
+.copy-button {
+  @apply font-light mt-3 mr-3 text-xs top-0 right-0 text-white/50 z-10 absolute opacity-0 transition-opacity duration-200;
+}
+
+.nuxt-content-highlight:hover .copy-button {
+  @apply opacity-100;
+}
+
+.gsc-reactions-count {
+  @apply text-xs text-white/50 font-light ml-2 flex items-center space-x-1 transition-colors duration-200 hover:text-white dark:hover:text-white/80 dark:text-white/30;
+  display: none !important;
+}
+
+
+//.dark .prose .nuxt-content-highlight {
+//  box-shadow: 0 0 0 100vmax #262626;
+//
+//  pre {
+//    @apply bg-neutral-800;
+//  }
+//}
+
+//// hide the copy button
+//
+//.copy-button {
+//  @apply font-light mt-3 mr-3 text-xs top-0 right-0 text-white/50 z-10 absolute opacity-0 transition-opacity duration-200;
+//}
+//
+//.nuxt-content-highlight:hover .copy-button {
+//  @apply opacity-100;
+//}
+//
+//.light .nuxt-content-highlight {
+//  box-shadow: 0 0 0 100vmax #282c34;
+//}
+//
+//.nuxt-content {
+//  .nuxt-content-highlight {
+//    clip-path: inset(0 -100vmax);
+//
+//    @apply mb-5 relative;
+//
+
+//
+//    pre {
+//      @apply rounded-none py-4 px-0;
+//    }
+//  }
+//
+//  ol {
+//    @apply pl-0;
+//  }
+//
+//  video {
+//    @apply rounded-lg;
+//  }
+//
+//  kbd {
+//    @apply rounded-lg bg-black/10 dark:(bg-white/10 border-white/30) px-2 py-1 text-sm border-b-2 border-black/30 cursor-default;
+//  }
+//
+//  code {
+//    @apply bg-blue-100 py-px px-1 text-blue-600 dark:bg-white/5;
+//  }
+//}
+//
+// Line numbers
+pre[class*="language-"].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+  position: relative;
+  white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.line-numbers-rows > span {
+  display: block;
+  counter-increment: linenumber;
+}
+
+.line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}
+pre[class*="language-"].line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+pre[class*="language-"].line-numbers > code {
+  position: relative;
+  white-space: inherit;
+}
+
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em; /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.line-numbers-rows > span {
+  display: block;
+  counter-increment: linenumber;
+}
+
+.line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}
+
 </style>

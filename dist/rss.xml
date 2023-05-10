@@ -4,16 +4,24 @@
         <title>Asgarrrr's Blog</title>
         <link>https://jeremycaruelle.fr/blog</link>
         <description> --- </description>
-        <lastBuildDate>Fri, 28 Apr 2023 14:52:05 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 10 May 2023 00:21:08 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
-            <title><![CDATA[Yeni Alan Adı!]]></title>
-            <link>https://jeremycaruelle.fr/blog/yeni-alan-adi</link>
-            <guid>https://jeremycaruelle.fr/blog/yeni-alan-adi</guid>
-            <pubDate>Wed, 22 Jul 2020 14:03:24 GMT</pubDate>
-            <description><![CDATA[Eski alan adının yenileme ücretinin aşırılığı dolayısıyla, yeni bir alan adı alarak sitenin tamamını oraya taşıma kararı aldım.]]></description>
-            <enclosure url="https://jeremycaruelle.fr/assets/images/posts/yeni-alan-adi.jpg" length="0" type="image/jpg"/>
+            <title><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium a nulla nec rutrum.]]></title>
+            <link>https://jeremycaruelle.fr/blog/test</link>
+            <guid>https://jeremycaruelle.fr/blog/test</guid>
+            <pubDate>Thu, 27 Apr 2023 19:03:24 GMT</pubDate>
+            <description><![CDATA[Quisque suscipit mauris quis nisl cursus porttitor. Vivamus aliquam magna id semper semper. Aliquam a diam id nisi pretium consectetur.]]></description>
+            <enclosure url="https://jeremycaruelle.fr/assets/images/posts/test.jpg" length="0" type="image/jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium a nulla nec rutrum.]]></title>
+            <link>https://jeremycaruelle.fr/blog/test2</link>
+            <guid>https://jeremycaruelle.fr/blog/test2</guid>
+            <pubDate>Thu, 27 Apr 2023 19:03:24 GMT</pubDate>
+            <description><![CDATA[Quisque suscipit mauris quis nisl cursus porttitor. Vivamus aliquam magna id semper semper. Aliquam a diam id nisi pretium consectetur.]]></description>
+            <enclosure url="https://jeremycaruelle.fr/assets/images/posts/test2.jpg" length="0" type="image/jpg"/>
         </item>
     </channel>
 </rss>

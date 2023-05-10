@@ -1,7 +1,7 @@
-exports.ids = [16];
+exports.ids = [15];
 exports.modules = {
 
-/***/ 123:
+/***/ 114:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -83,7 +83,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Text = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SmartImage: __webpack_require__(27).default,SmartLink: __webpack_require__(16).default})
+installComponents(component, {SmartImage: __webpack_require__(26).default,SmartLink: __webpack_require__(16).default})
 
 
 /***/ })

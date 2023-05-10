@@ -14,8 +14,8 @@ export default Vue.extend({
     getTargetLink() {
       const path = this.$route.path
 
-      if (path !== "/projects/premid" && path.startsWith("/projects/premid"))
-        return "/projects/premid"
+      if (path !== "/projects/rogue" && path.startsWith("/projects/rogue"))
+        return "/projects/rogue"
       else if (this.routeIsBlog && this.$route.params?.slug) return "/blog"
       else return "/"
     },
@@ -35,7 +35,7 @@ export default Vue.extend({
           <Transition name="fade" mode="out-in">
 
             <span v-if="!routeIsIndex"  class="text-black/90 text-sm uppercase font-medium dark:text-white/90" >
-              < Back to Home
+              < Back
             </span>
 
           </Transition>

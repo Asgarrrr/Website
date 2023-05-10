@@ -83,10 +83,7 @@ export default Vue.extend({
   <transition name="fade">
     <div
       v-show="isElementVisible"
-      v-tippy="{
-        content:
-          getPercentLeftBottom === 100 ? 'Tüm yazı okundu!' : 'Okuma oranı',
-      }"
+      v-tippy="{ content: getPercentLeftBottom === 100 ? '100% <3' : `${getPercentLeftBottom}% left ^^` }"
     >
       <div
         class="rounded-md bg-gray-200 h-40 w-4 hidden relative md:block dark:bg-neutral-800"

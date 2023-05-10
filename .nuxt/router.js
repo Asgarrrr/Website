@@ -7,12 +7,10 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _181dacc1 = () => interopDefault(import('..\\src\\pages\\blog\\index.vue' /* webpackChunkName: "pages/blog/index" */))
 const _0e04e1a4 = () => interopDefault(import('..\\src\\pages\\donate.vue' /* webpackChunkName: "pages/donate" */))
 const _90e56f2e = () => interopDefault(import('..\\src\\pages\\projects\\index.vue' /* webpackChunkName: "pages/projects/index" */))
+const _2c9cac26 = () => interopDefault(import('..\\src\\pages\\me\\anime.vue' /* webpackChunkName: "pages/me/anime" */))
 const _b5c8394e = () => interopDefault(import('..\\src\\pages\\me\\contact.vue' /* webpackChunkName: "pages/me/contact" */))
 const _dc65e38c = () => interopDefault(import('..\\src\\pages\\me\\repos.vue' /* webpackChunkName: "pages/me/repos" */))
-const _852bfb12 = () => interopDefault(import('..\\src\\pages\\me\\songs.vue' /* webpackChunkName: "pages/me/songs" */))
-const _09bfb404 = () => interopDefault(import('..\\src\\pages\\projects\\premid\\index.vue' /* webpackChunkName: "pages/projects/premid/index" */))
-const _07c59100 = () => interopDefault(import('..\\src\\pages\\projects\\premid\\custom-status.vue' /* webpackChunkName: "pages/projects/premid/custom-status" */))
-const _787bcf67 = () => interopDefault(import('..\\src\\pages\\projects\\premid\\mdcreator.vue' /* webpackChunkName: "pages/projects/premid/mdcreator" */))
+const _55b629f1 = () => interopDefault(import('..\\src\\pages\\projects\\rogue\\index.vue' /* webpackChunkName: "pages/projects/rogue/index" */))
 const _16670b79 = () => interopDefault(import('..\\src\\pages\\blog\\_slug.vue' /* webpackChunkName: "pages/blog/_slug" */))
 const _42e9203a = () => interopDefault(import('..\\src\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
 
@@ -40,6 +38,10 @@ export const routerOptions = {
     component: _90e56f2e,
     name: "projects"
   }, {
+    path: "/me/anime",
+    component: _2c9cac26,
+    name: "me-anime"
+  }, {
     path: "/me/contact",
     component: _b5c8394e,
     name: "me-contact"
@@ -48,21 +50,9 @@ export const routerOptions = {
     component: _dc65e38c,
     name: "me-repos"
   }, {
-    path: "/me/songs",
-    component: _852bfb12,
-    name: "me-songs"
-  }, {
-    path: "/projects/premid",
-    component: _09bfb404,
-    name: "projects-premid"
-  }, {
-    path: "/projects/premid/custom-status",
-    component: _07c59100,
-    name: "projects-premid-custom-status"
-  }, {
-    path: "/projects/premid/mdcreator",
-    component: _787bcf67,
-    name: "projects-premid-mdcreator"
+    path: "/projects/rogue",
+    component: _55b629f1,
+    name: "projects-rogue"
   }, {
     path: "/blog/:slug",
     component: _16670b79,

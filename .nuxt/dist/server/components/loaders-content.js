@@ -1,21 +1,21 @@
-exports.ids = [59];
+exports.ids = [58];
 exports.modules = {
 
-/***/ 113:
+/***/ 105:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Loaders/Content.vue?vue&type=template&id=17d7b260&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Loaders/Content.vue?vue&type=template&id=4fe0c54b&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
     _setup = _vm._self._setupProxy;
   return _vm.error === false ? _c('div', {
     staticClass: "w-full pt-14"
-  }, [_vm._ssrNode("<section class=\"space-y-8\"><div class=\"bg-black/10 h-30 rounded-lg animate-pulse w-full dark:bg-white/5\"></div> <div class=\"space-y-4\"><div class=\"flex space-x-2 justify-center\"><div class=\"bg-black/10 h-4 animate-pulse w-1/4 sm:w-1/6 dark:bg-white/5\"></div> <div class=\"bg-black/10 h-4 animate-pulse w-1/4 sm:w-1/6 dark:bg-white/5\"></div> <div class=\"bg-black/10 h-4 animate-pulse w-1/4 sm:w-1/6 dark:bg-white/5\"></div></div> <div class=\"bg-black/10 h-10 mx-auto w-full animate-pulse sm:w-8/12 dark:bg-white/5\"></div> <div class=\"flex flex-col space-y-2 items-center justify-center\"><div class=\"bg-black/10 h-4 w-full animate-pulse sm:w-8/12 dark:bg-white/5\"></div> <div class=\"bg-black/10 h-4 animate-pulse w-1/2 sm:w-4/12 dark:bg-white/5\"></div></div></div></section> <div class=\"space-y-10 mt-10 w-full\"><div class=\"space-y-1\">" + _vm._ssrList(6, function (_) {
+  }, [_vm._ssrNode("<section class=\"space-y-8\"><div class=\"space-y-4\"><div class=\"flex space-x-2 justify-center\"><div class=\"bg-black/10 h-4 animate-pulse w-1/4 sm:w-1/6 dark:bg-white/5\"></div></div></div> <div class=\"bg-black/10 h-10 mx-auto w-full animate-pulse sm:w-8/12 dark:bg-white/5\"></div> <div class=\"bg-black/10 h-4 animate-pulse dark:bg-white/5\"></div> <div class=\"flex space-x-2 justify-center\"><div class=\"bg-black/10 h-4 animate-pulse w-1/4 sm:w-1/6 dark:bg-white/5\"></div> <div class=\"bg-black/10 h-4 animate-pulse w-1/4 sm:w-1/6 dark:bg-white/5\"></div></div> <div class=\"bg-black/10 h-xl rounded-lg animate-pulse w-full dark:bg-white/5\"></div></section> <div class=\"space-y-10 mt-10 w-full\"><div class=\"space-y-1\">" + _vm._ssrList(6, function (_) {
     return "<div" + _vm._ssrClass("bg-black/10 h-4 animate-pulse dark:bg-white/5", _ !== 6 ? 'w-full' : 'w-8/12') + "></div>";
   }) + "</div> <div class=\"space-y-1\">" + _vm._ssrList(4, function (_) {
     return "<div" + _vm._ssrClass("bg-black/10 h-4 animate-pulse dark:bg-white/5", _ !== 4 ? 'w-full' : 'w-1/2') + "></div>";
@@ -23,7 +23,7 @@ var render = function render() {
     return "<div" + _vm._ssrClass("bg-black/10 h-4 animate-pulse dark:bg-white/5", _ !== 24 ? 'w-full' : 'w-1/2') + "></div>";
   }) + "</div></div>")], 2) : _c('div', {
     staticClass: "space-y-6 pt-14"
-  }, [_vm._ssrNode("<h1 class=\"font-semibold text-2xl text-black/90 dark:text-white/90\">\n    Gönderi yüklenemedi.\n  </h1> <p class=\"text-black/50 dark:text-white/30\">\n    Aradığınız gönderinin blogumda olduğuna, adreste bir yanlışlık olmadığına\n    emin olun. Arama özelliğini kullanarak gönderiyi aratabilir, anasayfaya\n    dönerek diğer gönderilerime ulaşabilirsiniz.\n  </p> "), _c('Button', {
+  }, [_vm._ssrNode("<h1 class=\"font-semibold text-2xl text-black/90 dark:text-white/90\">\n    Failed to load post...\n  </h1> <p class=\"text-black/50 dark:text-white/30\">\n    ;(\n  </p> "), _c('Button', {
     attrs: {
       "icon": "IconBack"
     },
@@ -32,11 +32,11 @@ var render = function render() {
         return _vm.$router.back();
       }
     }
-  }, [_vm._v("Geri Dön")])], 2);
+  }, [_vm._v("Go Back")])], 2);
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/components/Loaders/Content.vue?vue&type=template&id=17d7b260&
+// CONCATENATED MODULE: ./src/components/Loaders/Content.vue?vue&type=template&id=4fe0c54b&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -80,7 +80,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Content = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Button: __webpack_require__(7).default})
+installComponents(component, {Button: __webpack_require__(8).default})
 
 
 /***/ })

@@ -1,7 +1,7 @@
-exports.ids = [71,0,58,63,64,65,66];
+exports.ids = [70,0,57,62,63,64,65];
 exports.modules = {
 
-/***/ 107:
+/***/ 102:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -64,12 +64,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Blog = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SkeletonLoader: __webpack_require__(64).default})
+installComponents(component, {SkeletonLoader: __webpack_require__(70).default})
 
 
 /***/ }),
 
-/***/ 149:
+/***/ 136:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -111,43 +111,43 @@ var staticRenderFns = [];
 // CONCATENATED MODULE: ./src/pages/blog/index.vue?vue&type=template&id=3bbc7ed8&
 
 // EXTERNAL MODULE: external "core-js/modules/esnext.map.delete-all.js"
-var esnext_map_delete_all_js_ = __webpack_require__(46);
+var esnext_map_delete_all_js_ = __webpack_require__(45);
 
 // EXTERNAL MODULE: external "core-js/modules/esnext.map.every.js"
-var esnext_map_every_js_ = __webpack_require__(47);
+var esnext_map_every_js_ = __webpack_require__(46);
 
 // EXTERNAL MODULE: external "core-js/modules/esnext.map.filter.js"
-var esnext_map_filter_js_ = __webpack_require__(48);
+var esnext_map_filter_js_ = __webpack_require__(47);
 
 // EXTERNAL MODULE: external "core-js/modules/esnext.map.find.js"
-var esnext_map_find_js_ = __webpack_require__(49);
+var esnext_map_find_js_ = __webpack_require__(48);
 
 // EXTERNAL MODULE: external "core-js/modules/esnext.map.find-key.js"
-var esnext_map_find_key_js_ = __webpack_require__(50);
+var esnext_map_find_key_js_ = __webpack_require__(49);
 
 // EXTERNAL MODULE: external "core-js/modules/esnext.map.includes.js"
-var esnext_map_includes_js_ = __webpack_require__(51);
+var esnext_map_includes_js_ = __webpack_require__(50);
 
 // EXTERNAL MODULE: external "core-js/modules/esnext.map.key-of.js"
-var esnext_map_key_of_js_ = __webpack_require__(52);
+var esnext_map_key_of_js_ = __webpack_require__(51);
 
 // EXTERNAL MODULE: external "core-js/modules/esnext.map.map-keys.js"
-var esnext_map_map_keys_js_ = __webpack_require__(53);
+var esnext_map_map_keys_js_ = __webpack_require__(52);
 
 // EXTERNAL MODULE: external "core-js/modules/esnext.map.map-values.js"
-var esnext_map_map_values_js_ = __webpack_require__(54);
+var esnext_map_map_values_js_ = __webpack_require__(53);
 
 // EXTERNAL MODULE: external "core-js/modules/esnext.map.merge.js"
-var esnext_map_merge_js_ = __webpack_require__(55);
+var esnext_map_merge_js_ = __webpack_require__(54);
 
 // EXTERNAL MODULE: external "core-js/modules/esnext.map.reduce.js"
-var esnext_map_reduce_js_ = __webpack_require__(56);
+var esnext_map_reduce_js_ = __webpack_require__(55);
 
 // EXTERNAL MODULE: external "core-js/modules/esnext.map.some.js"
-var esnext_map_some_js_ = __webpack_require__(57);
+var esnext_map_some_js_ = __webpack_require__(56);
 
 // EXTERNAL MODULE: external "core-js/modules/esnext.map.update.js"
-var esnext_map_update_js_ = __webpack_require__(58);
+var esnext_map_update_js_ = __webpack_require__(57);
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -260,12 +260,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var blog = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {LoadersBlog: __webpack_require__(107).default})
+installComponents(component, {LoadersBlog: __webpack_require__(102).default})
 
 
 /***/ }),
 
-/***/ 64:
+/***/ 70:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -343,12 +343,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Index = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SkeletonLoaderRepository: __webpack_require__(66).default,SkeletonLoaderIframe: __webpack_require__(65).default,SkeletonLoaderSong: __webpack_require__(67).default,SkeletonLoaderLastfm: __webpack_require__(69).default,SkeletonLoaderSpinner: __webpack_require__(68).default})
+installComponents(component, {SkeletonLoaderRepository: __webpack_require__(72).default,SkeletonLoaderIframe: __webpack_require__(71).default,SkeletonLoaderSong: __webpack_require__(73).default,SkeletonLoaderLastfm: __webpack_require__(75).default,SkeletonLoaderSpinner: __webpack_require__(74).default})
 
 
 /***/ }),
 
-/***/ 65:
+/***/ 71:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -415,7 +415,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 66:
+/***/ 72:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -459,7 +459,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 67:
+/***/ 73:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -503,7 +503,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 68:
+/***/ 74:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -556,7 +556,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 69:
+/***/ 75:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -623,7 +623,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Lastfm = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SkeletonLoader: __webpack_require__(64).default})
+installComponents(component, {SkeletonLoader: __webpack_require__(70).default})
 
 
 /***/ })

@@ -11,7 +11,7 @@ export default Vue.extend({
       sponsors: [] as ISponsor[],
       accounts: [
         {
-          image: "https://i.imgur.com/cxiXNEb.jpg",
+          image: "/assets/images/N26_App_Icon.png",
           name: "N26",
           iban: "DE28 1001 1001 2628 2807 55",
           revealed: false,
@@ -22,7 +22,7 @@ export default Vue.extend({
   fetchOnServer: false,
   async fetch() {
     const { data } = await this.$axios.get(
-      "https://raw.githubusercontent.com/Asgarrrr/.github/main/sponsors.json"
+      "https://raw.githubusercontent.com/asgarrrr/.github/main/sponsors.json"
     )
 
     this.sponsors = data
@@ -100,12 +100,12 @@ export default Vue.extend({
         </div>
 
         <div class="flex flex-wrap gap-x-4 gap-y-2">
-          <Button :href="getSponsorLinks.github" blank>
+          <Button :href="getSponsorLinks.buymeacoffee" blank>
             <template #icon>
               <IconBrand brand="BuyMeACoffee" class="h-5 w-5" />
             </template>
 
-            Buy Me A Coffee
+            Buy me a coffee
           </Button>
         </div>
 

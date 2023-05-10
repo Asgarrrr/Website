@@ -1,19 +1,19 @@
-exports.ids = [69,0,26,63,64,65,66];
+exports.ids = [68,0,25,62,63,64,65];
 exports.modules = {
 
-/***/ 118:
+/***/ 109:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Status.vue?vue&type=template&id=0e3af015&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Status.vue?vue&type=template&id=2760d0d5&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
     _setup = _vm._self._setupProxy;
-  return _vm.finished === false || !_vm.getStatusDetails || Object.keys(_vm.lanyard).length === 0 ? _c('div', {
+  return !_vm.finished || !_vm.getStatusDetails || Object.keys(_vm.lanyard).length === 0 ? _c('div', {
     staticClass: "flex items-center space-x-2"
   }, [_c('SkeletonLoader', {
     staticClass: "w-5 h-5",
@@ -24,7 +24,7 @@ var render = function render() {
     staticClass: "w-1/2 h-5"
   })], 2) : _c('div', {
     staticClass: "flex items-center space-x-2 rounded-md text-neutral-500"
-  }, [_vm.lanyard.spotify ? _c('IconBrand', {
+  }, [this.currentApp === 'Spotify' ? _c('IconBrand', {
     staticClass: "w-5 h-5",
     attrs: {
       "brand": "spotify"
@@ -37,7 +37,7 @@ var render = function render() {
         content: 'Discord status',
         placement: 'bottom'
       },
-      expression: "{\n      content: 'Discord status',\n      placement: 'bottom',\n    }"
+      expression: "{ content: 'Discord status', placement: 'bottom' }"
     }],
     class: `h-5 w-5 rounded-full flex-shrink-0 ${_vm.getDiscordStatus}`
   }), _vm._ssrNode(" "), _c('transition', {
@@ -67,7 +67,7 @@ var render = function render() {
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/components/Status.vue?vue&type=template&id=0e3af015&
+// CONCATENATED MODULE: ./src/components/Status.vue?vue&type=template&id=2760d0d5&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -90,49 +90,20 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
      * @returns {string}
      */
     getStatusDetails() {
-      var _a, _b, _c, _d, _e, _f, _g;
+      var _a, _b, _c;
       const lanyard = this.lanyard;
       if (!lanyard) return "Couldn't fetch data from Lanyard";
+      if (lanyard.discord_status === "offline") return "Offline";
       const filtered = ((_b = (_a = lanyard.activities) === null || _a === void 0 ? void 0 : _a.filter(activity => activity.type !== 4)) === null || _b === void 0 ? void 0 : _b.pop()) || null;
-      console.log(lanyard.activities);
-      // Offline
-      if (((_c = this.lanyard) === null || _c === void 0 ? void 0 : _c.discord_status) === "offline") return "Offline";else if (!filtered) return "Online";
-      // Spotify
-      else if (filtered.name === "Spotify" && !!lanyard.spotify) {
+      if (lanyard.spotify) {
         const {
           song,
           artist
         } = lanyard.spotify || {};
-        const firstArtist = (_d = artist === null || artist === void 0 ? void 0 : artist.split("; ")) === null || _d === void 0 ? void 0 : _d[0];
+        const firstArtist = (_c = artist === null || artist === void 0 ? void 0 : artist.split("; ")) === null || _c === void 0 ? void 0 : _c[0];
         return `Listening to **${song}** by **${firstArtist || "someone"}**`;
-      }
-      // Visual Studio Code
-      else if (filtered.name === "Visual Studio Code") {
-        const replaced = ((_g = (_f = (_e = filtered.state) === null || _e === void 0 ? void 0 : _e.replace("📁 ", "")) === null || _f === void 0 ? void 0 : _f.split(" | ")) === null || _g === void 0 ? void 0 : _g[0]) || "a file";
-        return `Editing **${replaced}** in **Visual Studio Code**`;
-      }
-      // Netflix
-      else if (filtered.name === "Netflix" && filtered.details) {
-        return `Watching **${filtered.details}** on **Netflix**`;
-      }
-      // YouTube Music
-      else if (filtered.name === "YouTube Music" && filtered.details) {
-        return `Listening to **${filtered.details}** on **YouTube Music**`;
-      }
-      // YouTube
-      else if (filtered.name === "YouTube" && filtered.details) {
-        return `Watching ${filtered.details} on YouTube`;
-      }
-      // Default values
-      else switch (filtered.name) {
-        case "Google Meet":
-          return "In a Google Meet meeting";
-        case "Twitch":
-          return "Watching a stream on Twitch";
-        case "Prime Video":
-          return "Watching something on Prime Video";
-        default:
-          return "Online";
+      } else {
+        return "Online";
       }
     },
     /**
@@ -164,7 +135,6 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
   },
   async mounted() {
     var _a;
-    // Connect to Lanyard Socket API, send heartbeat every 30 seconds and replace the Vue data value with the message using @eggsydev/vue-lanyard module
     this.socket = await this.$lanyard({
       userId: "253951718423789571",
       socket: true
@@ -176,11 +146,7 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
         t: type,
         d: status
       } = JSON.parse(data);
-      if (type === "INIT_STATE" || type === "PRESENCE_UPDATE") this.lanyard = status || {};
-      /*
-        This is done so the transition in template can switch between two different
-        elements to create a smooth transition.
-      */
+      if (["INIT_STATE", "PRESENCE_UPDATE"].includes(type)) this.lanyard = status || {};
       this.newData = !this.newData;
       this.finished = true;
     });
@@ -213,12 +179,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Status = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SkeletonLoader: __webpack_require__(64).default,IconBrand: __webpack_require__(70).default})
+installComponents(component, {SkeletonLoader: __webpack_require__(70).default,IconBrand: __webpack_require__(78).default})
 
 
 /***/ }),
 
-/***/ 64:
+/***/ 70:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -296,12 +262,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Index = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SkeletonLoaderRepository: __webpack_require__(66).default,SkeletonLoaderIframe: __webpack_require__(65).default,SkeletonLoaderSong: __webpack_require__(67).default,SkeletonLoaderLastfm: __webpack_require__(69).default,SkeletonLoaderSpinner: __webpack_require__(68).default})
+installComponents(component, {SkeletonLoaderRepository: __webpack_require__(72).default,SkeletonLoaderIframe: __webpack_require__(71).default,SkeletonLoaderSong: __webpack_require__(73).default,SkeletonLoaderLastfm: __webpack_require__(75).default,SkeletonLoaderSpinner: __webpack_require__(74).default})
 
 
 /***/ }),
 
-/***/ 65:
+/***/ 71:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -368,7 +334,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 66:
+/***/ 72:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -412,7 +378,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 67:
+/***/ 73:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -456,7 +422,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 68:
+/***/ 74:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -509,7 +475,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 69:
+/***/ 75:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -576,12 +542,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Lastfm = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SkeletonLoader: __webpack_require__(64).default})
+installComponents(component, {SkeletonLoader: __webpack_require__(70).default})
 
 
 /***/ }),
 
-/***/ 70:
+/***/ 78:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

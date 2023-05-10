@@ -1,14 +1,14 @@
-exports.ids = [21];
+exports.ids = [20];
 exports.modules = {
 
-/***/ 108:
+/***/ 103:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Card/Sponsor.vue?vue&type=template&id=63d26aa4&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Card/Sponsor.vue?vue&type=template&id=caa639be&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
@@ -34,7 +34,7 @@ var render = function render() {
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/components/Card/Sponsor.vue?vue&type=template&id=63d26aa4&
+// CONCATENATED MODULE: ./src/components/Card/Sponsor.vue?vue&type=template&id=caa639be&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -82,7 +82,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Sponsor = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SmartImage: __webpack_require__(27).default,SmartLink: __webpack_require__(16).default})
+installComponents(component, {SmartImage: __webpack_require__(26).default,SmartLink: __webpack_require__(16).default})
 
 
 /***/ })

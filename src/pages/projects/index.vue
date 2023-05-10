@@ -14,8 +14,39 @@ export default {
     }
   },
   data: () => ({
-    // SECTION : 001
-  }),
+    projects: [
+      {
+        client: "Personal",
+        name: "Rogue",
+        description:
+          "A procedurally generated roguelike-style game where players explore a dungeon filled with monsters and treasures.",
+        image: "https://i.imgur.com/GVCH2f5.png",
+        buttons: [
+          {
+            text: "Read more",
+            link: "https://discords.com/templates",
+            icon: "IconLink",
+          }, {
+            text: "rogue Pages",
+            link: "/projects/rogue",
+            icon: "Github",
+          },
+        ],
+      },{
+        client: "Personal",
+        name: "Riftmaker",
+        description:
+        "A real-time League of Legends AI companion, delivering game insights and assisting players with up-to-date information.",
+        image: "",
+      }, {
+        client: "Personal",
+        name: "Luna",
+        description:
+          "A Discord bot that allows you to create and manage your own Discord server templates.",
+        image: "https://i.imgur.com/PmmO69d.png",
+      },
+      ],
+    }),
   mounted() {
     this.$applyMediumZoom()
   },
@@ -46,6 +77,7 @@ export default {
       :class="index === 0 ? 'mt-24 mb-42' : 'my-42'"
     >
       <div class="space-y-4">
+
         <span
           v-if="project.client"
           class="bg-blue-600/10 block w-max text-sm rounded-lg px-4 text-blue-600 py-1.5 dark:(bg-white/5 text-white/30)"
@@ -53,16 +85,16 @@ export default {
           {{ project.client }}
         </span>
 
+        <h2 class="text-4xl text-black/90 font-bold dark:text-white/90">
+          {{ project.name }}
+        </h2>
+
         <span
           v-if="project.note"
           class="bg-orange-600/10 block w-max text-sm rounded-lg px-4 text-orange-600 py-1.5 dark:(bg-white/5 text-white/30)"
         >
           {{ project.note }}
         </span>
-
-        <h2 class="text-4xl text-black/90 font-bold dark:text-white/90">
-          {{ project.name }}
-        </h2>
 
         <p>
           {{ project.description }}

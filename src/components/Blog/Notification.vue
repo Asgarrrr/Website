@@ -61,4 +61,7 @@ export default Vue.extend({
     @apply font-medium text-current underline hover:underline;
   }
 }
+
+
+
 </style>

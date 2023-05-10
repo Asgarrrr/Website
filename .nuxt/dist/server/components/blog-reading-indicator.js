@@ -1,14 +1,14 @@
 exports.ids = [6];
 exports.modules = {
 
-/***/ 115:
+/***/ 106:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Blog/ReadingIndicator.vue?vue&type=template&id=48e20e52&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Blog/ReadingIndicator.vue?vue&type=template&id=49218130&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
@@ -27,9 +27,9 @@ var render = function render() {
       name: "tippy",
       rawName: "v-tippy",
       value: {
-        content: _vm.getPercentLeftBottom === 100 ? 'Tüm yazı okundu!' : 'Okuma oranı'
+        content: _vm.getPercentLeftBottom === 100 ? '100% <3' : `${_vm.getPercentLeftBottom}% left ^^`
       },
-      expression: "{\n      content:\n        getPercentLeftBottom === 100 ? 'Tüm yazı okundu!' : 'Okuma oranı',\n    }"
+      expression: "{ content: getPercentLeftBottom === 100 ? '100% <3' : `${getPercentLeftBottom}% left ^^` }"
     }]
   }, [_c('div', {
     staticClass: "rounded-md bg-gray-200 h-40 w-4 hidden relative md:block dark:bg-neutral-800"
@@ -46,7 +46,7 @@ var render = function render() {
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/components/Blog/ReadingIndicator.vue?vue&type=template&id=48e20e52&
+// CONCATENATED MODULE: ./src/components/Blog/ReadingIndicator.vue?vue&type=template&id=49218130&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);

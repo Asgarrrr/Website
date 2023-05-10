@@ -22,71 +22,47 @@ export default Vue.extend({
      * @returns {string}
      */
     getStatusDetails(): string {
+
       const lanyard = this.lanyard
-      if (!lanyard) return "Couldn't fetch data from Lanyard"
+
+      if ( !lanyard )
+        return "Couldn't fetch data from Lanyard"
+
+      if ( lanyard.discord_status === "offline" )
+        return "Offline"
 
       const filtered: Activity | null =
-        lanyard.activities?.filter((activity) => activity.type !== 4)?.pop() ||
+        lanyard.activities?.filter( ( activity ) => activity.type !== 4 )?.pop() ||
         null
 
-      console.log(lanyard.activities)
+      if ( lanyard.spotify ) {
 
-      // Offline
-      if (this.lanyard?.discord_status === "offline") return "Offline"
-      else if (!filtered) return "Online"
-      // Spotify
-      else if (filtered.name === "Spotify" && !!lanyard.spotify) {
         const { song, artist } = lanyard.spotify || {}
-        const firstArtist = artist?.split("; ")?.[0]
+        const firstArtist = artist?.split( "; " )?.[ 0 ]
 
-        return `Listening to **${song}** by **${firstArtist || "someone"}**`
+        return `Listening to **${ song }** by **${ firstArtist || "someone" }**`
+
+      } else {
+        return "Online"
       }
-      // Visual Studio Code
-      else if (filtered.name === "Visual Studio Code") {
-        const replaced =
-          filtered.state?.replace("📁 ", "")?.split(" | ")?.[0] || "a file"
-        return `Editing **${replaced}** in **Visual Studio Code**`
-      }
-      // Netflix
-      else if (filtered.name === "Netflix" && filtered.details) {
-        return `Watching **${filtered.details}** on **Netflix**`
-      }
-      // YouTube Music
-      else if (filtered.name === "YouTube Music" && filtered.details) {
-        return `Listening to **${filtered.details}** on **YouTube Music**`
-      }
-      // YouTube
-      else if (filtered.name === "YouTube" && filtered.details) {
-        return `Watching ${filtered.details} on YouTube`
-      }
-      // Default values
-      else
-        switch (filtered.name) {
-          case "Google Meet":
-            return "In a Google Meet meeting"
-          case "Twitch":
-            return "Watching a stream on Twitch"
-          case "Prime Video":
-            return "Watching something on Prime Video"
-          default:
-            return "Online"
-        }
     },
     /**
      * Replaces only markdown-like "**" and wraps content into HTML strong element.
      */
     getSafeHtml(): string {
+
       return this.getStatusDetails.replace(
         /\*\*(.*?)\*\*/gm,
         "<strong class='font-medium text-neutral-700 dark:text-neutral-200'>$1</strong>"
       )
+
     },
     /**
      * Returns Discord status colors.
      * @returns {string} Tailwind color classes
      */
     getDiscordStatus(): string {
-      switch (this.lanyard.discord_status) {
+      switch ( this.lanyard.discord_status ) {
         case "online":
           return "bg-green-500"
         case "idle":
@@ -102,8 +78,8 @@ export default Vue.extend({
     this.socket?.close()
   },
   async mounted() {
-    // Connect to Lanyard Socket API, send heartbeat every 30 seconds and replace the Vue data value with the message using @eggsydev/vue-lanyard module
-    this.socket = (await this.$lanyard({
+
+    this.socket = ( await this.$lanyard({
       userId: "253951718423789571",
       socket: true,
     })) as WebSocket
@@ -114,28 +90,21 @@ export default Vue.extend({
         d: LanyardData
       }
 
-      if (type === "INIT_STATE" || type === "PRESENCE_UPDATE")
+      if ( [ "INIT_STATE", "PRESENCE_UPDATE" ].includes( type ) )
         this.lanyard = status || {}
 
-      /*
-        This is done so the transition in template can switch between two different
-        elements to create a smooth transition.
-      */
-      this.newData = !this.newData
-
+      this.newData  = !this.newData
       this.finished = true
+
     })
   },
 })
 </script>
 
 <template>
+
   <div
-    v-if="
-      finished === false ||
-      !getStatusDetails ||
-      Object.keys(lanyard).length === 0
-    "
+    v-if="!finished || !getStatusDetails || Object.keys( lanyard ).length === 0"
     class="flex items-center space-x-2"
   >
     <SkeletonLoader class="w-5 h-5" type="rounded" />
@@ -143,16 +112,15 @@ export default Vue.extend({
   </div>
 
   <div v-else class="flex items-center space-x-2 rounded-md text-neutral-500">
-    <IconBrand v-if="lanyard.spotify" brand="spotify" class="w-5 h-5" />
+
+    <IconBrand v-if="this.currentApp === 'Spotify'" brand="spotify" class="w-5 h-5" />
 
     <div
       v-else
-      v-tippy="{
-        content: 'Discord status',
-        placement: 'bottom',
-      }"
-      :class="`h-5 w-5 rounded-full flex-shrink-0 ${getDiscordStatus}`"
+      v-tippy="{ content: 'Discord status', placement: 'bottom' }"
+      :class="`h-5 w-5 rounded-full flex-shrink-0 ${ getDiscordStatus }`"
     />
+
 
     <transition name="fade" mode="out-in">
       <div

@@ -9,5 +9,6 @@ export default {
   },
   sponsor: {
     github: "https://github.com/sponsors/asgarrrr",
+    buymeacoffee: "https://www.buymeacoffee.com/asgarrrr",
   },
 }

@@ -16,40 +16,32 @@ export default Vue.extend({
   <!-- Loader -->
   <div v-if="error === false" class="w-full pt-14">
     <section class="space-y-8">
-      <!-- Header -->
-      <div
-        class="bg-black/10 h-30 rounded-lg animate-pulse w-full dark:bg-white/5"
-      />
 
       <div class="space-y-4">
-        <!-- Reading time & date  -->
         <div class="flex space-x-2 justify-center">
-          <div
-            class="bg-black/10 h-4 animate-pulse w-1/4 sm:w-1/6 dark:bg-white/5"
-          />
-          <div
-            class="bg-black/10 h-4 animate-pulse w-1/4 sm:w-1/6 dark:bg-white/5"
-          />
-          <div
-            class="bg-black/10 h-4 animate-pulse w-1/4 sm:w-1/6 dark:bg-white/5"
-          />
-        </div>
-
-        <!-- Title -->
-        <div
-          class="bg-black/10 h-10 mx-auto w-full animate-pulse sm:w-8/12 dark:bg-white/5"
-        />
-
-        <!-- Content -->
-        <div class="flex flex-col space-y-2 items-center justify-center">
-          <div
-            class="bg-black/10 h-4 w-full animate-pulse sm:w-8/12 dark:bg-white/5"
-          />
-          <div
-            class="bg-black/10 h-4 animate-pulse w-1/2 sm:w-4/12 dark:bg-white/5"
-          />
+          <div class="bg-black/10 h-4 animate-pulse w-1/4 sm:w-1/6 dark:bg-white/5" />
         </div>
       </div>
+
+      <!-- Title -->
+      <div class="bg-black/10 h-10 mx-auto w-full animate-pulse sm:w-8/12 dark:bg-white/5" />
+      <div class="bg-black/10 h-4 animate-pulse dark:bg-white/5" />
+
+      <!-- Reading time & date  -->
+      <div class="flex space-x-2 justify-center">
+        <div
+          class="bg-black/10 h-4 animate-pulse w-1/4 sm:w-1/6 dark:bg-white/5"
+        />
+        <div
+          class="bg-black/10 h-4 animate-pulse w-1/4 sm:w-1/6 dark:bg-white/5"
+        />
+      </div>
+
+      <!-- Header -->
+      <div
+        class="bg-black/10 h-xl rounded-lg animate-pulse w-full dark:bg-white/5"
+      />
+
     </section>
 
     <!-- Content -->
@@ -85,15 +77,13 @@ export default Vue.extend({
 
   <div v-else class="space-y-6 pt-14">
     <h1 class="font-semibold text-2xl text-black/90 dark:text-white/90">
-      Gönderi yüklenemedi.
+      Failed to load post...
     </h1>
 
     <p class="text-black/50 dark:text-white/30">
-      Aradığınız gönderinin blogumda olduğuna, adreste bir yanlışlık olmadığına
-      emin olun. Arama özelliğini kullanarak gönderiyi aratabilir, anasayfaya
-      dönerek diğer gönderilerime ulaşabilirsiniz.
+      ;(
     </p>
 
-    <Button icon="IconBack" @click.native="$router.back()">Geri Dön</Button>
+    <Button icon="IconBack" @click.native="$router.back()">Go Back</Button>
   </div>
 </template>

@@ -1,14 +1,14 @@
 exports.ids = [4];
 exports.modules = {
 
-/***/ 117:
+/***/ 108:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Blog/PrevNext.vue?vue&type=template&id=2b1f4c25&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Blog/PrevNext.vue?vue&type=template&id=32958a67&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
@@ -36,7 +36,7 @@ var render = function render() {
     staticClass: "truncate"
   }, [_vm._v(_vm._s(_vm.prev.title))]) : _c('span', {
     staticClass: "truncate"
-  }, [_vm._v("Eski Gönderi Yok")])], 1), _vm._v(" "), _c(_vm.next ? 'SmartLink' : 'div', {
+  }, [_vm._v("No Older Posts")])], 1), _vm._v(" "), _c(_vm.next ? 'SmartLink' : 'div', {
     tag: "component",
     staticClass: "rounded-lg card-base flex items-center space-x-2 justify-end",
     class: !_vm.next ? 'cursor-not-allowed' : 'dark:hover:text-white hover:bg-opacity-40',
@@ -47,7 +47,7 @@ var render = function render() {
     staticClass: "truncate"
   }, [_vm._v(_vm._s(_vm.next.title))]) : _c('span', {
     staticClass: "truncate"
-  }, [_vm._v("Yeni Gönderi Yok")]), _vm._v(" "), _c('IconChevron', {
+  }, [_vm._v("No Newer Posts")]), _vm._v(" "), _c('IconChevron', {
     staticClass: "h-4 w-4 flex-shrink-0",
     attrs: {
       "right": ""
@@ -56,7 +56,7 @@ var render = function render() {
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/components/Blog/PrevNext.vue?vue&type=template&id=2b1f4c25&
+// CONCATENATED MODULE: ./src/components/Blog/PrevNext.vue?vue&type=template&id=32958a67&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -111,7 +111,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var PrevNext = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {IconChevron: __webpack_require__(29).default})
+installComponents(component, {IconChevron: __webpack_require__(28).default})
 
 
 /***/ })

@@ -9,7 +9,6 @@
     "components/blog-sections-ratings.js": "components/blog-sections-ratings.js",
     "components/blog-share.js": "components/blog-share.js",
     "components/blog-table-of-contents.js": "components/blog-table-of-contents.js",
-    "components/card-discord.js": "components/card-discord.js",
     "components/card-experience.js": "components/card-experience.js",
     "components/card-last-fm.js": "components/card-last-fm.js",
     "components/card-post-normal.js": "components/card-post-normal.js",
@@ -74,13 +73,11 @@
     "pages/blog/index.js": "pages/blog/index.js",
     "pages/donate.js": "pages/donate.js",
     "pages/index.js": "pages/index.js",
+    "pages/me/anime.js": "pages/me/anime.js",
     "pages/me/contact.js": "pages/me/contact.js",
     "pages/me/repos.js": "pages/me/repos.js",
-    "pages/me/songs.js": "pages/me/songs.js",
     "pages/projects/index.js": "pages/projects/index.js",
-    "pages/projects/premid/custom-status.js": "pages/projects/premid/custom-status.js",
-    "pages/projects/premid/index.js": "pages/projects/premid/index.js",
-    "pages/projects/premid/mdcreator.js": "pages/projects/premid/mdcreator.js",
+    "pages/projects/rogue/index.js": "pages/projects/rogue/index.js",
     "server.js": "server.js"
   },
   "maps": {
@@ -92,7 +89,6 @@
     "components/blog-sections-ratings.js": "components/blog-sections-ratings.js.map",
     "components/blog-share.js": "components/blog-share.js.map",
     "components/blog-table-of-contents.js": "components/blog-table-of-contents.js.map",
-    "components/card-discord.js": "components/card-discord.js.map",
     "components/card-experience.js": "components/card-experience.js.map",
     "components/card-last-fm.js": "components/card-last-fm.js.map",
     "components/card-post-normal.js": "components/card-post-normal.js.map",
@@ -157,13 +153,11 @@
     "pages/blog/index.js": "pages/blog/index.js.map",
     "pages/donate.js": "pages/donate.js.map",
     "pages/index.js": "pages/index.js.map",
+    "pages/me/anime.js": "pages/me/anime.js.map",
     "pages/me/contact.js": "pages/me/contact.js.map",
     "pages/me/repos.js": "pages/me/repos.js.map",
-    "pages/me/songs.js": "pages/me/songs.js.map",
     "pages/projects/index.js": "pages/projects/index.js.map",
-    "pages/projects/premid/custom-status.js": "pages/projects/premid/custom-status.js.map",
-    "pages/projects/premid/index.js": "pages/projects/premid/index.js.map",
-    "pages/projects/premid/mdcreator.js": "pages/projects/premid/mdcreator.js.map",
+    "pages/projects/rogue/index.js": "pages/projects/rogue/index.js.map",
     "server.js": "server.js.map"
   }
 }

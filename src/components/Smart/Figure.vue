@@ -33,7 +33,7 @@ export default Vue.extend({
       required: false,
       default: true,
     },
-  },
+  }
 })
 </script>
 
@@ -43,7 +43,7 @@ export default Vue.extend({
       :is="src.endsWith('.gif') ? 'img' : 'nuxt-img'"
       :src="src"
       :alt="alt || caption || 'image'"
-      loading="lazy"
+      loading="lazy" 
       draggable="false"
       fit="cover"
       class="object-cover w-full rounded-md"
@@ -54,7 +54,7 @@ export default Vue.extend({
       :data-zoomable="zoomable"
     />
 
-    <figcaption v-if="caption" class="text-center">
+    <figcaption v-if="caption" class="text-center mt-3">
       {{ caption }}
     </figcaption>
   </figure>
