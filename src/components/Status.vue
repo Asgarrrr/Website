@@ -113,7 +113,7 @@ export default Vue.extend({
 
   <div v-else class="flex items-center space-x-2 rounded-md text-neutral-500">
 
-    <IconBrand v-if="this.currentApp === 'Spotify'" brand="spotify" class="w-5 h-5" />
+    <IconBrand v-if="lanyard.spotify" brand="spotify" class="w-5 h-5" />
 
     <div
       v-else

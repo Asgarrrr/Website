@@ -24,26 +24,33 @@ export default {
         buttons: [
           {
             text: "Read more",
-            link: "https://discords.com/templates",
+            link: "/projects/rogue",
             icon: "IconLink",
           }, {
-            text: "rogue Pages",
-            link: "/projects/rogue",
-            icon: "Github",
-          },
+            text: "Play now",
+            link: "https://rogue-ii-production.up.railway.app/login",
+            icon: "IconPlay",
+          }
         ],
       },{
         client: "Personal",
         name: "Riftmaker",
         description:
         "A real-time League of Legends AI companion, delivering game insights and assisting players with up-to-date information.",
-        image: "",
+        image: "https://cdn.discordapp.com/attachments/864261615402876948/1106130034277765181/Riftmaker.png",
+        buttons: [
+          {
+            text: "Read more",
+            link: "/projects/riftmaker",
+            icon: "IconLink",
+          },
+        ],
       }, {
         client: "Personal",
         name: "Luna",
         description:
           "A Discord bot that allows you to create and manage your own Discord server templates.",
-        image: "https://i.imgur.com/PmmO69d.png",
+        image: "",
       },
       ],
     }),
@@ -54,10 +61,18 @@ export default {
 </script>
 
 <template>
+
   <PageLayout
     title="My Projects"
     description="Check out the projects I worked on!"
   >
+
+    <blog-notification type="danger">
+      <p>
+        <strong>Notice:</strong> This page is still under construction. Some projects may be missing, and projects pages may be incomplete.
+      </p>
+    </blog-notification>
+
     <section class="flex items-center flex-wrap gap-2">
       <span class="text-sm">Jump to:</span>
       <Button

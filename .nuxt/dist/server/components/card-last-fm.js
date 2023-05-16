@@ -1,7 +1,7 @@
 exports.ids = [12,45];
 exports.modules = {
 
-/***/ 86:
+/***/ 84:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -165,7 +165,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var LastFm = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SmartImage: __webpack_require__(26).default,IconPlay: __webpack_require__(86).default,SmartLink: __webpack_require__(16).default})
+installComponents(component, {SmartImage: __webpack_require__(26).default,IconPlay: __webpack_require__(84).default,SmartLink: __webpack_require__(16).default})
 
 
 /***/ })

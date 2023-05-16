@@ -1,7 +1,7 @@
-exports.ids = [73,0,12,26,37,45,60,61,62,63,64,65];
+exports.ids = [73,0,60,61,62,63,64,65];
 exports.modules = {
 
-/***/ 116:
+/***/ 119:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -90,14 +90,14 @@ installComponents(component, {Title: __webpack_require__(27).default,SkeletonLoa
 
 /***/ }),
 
-/***/ 139:
+/***/ 140:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/pages/me/anime.vue?vue&type=template&id=2a74b9ae&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/pages/me/anime.vue?vue&type=template&id=4f784c38&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
@@ -112,10 +112,10 @@ var render = function render() {
     staticClass: "mb-1"
   }, [_vm._v("Note")]), _vm._v(" "), _c('p', {
     staticClass: "text-lg text-justify"
-  }, [_vm._v("\n      Animes are often wrongly perceived as exclusively meant for children.\n      However, this notion is far from the truth. Animes tackle a multitude\n      of complex subjects such as politics, psychology, interpersonal relationships,\n      and moral dilemmas. Moreover, they often explore mature themes including violence,\n      sexuality, and existential questions. Animes offer a wide variety of genres and\n      artistic styles, catering to a broad audience and catering to individual preferences.\n      They can be profound, emotionally moving, intellectually stimulating, and captivating,\n      providing a rich and intricate narrative experience. Therefore, animes are a medium\n      that can be appreciated and enjoyed by viewers of all ages, transcending the boundaries\n      of childhood to offer a genuine form of artistic expression.\n    ")])], 1), _vm._v(" "), _vm.$fetchState.pending === true || _vm.$fetchState.error !== null ? _c('LoadersSongs') : [_c('section', [_c('Title', {
+  }, [_vm._v("\n      Animes are often wrongly perceived as exclusively meant for children.\n      However, this notion is far from the truth. Animes tackle a multitude of\n      complex subjects such as politics, psychology, interpersonal\n      relationships, and moral dilemmas. Moreover, they often explore mature\n      themes including violence, sexuality, and existential questions. Animes\n      offer a wide variety of genres and artistic styles, catering to a broad\n      audience and catering to individual preferences. They can be profound,\n      emotionally moving, intellectually stimulating, and captivating,\n      providing a rich and intricate narrative experience. Therefore, animes\n      are a medium that can be appreciated and enjoyed by viewers of all ages,\n      transcending the boundaries of childhood to offer a genuine form of\n      artistic expression.\n    ")])], 1), _vm._v(" "), _vm.$fetchState.pending === true || _vm.$fetchState.error !== null ? _c('LoadersSongs') : [_c('section', [_c('Title', {
     staticClass: "mb-4"
-  }, [_vm._v("Details")]), _vm._v(" "), _c('div', {
-    staticClass: "grid gap-x-0 gap-y-4 md:gap-x-12 md:grid-cols-2"
+  }, [_vm._v("Stats")]), _vm._v(" "), _c('div', {
+    staticClass: "grid gap-x-0 gap-y-4 md:gap-x-12 md:grid-cols-3"
   }, [_c('div', {
     staticClass: "flex space-x-4 items-center justify-between"
   }, [_c('span', [_vm._v("Profile")]), _vm._v(" "), _c('div', {
@@ -123,99 +123,37 @@ var render = function render() {
   }, [_c('SmartLink', {
     staticClass: "flex-shrink-0",
     attrs: {
-      "href": "https://last.fm/user/eggsywashere",
+      "href": "https://myanimelist.net/profile/Asgarrrr",
       "blank": ""
     }
-  }, [_vm._v("@" + _vm._s(_vm.lastFm.user.name))]), _vm._v(" "), _c('SmartImage', {
+  }, [_vm._v("@Asgarrrr")]), _vm._v(" "), _c('SmartImage', {
     staticClass: "rounded-full h-6 w-6",
     attrs: {
-      "src": _vm.lastFm.user.image
+      "src": "https://cdn.myanimelist.net/images/userimages/11355315.jpg"
     }
   })], 1)]), _vm._v(" "), _c('div', {
     staticClass: "flex space-x-4 items-center justify-between"
-  }, [_c('span', {
-    staticClass: "flex-shrink-0"
-  }, [_vm._v("Total Plays")]), _vm._v(" "), _c('div', {
-    staticClass: "flex space-x-2 items-center"
-  }, [_c('div', {
-    staticClass: "truncate"
-  }, [_vm._v(_vm._s(_vm.lastFm.user.totalPlays))]), _vm._v(" "), _c('IconFire', {
-    staticClass: "h-6 text-red-700 w-6 dark:text-current",
-    attrs: {
-      "filled": ""
-    }
-  })], 1)]), _vm._v(" "), _c('div', {
+  }, [_c('span', [_vm._v("Total Anime")]), _vm._v(" "), _c('span', [_vm._v("1,000")])]), _vm._v(" "), _c('div', {
     staticClass: "flex space-x-4 items-center justify-between"
-  }, [_c('span', {
-    staticClass: "flex-shrink-0"
-  }, [_vm._v("Account Age")]), _vm._v(" "), _c('div', {
-    staticClass: "flex space-x-2 items-center"
-  }, [_c('div', {
-    staticClass: "truncate"
-  }, [_vm._v("\n              " + _vm._s(new Date().getFullYear() - new Date(_vm.lastFm.user.registered * 1000).getFullYear()) + "\n\n              year(s)\n            ")]), _vm._v(" "), _c('IconCalendar', {
-    staticClass: "h-6 w-6"
-  })], 1)])])], 1), _vm._v(" "), _c('section', {
-    attrs: {
-      "id": "top-songs"
-    }
-  }, [_c('Title', {
-    staticClass: "mb-4"
-  }, [_vm._v("Top Songs (last 7 days)")]), _vm._v(" "), _c('div', {
-    staticClass: "grid gap-x-4 gap-y-2 md:grid-cols-2"
-  }, _vm._l(_vm.lastFm.topTracks, function (song) {
-    return _c('CardLastFm', {
-      key: song.name,
-      attrs: {
-        "name": song.name,
-        "artist": song.artist,
-        "image": song.image,
-        "now-playing": song.nowPlaying,
-        "plays": song.plays,
-        "url": song.url
-      }
-    });
-  }), 1)], 1), _vm._v(" "), _c('section', {
-    attrs: {
-      "id": "top-artists"
-    }
-  }, [_c('Title', {
-    staticClass: "mb-4"
-  }, [_vm._v("Top Artists (last 7 days)")]), _vm._v(" "), _c('div', {
-    staticClass: "grid gap-x-4 gap-y-2 md:grid-cols-2"
-  }, _vm._l(_vm.lastFm.topArtists, function (artist) {
-    return _c('CardLastFm', {
-      key: artist.name,
-      attrs: {
-        "name": artist.name,
-        "plays": artist.plays,
-        "image": artist.image,
-        "url": artist.url
-      }
-    });
-  }), 1)], 1), _vm._v(" "), _c('section', {
-    attrs: {
-      "id": "recent"
-    }
-  }, [_c('Title', {
-    staticClass: "mb-4"
-  }, [_vm._v("Recent Songs")]), _vm._v(" "), _c('div', {
-    staticClass: "grid gap-x-4 gap-y-2 md:grid-cols-2"
-  }, _vm._l(_vm.lastFm.recentTracks, function (song) {
-    return _c('CardLastFm', {
-      key: song.name,
-      attrs: {
-        "name": song.name,
-        "artist": song.artist,
-        "image": song.image,
-        "now-playing": song.nowPlaying,
-        "url": song.url
-      }
-    });
-  }), 1)], 1)]], 2);
+  }, [_c('span', [_vm._v("Total Days")]), _vm._v(" "), _c('span', [_vm._v("1,000")])]), _vm._v(" "), _c('div', {
+    staticClass: "flex space-x-4 items-center justify-between"
+  }, [_c('span', [_vm._v("Mean Score")]), _vm._v(" "), _c('span', [_vm._v("1,000")])]), _vm._v(" "), _c('div', {
+    staticClass: "flex space-x-4 items-center justify-between"
+  }, [_c('span', [_vm._v("Watching")]), _vm._v(" "), _c('span', [_vm._v("1,000")])]), _vm._v(" "), _c('div', {
+    staticClass: "flex space-x-4 items-center justify-between"
+  }, [_c('span', [_vm._v("Completed")]), _vm._v(" "), _c('span', [_vm._v("1,000")])]), _vm._v(" "), _c('div', {
+    staticClass: "flex space-x-4 items-center justify-between"
+  }, [_c('span', [_vm._v("On Hold")]), _vm._v(" "), _c('span', [_vm._v("1,000")])]), _vm._v(" "), _c('div', {
+    staticClass: "flex space-x-4 items-center justify-between"
+  }, [_c('span', [_vm._v("Dropped")]), _vm._v(" "), _c('span', [_vm._v("1,000")])]), _vm._v(" "), _c('div', {
+    staticClass: "flex space-x-4 items-center justify-between"
+  }, [_c('span', [_vm._v("Plan to Watch")]), _vm._v(" "), _c('span', [_vm._v("1,000")])]), _vm._v(" "), _c('div', {
+    staticClass: "flex space-x-4 items-center justify-between"
+  }, [_c('span', [_vm._v("Total Entries")]), _vm._v(" "), _c('span', [_vm._v("1,000")])])])], 1)]], 2);
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/pages/me/anime.vue?vue&type=template&id=2a74b9ae&
+// CONCATENATED MODULE: ./src/pages/me/anime.vue?vue&type=template&id=4f784c38&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -233,39 +171,43 @@ var Title = __webpack_require__(27);
   },
   data() {
     return {
-      lastFm: {}
+      animes: []
     };
   },
   fetchOnServer: false,
   async fetch() {
-    const repos = (await this.$axios.get("https://myanimelist.net/animelist/Asgarrrr/load.json", {
-      headers: {
-        "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-        "accept-language": "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7",
-        "cache-control": "no-cache",
-        "pragma": "no-cache",
-        "sec-ch-ua": "\"Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99\"",
-        "sec-ch-ua-mobile": "?0",
-        "sec-ch-ua-platform": "\"Windows\"",
-        "sec-fetch-dest": "document",
-        "sec-fetch-mode": "navigate",
-        "sec-fetch-site": "none",
-        "sec-fetch-user": "?1",
-        "upgrade-insecure-requests": "1",
-        "Access-Control-Allow-Origin": "*"
-      }
-    })).data;
-    console.log(repos);
-    const url =  true ? "https://eggsy.xyz/.netlify/functions/getLastFmSongs" : undefined;
     const {
-      data: songs
-    } = await this.$axios(url);
-    this.lastFm = anime;
+      data: animes
+    } = await this.$axios.get("/mal/animes");
+    console.log(animes);
+    //
+    // const animes: Anime[] = (
+    //   await this.$axios.get(
+    //     "/mal/animes"
+    //   )
+    // ).data
+    // const test: String = await this.$axios.get(
+    //   "/mal/profile/"
+    // )
+    //
+    // const $ = cheerio.load(test)
+    // console.log($)
+    //
+    // console.log(animes)
+    //
+    // const url =
+    //   process.env.NODE_ENV === "production"
+    //     ? "https://eggsy.xyz/.netlify/functions/getLastFmSongs"
+    //     : "http://localhost:9999/.netlify/functions/getLastFmSongs"
+    //
+    // const { data: songs }: { data: LastFmResponse } = await this.$axios(url)
+    //
+    // this.lastFm = anime
   },
+
   head() {
     const title = "Anime";
     const description = "Anime that I recently watched and the anime that I watched most as well as some more information from MyAnimeList, all of that information is on this page!";
-    // "Songs that I recently listened and the songs that I listened most as well as some more information from Last.fm, all of that information is on this page!"
     return {
       title,
       meta: this.$prepareMeta({
@@ -299,10 +241,10 @@ var component = Object(componentNormalizer["a" /* default */])(
   
 )
 
-/* harmony default export */ var me_anime = __webpack_exports__["default"] = (component.exports);
+/* harmony default export */ var anime = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Title: __webpack_require__(27).default,LoadersSongs: __webpack_require__(116).default,SmartLink: __webpack_require__(16).default,SmartImage: __webpack_require__(26).default,IconFire: __webpack_require__(84).default,IconCalendar: __webpack_require__(85).default,CardLastFm: __webpack_require__(89).default,PageLayout: __webpack_require__(76).default})
+installComponents(component, {Title: __webpack_require__(27).default,LoadersSongs: __webpack_require__(119).default,SmartLink: __webpack_require__(16).default,SmartImage: __webpack_require__(26).default,PageLayout: __webpack_require__(77).default})
 
 
 /***/ }),
@@ -670,7 +612,7 @@ installComponents(component, {SkeletonLoader: __webpack_require__(70).default})
 
 /***/ }),
 
-/***/ 76:
+/***/ 77:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -741,272 +683,6 @@ var component = Object(componentNormalizer["a" /* default */])(
 )
 
 /* harmony default export */ var PageLayout = __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ 84:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Icon/Fire.vue?vue&type=template&id=39e81928&
-var render = function render() {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c('svg', {
-    attrs: {
-      "xmlns": "http://www.w3.org/2000/svg",
-      "viewBox": "0 0 20 20",
-      "fill": "currentColor"
-    }
-  }, [_vm._ssrNode("<path fill-rule=\"evenodd\" d=\"M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z\" clip-rule=\"evenodd\"></path>")]);
-};
-var staticRenderFns = [];
-
-// CONCATENATED MODULE: ./src/components/Icon/Fire.vue?vue&type=template&id=39e81928&
-
-// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
-var componentNormalizer = __webpack_require__(2);
-
-// CONCATENATED MODULE: ./src/components/Icon/Fire.vue
-
-var script = {}
-
-
-/* normalize component */
-
-var component = Object(componentNormalizer["a" /* default */])(
-  script,
-  render,
-  staticRenderFns,
-  false,
-  null,
-  null,
-  "675e0695"
-  
-)
-
-/* harmony default export */ var Fire = __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ 85:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Icon/Calendar.vue?vue&type=template&id=18e1b972&
-var render = function render() {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c('svg', {
-    attrs: {
-      "xmlns": "http://www.w3.org/2000/svg",
-      "fill": "none",
-      "viewBox": "0 0 24 24",
-      "stroke": "currentColor"
-    }
-  }, [_vm._ssrNode("<path stroke-linecap=\"round\" stroke-linejoin=\"round\" stroke-width=\"2\" d=\"M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z\"></path>")]);
-};
-var staticRenderFns = [];
-
-// CONCATENATED MODULE: ./src/components/Icon/Calendar.vue?vue&type=template&id=18e1b972&
-
-// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
-var componentNormalizer = __webpack_require__(2);
-
-// CONCATENATED MODULE: ./src/components/Icon/Calendar.vue
-
-var script = {}
-
-
-/* normalize component */
-
-var component = Object(componentNormalizer["a" /* default */])(
-  script,
-  render,
-  staticRenderFns,
-  false,
-  null,
-  null,
-  "e818e7c6"
-  
-)
-
-/* harmony default export */ var Calendar = __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ 86:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Icon/Play.vue?vue&type=template&id=2840787e&
-var render = function render() {
-  var _vm = this,
-    _c = _vm._self._c;
-  return _c('svg', {
-    attrs: {
-      "viewBox": "0 0 24 24",
-      "fill": "none",
-      "xmlns": "http://www.w3.org/2000/svg"
-    }
-  }, [_vm._ssrNode("<path d=\"M17.886 9.874L9.89 4.429a2.46 2.46 0 00-2.57-.126c-.4.219-.734.544-.966.942A2.594 2.594 0 006 6.559v10.887c0 .462.123.916.356 1.313.232.396.566.72.965.939a2.46 2.46 0 002.569-.127l7.996-5.445c.343-.233.624-.55.818-.92a2.597 2.597 0 000-2.41 2.536 2.536 0 00-.818-.92v-.002 0z\" fill=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>")]);
-};
-var staticRenderFns = [];
-
-// CONCATENATED MODULE: ./src/components/Icon/Play.vue?vue&type=template&id=2840787e&
-
-// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
-var componentNormalizer = __webpack_require__(2);
-
-// CONCATENATED MODULE: ./src/components/Icon/Play.vue
-
-var script = {}
-
-
-/* normalize component */
-
-var component = Object(componentNormalizer["a" /* default */])(
-  script,
-  render,
-  staticRenderFns,
-  false,
-  null,
-  null,
-  "0e1826da"
-  
-)
-
-/* harmony default export */ var Play = __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ 89:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Card/LastFm.vue?vue&type=template&id=738f5bcb&
-var render = function render() {
-  var _vm = this,
-    _c = _vm._self._c,
-    _setup = _vm._self._setupProxy;
-  return _c('SmartLink', {
-    staticClass: "rounded-lg flex items-center gap-4 card-base",
-    class: {
-      'justify-between': _vm.plays !== null
-    },
-    attrs: {
-      "href": _vm.url,
-      "title": _vm.name,
-      "blank": ""
-    }
-  }, [_c('div', {
-    staticClass: "flex space-x-4 truncate items-center"
-  }, [_c('div', {
-    staticClass: "flex-shrink-0 h-14 w-14 relative"
-  }, [_c('SmartImage', {
-    staticClass: "rounded-md",
-    attrs: {
-      "src": _vm.image
-    }
-  }), _vm._v(" "), _vm.nowPlaying ? _c('div', {
-    staticClass: "rounded-md flex bg-black/75 inset-0 items-center justify-center absolute",
-    attrs: {
-      "title": "Playing now..."
-    }
-  }, [_c('IconPlay', {
-    staticClass: "h-6 text-neutral-300 w-6"
-  })], 1) : _vm._e()], 1), _vm._v(" "), _c('div', {
-    staticClass: "flex flex-col truncate"
-  }, [_c('span', {
-    staticClass: "truncate"
-  }, [_vm._v("\n        " + _vm._s(_vm.name) + "\n      ")]), _vm._v(" "), _vm.artist ? _c('span', {
-    staticClass: "text-sm text-black/50 dark:text-white/30 truncate"
-  }, [_vm._v("by " + _vm._s(_vm.artist))]) : _vm._e()])]), _vm._v(" "), _vm.plays ? _c('div', {
-    staticClass: "rounded-md text-blue-600 bg-blue-600/10 ring-[0.5px] ring-blue-600/40 px-4 py-1 flex-shrink-0 text-xs"
-  }, [_vm._v("\n    " + _vm._s(_vm.plays) + " plays\n  ")]) : _vm._e()]);
-};
-var staticRenderFns = [];
-
-// CONCATENATED MODULE: ./src/components/Card/LastFm.vue?vue&type=template&id=738f5bcb&
-
-// EXTERNAL MODULE: external "vue"
-var external_vue_ = __webpack_require__(0);
-var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
-
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--12-0!./node_modules/ts-loader??ref--12-1!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Card/LastFm.vue?vue&type=script&lang=ts&
-
-/* harmony default export */ var LastFmvue_type_script_lang_ts_ = (external_vue_default.a.extend({
-  props: {
-    name: {
-      type: String,
-      required: true
-    },
-    artist: {
-      type: String,
-      required: false,
-      default: null
-    },
-    url: {
-      type: String,
-      required: true
-    },
-    image: {
-      type: String,
-      required: true
-    },
-    nowPlaying: {
-      type: Boolean,
-      required: false,
-      default: false
-    },
-    plays: {
-      type: Number,
-      required: false,
-      default: null
-    }
-  }
-}));
-// CONCATENATED MODULE: ./src/components/Card/LastFm.vue?vue&type=script&lang=ts&
- /* harmony default export */ var Card_LastFmvue_type_script_lang_ts_ = (LastFmvue_type_script_lang_ts_); 
-// EXTERNAL MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
-var componentNormalizer = __webpack_require__(2);
-
-// CONCATENATED MODULE: ./src/components/Card/LastFm.vue
-
-
-
-
-
-/* normalize component */
-
-var component = Object(componentNormalizer["a" /* default */])(
-  Card_LastFmvue_type_script_lang_ts_,
-  render,
-  staticRenderFns,
-  false,
-  null,
-  null,
-  "68f89a25"
-  
-)
-
-/* harmony default export */ var LastFm = __webpack_exports__["default"] = (component.exports);
-
-/* nuxt-component-imports */
-installComponents(component, {SmartImage: __webpack_require__(26).default,IconPlay: __webpack_require__(86).default,SmartLink: __webpack_require__(16).default})
-
 
 /***/ })
 

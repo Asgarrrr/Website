@@ -4,70 +4,68 @@
     "path": "/blog",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\blog\\\\index.vue",
     "chunkName": "pages/blog/index",
-    "url": "/blog",
-    "_name": "_181dacc1"
+    "url": "/blog"
   },
   {
     "name": "donate",
     "path": "/donate",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\donate.vue",
     "chunkName": "pages/donate",
-    "url": "/donate",
-    "_name": "_0e04e1a4"
+    "url": "/donate"
   },
   {
     "name": "projects",
     "path": "/projects",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\projects\\\\index.vue",
     "chunkName": "pages/projects/index",
-    "url": "/projects",
-    "_name": "_90e56f2e"
+    "url": "/projects"
   },
   {
     "name": "me-anime",
     "path": "/me/anime",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\me\\\\anime.vue",
     "chunkName": "pages/me/anime",
-    "url": "/me/anime",
-    "_name": "_2c9cac26"
+    "url": "/me/anime"
   },
   {
     "name": "me-contact",
     "path": "/me/contact",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\me\\\\contact.vue",
     "chunkName": "pages/me/contact",
-    "url": "/me/contact",
-    "_name": "_b5c8394e"
+    "url": "/me/contact"
   },
   {
     "name": "me-repos",
     "path": "/me/repos",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\me\\\\repos.vue",
     "chunkName": "pages/me/repos",
-    "url": "/me/repos",
-    "_name": "_dc65e38c"
+    "url": "/me/repos"
+  },
+  {
+    "name": "projects-riftmaker",
+    "path": "/projects/riftmaker",
+    "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\projects\\\\riftmaker\\\\index.vue",
+    "chunkName": "pages/projects/riftmaker/index",
+    "url": "/projects/riftmaker"
   },
   {
     "name": "projects-rogue",
     "path": "/projects/rogue",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\projects\\\\rogue\\\\index.vue",
     "chunkName": "pages/projects/rogue/index",
-    "url": "/projects/rogue",
-    "_name": "_55b629f1"
+    "url": "/projects/rogue"
   },
   {
     "name": "blog-slug",
     "path": "/blog/:slug",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\blog\\\\_slug.vue",
-    "chunkName": "pages/blog/_slug",
-    "_name": "_16670b79"
+    "chunkName": "pages/blog/_slug"
   },
   {
     "name": "index",
     "path": "/",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "url": "/",
-    "_name": "_42e9203a"
+    "url": "/"
   }
 ]

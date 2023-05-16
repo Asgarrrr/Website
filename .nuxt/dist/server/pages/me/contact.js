@@ -1,7 +1,7 @@
 exports.ids = [74,10,22,25,61];
 exports.modules = {
 
-/***/ 117:
+/***/ 120:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -50,14 +50,14 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 140:
+/***/ 141:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/pages/me/contact.vue?vue&type=template&id=7f8e8698&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/pages/me/contact.vue?vue&type=template&id=2274d5db&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
@@ -112,7 +112,7 @@ var render = function render() {
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/pages/me/contact.vue?vue&type=template&id=7f8e8698&
+// CONCATENATED MODULE: ./src/pages/me/contact.vue?vue&type=template&id=2274d5db&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -142,7 +142,7 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
       var _a;
       const social = this.$config.social;
       const titles = {
-        discord: "Join my Discord server!",
+        discord: "Add me on Discord!",
         twitter: "Follow me on Twitter!",
         github: "Follow me on GitHub!",
         instagram: "Follow me on Instagram!",
@@ -194,12 +194,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var contact = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {IconBrand: __webpack_require__(78).default,Card: __webpack_require__(90).default,IconAt: __webpack_require__(117).default,PageLayout: __webpack_require__(76).default})
+installComponents(component, {IconBrand: __webpack_require__(78).default,Card: __webpack_require__(88).default,IconAt: __webpack_require__(120).default,PageLayout: __webpack_require__(77).default})
 
 
 /***/ }),
 
-/***/ 76:
+/***/ 77:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -498,7 +498,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 90:
+/***/ 88:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

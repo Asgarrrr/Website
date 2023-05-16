@@ -1,14 +1,14 @@
 exports.ids = [68,0,25,62,63,64,65];
 exports.modules = {
 
-/***/ 109:
+/***/ 112:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Status.vue?vue&type=template&id=2760d0d5&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Status.vue?vue&type=template&id=6d994c6b&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
@@ -24,7 +24,7 @@ var render = function render() {
     staticClass: "w-1/2 h-5"
   })], 2) : _c('div', {
     staticClass: "flex items-center space-x-2 rounded-md text-neutral-500"
-  }, [this.currentApp === 'Spotify' ? _c('IconBrand', {
+  }, [_vm.lanyard.spotify ? _c('IconBrand', {
     staticClass: "w-5 h-5",
     attrs: {
       "brand": "spotify"
@@ -67,7 +67,7 @@ var render = function render() {
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/components/Status.vue?vue&type=template&id=2760d0d5&
+// CONCATENATED MODULE: ./src/components/Status.vue?vue&type=template&id=6d994c6b&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);

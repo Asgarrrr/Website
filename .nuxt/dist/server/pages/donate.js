@@ -1,7 +1,7 @@
 exports.ids = [71,0,20,25,61,62,63,64,65];
 exports.modules = {
 
-/***/ 103:
+/***/ 105:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -87,7 +87,7 @@ installComponents(component, {SmartImage: __webpack_require__(26).default,SmartL
 
 /***/ }),
 
-/***/ 137:
+/***/ 138:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -301,7 +301,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var donate = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Title: __webpack_require__(27).default,IconBrand: __webpack_require__(78).default,Button: __webpack_require__(8).default,SkeletonLoader: __webpack_require__(70).default,CardSponsor: __webpack_require__(103).default,SmartImage: __webpack_require__(26).default,PageLayout: __webpack_require__(76).default})
+installComponents(component, {Title: __webpack_require__(27).default,IconBrand: __webpack_require__(78).default,Button: __webpack_require__(8).default,SkeletonLoader: __webpack_require__(70).default,CardSponsor: __webpack_require__(105).default,SmartImage: __webpack_require__(26).default,PageLayout: __webpack_require__(77).default})
 
 
 /***/ }),
@@ -669,7 +669,7 @@ installComponents(component, {SkeletonLoader: __webpack_require__(70).default})
 
 /***/ }),
 
-/***/ 76:
+/***/ 77:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

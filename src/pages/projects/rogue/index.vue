@@ -189,7 +189,24 @@ export default Vue.extend({
         caption="Example of entity tileset created by @pixel_poem"
       />
 
+      <Title size="2" class="!mt-12"> Turn-based gameplay </Title>
+      <p class="dark:text-white/70 ml-2">
+        The game is turn-based, meaning that the player and monsters take turns moving and attacking; every time the player moves or attacks, the monsters get a chance to move or attack.
+      </p>
 
+      <Title size="2" class="!mt-12"> Character creation </Title>
+
+      <SmartFigure src="https://cdn.discordapp.com/attachments/864261615402876948/1107985922164805702/image.png" border caption="The player can choose from a variety of character classes, each with their own unique abilities and playstyles"/>
+
+      <Title size="2" class="!mt-12"> Permadeath </Title>
+      <p class="dark:text-white/70 ml-2">
+        The game has permadeath, meaning that if the player dies, they lose all progress and must start over from the beginning. BUT, the leaderboard is shared between all players, so you can compete with your friends to see who can get the highest score.
+      </p>
+
+      <Title size="2" class="!mt-12"> Saving and loading </Title>
+      <p class="dark:text-white/70 ml-2">
+        In order to enable efficient saving and loading, the game uses a Websocket server to store the game state. This allows the game to be saved and loaded from any device, as long as it has an internet connection.
+      </p>
 
     </section>
 

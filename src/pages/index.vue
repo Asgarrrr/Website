@@ -80,12 +80,12 @@ export default Vue.extend({
               "Want to see and/or contribute to my code and public repositories?",
             href: "/me/repos",
           },
-          {
-            title: "Anime",
-            description:
-              "Trust your taste? Compare your favourite anime with mine!",
-            href: "/me/anime",
-          },
+          // {
+          //   title: "Anime",
+          //   description:
+          //     "Trust your taste? Compare your favourite anime with mine!",
+          //   href: "/me/anime",
+          // },
           {
             title: "Contact",
             description:

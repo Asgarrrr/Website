@@ -1,14 +1,14 @@
-exports.ids = [77,12,45,61,66];
+exports.ids = [78,12,45,61,66];
 exports.modules = {
 
-/***/ 142:
+/***/ 144:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/pages/projects/rogue/index.vue?vue&type=template&id=25f37b12&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/pages/projects/rogue/index.vue?vue&type=template&id=6a4ec862&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
@@ -150,11 +150,43 @@ var render = function render() {
       "border": "",
       "caption": "Example of entity tileset created by @pixel_poem"
     }
-  })], 1)], 1);
+  }), _vm._v(" "), _c('Title', {
+    staticClass: "!mt-12",
+    attrs: {
+      "size": "2"
+    }
+  }, [_vm._v(" Turn-based gameplay ")]), _vm._v(" "), _c('p', {
+    staticClass: "dark:text-white/70 ml-2"
+  }, [_vm._v("\n        The game is turn-based, meaning that the player and monsters take turns moving and attacking; every time the player moves or attacks, the monsters get a chance to move or attack.\n      ")]), _vm._v(" "), _c('Title', {
+    staticClass: "!mt-12",
+    attrs: {
+      "size": "2"
+    }
+  }, [_vm._v(" Character creation ")]), _vm._v(" "), _c('SmartFigure', {
+    attrs: {
+      "src": "https://cdn.discordapp.com/attachments/864261615402876948/1107985922164805702/image.png",
+      "border": "",
+      "caption": "The player can choose from a variety of character classes, each with their own unique abilities and playstyles"
+    }
+  }), _vm._v(" "), _c('Title', {
+    staticClass: "!mt-12",
+    attrs: {
+      "size": "2"
+    }
+  }, [_vm._v(" Permadeath ")]), _vm._v(" "), _c('p', {
+    staticClass: "dark:text-white/70 ml-2"
+  }, [_vm._v("\n        The game has permadeath, meaning that if the player dies, they lose all progress and must start over from the beginning. BUT, the leaderboard is shared between all players, so you can compete with your friends to see who can get the highest score.\n      ")]), _vm._v(" "), _c('Title', {
+    staticClass: "!mt-12",
+    attrs: {
+      "size": "2"
+    }
+  }, [_vm._v(" Saving and loading ")]), _vm._v(" "), _c('p', {
+    staticClass: "dark:text-white/70 ml-2"
+  }, [_vm._v("\n        In order to enable efficient saving and loading, the game uses a Websocket server to store the game state. This allows the game to be saved and loaded from any device, as long as it has an internet connection.\n      ")])], 1)], 1);
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/pages/projects/rogue/index.vue?vue&type=template&id=25f37b12&
+// CONCATENATED MODULE: ./src/pages/projects/rogue/index.vue?vue&type=template&id=6a4ec862&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -242,12 +274,30 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var rogue = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SmartFigure: __webpack_require__(81).default,Title: __webpack_require__(27).default,PageLayout: __webpack_require__(76).default})
+installComponents(component, {SmartFigure: __webpack_require__(81).default,Title: __webpack_require__(27).default,PageLayout: __webpack_require__(77).default})
 
 
 /***/ }),
 
 /***/ 76:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(80);
+if(content.__esModule) content = content.default;
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add CSS to SSR context
+var add = __webpack_require__(5).default
+module.exports.__inject__ = function (context) {
+  add("09a2553a", content, true, context)
+};
+
+/***/ }),
+
+/***/ 77:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -321,30 +371,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 77:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(80);
-if(content.__esModule) content = content.default;
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add CSS to SSR context
-var add = __webpack_require__(5).default
-module.exports.__inject__ = function (context) {
-  add("09a2553a", content, true, context)
-};
-
-/***/ }),
-
 /***/ 79:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_windicss_webpack_plugin_dist_loaders_windicss_style_pitcher_cjs_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_windicss_webpack_plugin_dist_loaders_windicss_template_cjs_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Figure_vue_vue_type_style_index_0_id_6bdc1fc8_prod_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(77);
+/* harmony import */ var _node_modules_windicss_webpack_plugin_dist_loaders_windicss_style_pitcher_cjs_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_windicss_webpack_plugin_dist_loaders_windicss_template_cjs_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Figure_vue_vue_type_style_index_0_id_6bdc1fc8_prod_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(76);
 /* harmony import */ var _node_modules_windicss_webpack_plugin_dist_loaders_windicss_style_pitcher_cjs_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_windicss_webpack_plugin_dist_loaders_windicss_template_cjs_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Figure_vue_vue_type_style_index_0_id_6bdc1fc8_prod_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_windicss_webpack_plugin_dist_loaders_windicss_style_pitcher_cjs_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_windicss_webpack_plugin_dist_loaders_windicss_template_cjs_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Figure_vue_vue_type_style_index_0_id_6bdc1fc8_prod_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_windicss_webpack_plugin_dist_loaders_windicss_style_pitcher_cjs_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_windicss_webpack_plugin_dist_loaders_windicss_template_cjs_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Figure_vue_vue_type_style_index_0_id_6bdc1fc8_prod_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_windicss_webpack_plugin_dist_loaders_windicss_style_pitcher_cjs_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_windicss_webpack_plugin_dist_loaders_windicss_template_cjs_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Figure_vue_vue_type_style_index_0_id_6bdc1fc8_prod_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
@@ -471,7 +503,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 86:
+/***/ 84:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -635,7 +667,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var LastFm = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SmartImage: __webpack_require__(26).default,IconPlay: __webpack_require__(86).default,SmartLink: __webpack_require__(16).default})
+installComponents(component, {SmartImage: __webpack_require__(26).default,IconPlay: __webpack_require__(84).default,SmartLink: __webpack_require__(16).default})
 
 
 /***/ })

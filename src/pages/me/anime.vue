@@ -1,7 +1,8 @@
 <script lang="ts">
 import Vue from "vue"
-import Title from "@/components/Title.vue";
-import {Repository} from "@/types/Response/GitHub";
+import Title from "@/components/Title.vue"
+import { parse } from "node-html-parser"
+import { Repository } from "@/types/Response/GitHub"
 
 // Netlify function return type
 interface LastFmUser {
@@ -36,58 +37,100 @@ interface LastFmResponse {
   topArtists: LastFmArtist[]
 }
 
+export interface Anime {
+  status: number
+  score: number
+  tags: string
+  is_rewatching: number
+  num_watched_episodes: number
+  created_at: number
+  updated_at: number
+  anime_title: string
+  anime_title_eng: string
+  anime_num_episodes: number
+  anime_airing_status: number
+  anime_id: number
+  anime_studios: any
+  anime_licensors: any
+  anime_season: any
+  anime_total_members: number
+  anime_total_scores: number
+  anime_score_val: number
+  has_episode_video: boolean
+  has_promotion_video: boolean
+  has_video: boolean
+  video_url: string
+  genres: Genre[]
+  demographics: any[]
+  title_localized: any
+  anime_url: string
+  anime_image_path: string
+  is_added_to_list: boolean
+  anime_media_type_string: string
+  anime_mpaa_rating_string: string
+  start_date_string: any
+  finish_date_string: any
+  anime_start_date_string: string
+  anime_end_date_string: string
+  days_string: any
+  storage_string: string
+  priority_string: string
+  notes: string
+  editable_notes: string
+}
+
+export interface Genre {
+  id: number
+  name: string
+}
+
 export default Vue.extend({
-  components: {Title},
+  components: { Title },
   data() {
     return {
-      lastFm: {} as LastFmResponse,
+      animes: [] as Anime[],
     }
   },
   fetchOnServer: false,
   async fetch() {
 
-    const repos: Object = (
-      await this.$axios.get(
-        "https://myanimelist.net/animelist/Asgarrrr/load.json", {
-          headers: {
-            "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-            "accept-language": "fr-FR,fr;q=0.9,en-US;q=0.8,en;q=0.7",
-            "cache-control": "no-cache",
-            "pragma": "no-cache",
-            "sec-ch-ua": "\"Chromium\";v=\"112\", \"Google Chrome\";v=\"112\", \"Not:A-Brand\";v=\"99\"",
-            "sec-ch-ua-mobile": "?0",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "sec-fetch-dest": "document",
-            "sec-fetch-mode": "navigate",
-            "sec-fetch-site": "none",
-            "sec-fetch-user": "?1",
-            "upgrade-insecure-requests": "1",
-            "Access-Control-Allow-Origin": "*",
-          }
-        }
-      )
-    ).data
+    const { data: animes }: Anime[]  = await this.$axios.get("/mal/animes")
 
-    console.log(repos)
+    console.log( animes )
 
 
 
 
+    //
+    // const animes: Anime[] = (
+    //   await this.$axios.get(
+    //     "/mal/animes"
+    //   )
+    // ).data
 
-    const url =
-      process.env.NODE_ENV === "production"
-        ? "https://eggsy.xyz/.netlify/functions/getLastFmSongs"
-        : "http://localhost:9999/.netlify/functions/getLastFmSongs"
+    // const test: String = await this.$axios.get(
+    //   "/mal/profile/"
+    // )
+    //
+    // const $ = cheerio.load(test)
+    // console.log($)
+    //
+    // console.log(animes)
 
-    const { data: songs }: { data: LastFmResponse } = await this.$axios(url)
-
-    this.lastFm = anime
+    //
+    // const url =
+    //   process.env.NODE_ENV === "production"
+    //     ? "https://eggsy.xyz/.netlify/functions/getLastFmSongs"
+    //     : "http://localhost:9999/.netlify/functions/getLastFmSongs"
+    //
+    // const { data: songs }: { data: LastFmResponse } = await this.$axios(url)
+    //
+    // this.lastFm = anime
   },
   head() {
     const title = "Anime"
     const description =
       "Anime that I recently watched and the anime that I watched most as well as some more information from MyAnimeList, all of that information is on this page!"
-      // "Songs that I recently listened and the songs that I listened most as well as some more information from Last.fm, all of that information is on this page!"
 
     return {
       title,
@@ -106,20 +149,21 @@ export default Vue.extend({
     description="Anime that I recently watched and my personal notes about them."
     class="space-y-12"
   >
-
     <section>
       <Title class="mb-1">Note</Title>
       <p class="text-lg text-justify">
         Animes are often wrongly perceived as exclusively meant for children.
-        However, this notion is far from the truth. Animes tackle a multitude
-        of complex subjects such as politics, psychology, interpersonal relationships,
-        and moral dilemmas. Moreover, they often explore mature themes including violence,
-        sexuality, and existential questions. Animes offer a wide variety of genres and
-        artistic styles, catering to a broad audience and catering to individual preferences.
-        They can be profound, emotionally moving, intellectually stimulating, and captivating,
-        providing a rich and intricate narrative experience. Therefore, animes are a medium
-        that can be appreciated and enjoyed by viewers of all ages, transcending the boundaries
-        of childhood to offer a genuine form of artistic expression.
+        However, this notion is far from the truth. Animes tackle a multitude of
+        complex subjects such as politics, psychology, interpersonal
+        relationships, and moral dilemmas. Moreover, they often explore mature
+        themes including violence, sexuality, and existential questions. Animes
+        offer a wide variety of genres and artistic styles, catering to a broad
+        audience and catering to individual preferences. They can be profound,
+        emotionally moving, intellectually stimulating, and captivating,
+        providing a rich and intricate narrative experience. Therefore, animes
+        are a medium that can be appreciated and enjoyed by viewers of all ages,
+        transcending the boundaries of childhood to offer a genuine form of
+        artistic expression.
       </p>
     </section>
 
@@ -129,105 +173,189 @@ export default Vue.extend({
 
     <template v-else>
       <section>
-        <Title class="mb-4">Details</Title>
-
-        <div class="grid gap-x-0 gap-y-4 md:gap-x-12 md:grid-cols-2">
+        <Title class="mb-4">Stats</Title>
+        <div class="grid gap-x-0 gap-y-4 md:gap-x-12 md:grid-cols-3">
           <!-- Profile -->
           <div class="flex space-x-4 items-center justify-between">
             <span>Profile</span>
 
             <div class="flex space-x-2 items-center">
               <SmartLink
-                href="https://last.fm/user/eggsywashere"
+                href="https://myanimelist.net/profile/Asgarrrr"
                 class="flex-shrink-0"
                 blank
-                >@{{ lastFm.user.name }}</SmartLink
+                >@Asgarrrr</SmartLink
               >
 
               <SmartImage
-                :src="lastFm.user.image"
+                src="https://cdn.myanimelist.net/images/userimages/11355315.jpg"
                 class="rounded-full h-6 w-6"
               />
             </div>
           </div>
 
-          <!-- Play count -->
+          <!-- Total Anime -->
           <div class="flex space-x-4 items-center justify-between">
-            <span class="flex-shrink-0">Total Plays</span>
-
-            <div class="flex space-x-2 items-center">
-              <div class="truncate">{{ lastFm.user.totalPlays }}</div>
-              <IconFire filled class="h-6 text-red-700 w-6 dark:text-current" />
-            </div>
+            <span>Total Anime</span>
+            <span>1,000</span>
           </div>
 
-          <!-- Registered -->
+          <!-- Total Days -->
           <div class="flex space-x-4 items-center justify-between">
-            <span class="flex-shrink-0">Account Age</span>
-
-            <div class="flex space-x-2 items-center">
-              <div class="truncate">
-                {{
-                  new Date().getFullYear() -
-                  new Date(lastFm.user.registered * 1000).getFullYear()
-                }}
-
-                year(s)
-              </div>
-
-              <IconCalendar class="h-6 w-6" />
-            </div>
+            <span>Total Days</span>
+            <span>1,000</span>
           </div>
+
+          <!-- Mean Score -->
+          <div class="flex space-x-4 items-center justify-between">
+            <span>Mean Score</span>
+            <span>1,000</span>
+          </div>
+
+          <!-- Watching -->
+          <div class="flex space-x-4 items-center justify-between">
+            <span>Watching</span>
+            <span>1,000</span>
+          </div>
+
+          <!-- Completed -->
+          <div class="flex space-x-4 items-center justify-between">
+            <span>Completed</span>
+            <span>1,000</span>
+          </div>
+
+          <!-- On Hold -->
+          <div class="flex space-x-4 items-center justify-between">
+            <span>On Hold</span>
+            <span>1,000</span>
+          </div>
+
+          <!-- Dropped -->
+          <div class="flex space-x-4 items-center justify-between">
+            <span>Dropped</span>
+            <span>1,000</span>
+          </div>
+
+          <!-- Plan to Watch -->
+          <div class="flex space-x-4 items-center justify-between">
+            <span>Plan to Watch</span>
+            <span>1,000</span>
+          </div>
+
+          <!-- Total Entries -->
+          <div class="flex space-x-4 items-center justify-between">
+            <span>Total Entries</span>
+            <span>1,000</span>
+          </div>
+
+
+
         </div>
+
+
       </section>
 
-      <section id="top-songs">
-        <Title class="mb-4">Top Songs (last 7 days)</Title>
+    <!--    <template v-else>-->
+    <!--      <section>-->
+    <!--        <Title class="mb-4">Details</Title>-->
 
-        <div class="grid gap-x-4 gap-y-2 md:grid-cols-2">
-          <CardLastFm
-            v-for="song of lastFm.topTracks"
-            :key="song.name"
-            :name="song.name"
-            :artist="song.artist"
-            :image="song.image"
-            :now-playing="song.nowPlaying"
-            :plays="song.plays"
-            :url="song.url"
-          />
-        </div>
-      </section>
+    <!--        <div class="grid gap-x-0 gap-y-4 md:gap-x-12 md:grid-cols-2">-->
+    <!--          &lt;!&ndash; Profile &ndash;&gt;-->
+    <!--          <div class="flex space-x-4 items-center justify-between">-->
+    <!--            <span>Profile</span>-->
 
-      <section id="top-artists">
-        <Title class="mb-4">Top Artists (last 7 days)</Title>
+    <!--            <div class="flex space-x-2 items-center">-->
+    <!--              <SmartLink-->
+    <!--                href="https://last.fm/user/eggsywashere"-->
+    <!--                class="flex-shrink-0"-->
+    <!--                blank-->
+    <!--                >@{{ lastFm.user.name }}</SmartLink-->
+    <!--              >-->
 
-        <div class="grid gap-x-4 gap-y-2 md:grid-cols-2">
-          <CardLastFm
-            v-for="artist of lastFm.topArtists"
-            :key="artist.name"
-            :name="artist.name"
-            :plays="artist.plays"
-            :image="artist.image"
-            :url="artist.url"
-          />
-        </div>
-      </section>
+    <!--              <SmartImage-->
+    <!--                :src="lastFm.user.image"-->
+    <!--                class="rounded-full h-6 w-6"-->
+    <!--              />-->
+    <!--            </div>-->
+    <!--          </div>-->
 
-      <section id="recent">
-        <Title class="mb-4">Recent Songs</Title>
+    <!--          &lt;!&ndash; Play count &ndash;&gt;-->
+    <!--          <div class="flex space-x-4 items-center justify-between">-->
+    <!--            <span class="flex-shrink-0">Total Plays</span>-->
 
-        <div class="grid gap-x-4 gap-y-2 md:grid-cols-2">
-          <CardLastFm
-            v-for="song of lastFm.recentTracks"
-            :key="song.name"
-            :name="song.name"
-            :artist="song.artist"
-            :image="song.image"
-            :now-playing="song.nowPlaying"
-            :url="song.url"
-          />
-        </div>
-      </section>
-    </template>
+    <!--            <div class="flex space-x-2 items-center">-->
+    <!--              <div class="truncate">{{ lastFm.user.totalPlays }}</div>-->
+    <!--              <IconFire filled class="h-6 text-red-700 w-6 dark:text-current" />-->
+    <!--            </div>-->
+    <!--          </div>-->
+
+    <!--          &lt;!&ndash; Registered &ndash;&gt;-->
+    <!--          <div class="flex space-x-4 items-center justify-between">-->
+    <!--            <span class="flex-shrink-0">Account Age</span>-->
+
+    <!--            <div class="flex space-x-2 items-center">-->
+    <!--              <div class="truncate">-->
+    <!--                {{-->
+    <!--                  new Date().getFullYear() - -->
+    <!--                  new Date(lastFm.user.registered * 1000).getFullYear()-->
+    <!--                }}-->
+
+    <!--                year(s)-->
+    <!--              </div>-->
+
+    <!--              <IconCalendar class="h-6 w-6" />-->
+    <!--            </div>-->
+    <!--          </div>-->
+    <!--        </div>-->
+    <!--      </section>-->
+
+    <!--      <section id="top-songs">-->
+    <!--        <Title class="mb-4">Top Songs (last 7 days)</Title>-->
+
+    <!--        <div class="grid gap-x-4 gap-y-2 md:grid-cols-2">-->
+    <!--          <CardLastFm-->
+    <!--            v-for="song of lastFm.topTracks"-->
+    <!--            :key="song.name"-->
+    <!--            :name="song.name"-->
+    <!--            :artist="song.artist"-->
+    <!--            :image="song.image"-->
+    <!--            :now-playing="song.nowPlaying"-->
+    <!--            :plays="song.plays"-->
+    <!--            :url="song.url"-->
+    <!--          />-->
+    <!--        </div>-->
+    <!--      </section>-->
+
+    <!--      <section id="top-artists">-->
+    <!--        <Title class="mb-4">Top Artists (last 7 days)</Title>-->
+
+    <!--        <div class="grid gap-x-4 gap-y-2 md:grid-cols-2">-->
+    <!--          <CardLastFm-->
+    <!--            v-for="artist of lastFm.topArtists"-->
+    <!--            :key="artist.name"-->
+    <!--            :name="artist.name"-->
+    <!--            :plays="artist.plays"-->
+    <!--            :image="artist.image"-->
+    <!--            :url="artist.url"-->
+    <!--          />-->
+    <!--        </div>-->
+    <!--      </section>-->
+
+    <!--      <section id="recent">-->
+    <!--        <Title class="mb-4">Recent Songs</Title>-->
+
+    <!--        <div class="grid gap-x-4 gap-y-2 md:grid-cols-2">-->
+    <!--          <CardLastFm-->
+    <!--            v-for="song of lastFm.recentTracks"-->
+    <!--            :key="song.name"-->
+    <!--            :name="song.name"-->
+    <!--            :artist="song.artist"-->
+    <!--            :image="song.image"-->
+    <!--            :now-playing="song.nowPlaying"-->
+    <!--            :url="song.url"-->
+    <!--          />-->
+    <!--        </div>-->
+    <!--      </section>-->
+    <!--    </template>-->
   </PageLayout>
 </template>
