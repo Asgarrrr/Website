@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/me/anime", {data:[{_img:{}}],fetch:{},mutations:void 0});

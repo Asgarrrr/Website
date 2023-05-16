@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/donate", {data:[{_img:{"/_ipx/f_webp,fit_cover/assets/images/N26_App_Icon.png":"\u002F_nuxt\u002Fimage\u002Fb6d6ee.webp"}}],fetch:{},mutations:void 0});
