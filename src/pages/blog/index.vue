@@ -1,7 +1,5 @@
 <script lang="ts">
 
-console.log("Hello World!")
-
 import Vue from "vue"
 
 /* Interfaces */

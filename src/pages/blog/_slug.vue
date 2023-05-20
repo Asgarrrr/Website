@@ -60,14 +60,14 @@ export default Vue.extend({
 
   head() {
 
+    const title = "Asgarrr - Blog TEST"
+    const description = "Not very interesting content, but always done with passion!"
+
     return {
-      title: this.post.title,
+      title: "Blog",
       meta: this.$prepareMeta({
-        title: "this.post.title",
-        description: "this.post.description",
-        image: `https://jeremycaruelle.com${this.post.image}`,
-        keywords: `${this.post.tags?.join(", ")}, Asgarrrr blog`,
-        url: `https://jeremycaruelle.com${this.$route.path}`,
+        title,
+        description,
       }),
     }
 
