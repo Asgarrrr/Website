@@ -64,6 +64,8 @@ export default Vue.extend({
       getTags: string[]
     }
 
+    console.log( post.description )
+
     const title = post.title
     const description =
       post.description || "You were invited to read this post on Asgarrr's blog."
@@ -83,41 +85,41 @@ export default Vue.extend({
           href,
         },
       ],
-      meta: this.$prepareMeta(
-        {
-          title,
-          description,
-          image: `https://jeremycaruelle.fr${ image }`,
-          keywords: `${tags}, Asgarrrr blog`,
-          url: href,
-        },
-        [
-          {
-            name: "twitter:card",
-            content: "summary_large_image",
-          },
-          {
-            name: "article:published-time",
-            content: post?.createdAt || null,
-          },
-          {
-            name: "twitter:label1",
-            content: "asgarrrr",
-          },
-          {
-            name: "twitter:data1",
-            content: post?.createdAt,
-          },
-          {
-            name: "twitter:label2",
-            content: "Jérémy Caruelle",
-          },
-          {
-            name: "twitter:data2",
-            content: `${this.getReadingTime} min read`,
-          },
-        ]
-      ),
+      // meta: this.$prepareMeta(
+      //   {
+      //     title,
+      //     description,
+      //     image: `https://jeremycaruelle.fr${ image }`,
+      //     keywords: `${tags}, Asgarrrr blog`,
+      //     url: href,
+      //   },
+      //   [
+      //     {
+      //       name: "twitter:card",
+      //       content: "summary_large_image",
+      //     },
+      //     {
+      //       name: "article:published-time",
+      //       content: post?.createdAt || null,
+      //     },
+      //     {
+      //       name: "twitter:label1",
+      //       content: "asgarrrr",
+      //     },
+      //     {
+      //       name: "twitter:data1",
+      //       content: post?.createdAt,
+      //     },
+      //     {
+      //       name: "twitter:label2",
+      //       content: "Jérémy Caruelle",
+      //     },
+      //     {
+      //       name: "twitter:data2",
+      //       content: `${this.getReadingTime} min read`,
+      //     },
+      //   ]
+      // ),
     }
   },
   watch: {

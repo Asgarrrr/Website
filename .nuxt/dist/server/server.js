@@ -2044,15 +2044,15 @@ __webpack_require__.d(components_namespaceObject, "LoadersBlog", function() { re
 __webpack_require__.d(components_namespaceObject, "LoadersContent", function() { return LoadersContent; });
 __webpack_require__.d(components_namespaceObject, "LoadersGoals", function() { return LoadersGoals; });
 __webpack_require__.d(components_namespaceObject, "LoadersSongs", function() { return LoadersSongs; });
+__webpack_require__.d(components_namespaceObject, "SmartFigure", function() { return SmartFigure; });
+__webpack_require__.d(components_namespaceObject, "SmartImage", function() { return SmartImage; });
+__webpack_require__.d(components_namespaceObject, "SmartLink", function() { return SmartLink; });
 __webpack_require__.d(components_namespaceObject, "SkeletonLoaderIframe", function() { return SkeletonLoaderIframe; });
 __webpack_require__.d(components_namespaceObject, "SkeletonLoader", function() { return SkeletonLoader; });
 __webpack_require__.d(components_namespaceObject, "SkeletonLoaderLastfm", function() { return SkeletonLoaderLastfm; });
 __webpack_require__.d(components_namespaceObject, "SkeletonLoaderRepository", function() { return SkeletonLoaderRepository; });
 __webpack_require__.d(components_namespaceObject, "SkeletonLoaderSong", function() { return SkeletonLoaderSong; });
 __webpack_require__.d(components_namespaceObject, "SkeletonLoaderSpinner", function() { return SkeletonLoaderSpinner; });
-__webpack_require__.d(components_namespaceObject, "SmartFigure", function() { return SmartFigure; });
-__webpack_require__.d(components_namespaceObject, "SmartImage", function() { return SmartImage; });
-__webpack_require__.d(components_namespaceObject, "SmartLink", function() { return SmartLink; });
 __webpack_require__.d(components_namespaceObject, "BlogSectionsRatings", function() { return BlogSectionsRatings; });
 __webpack_require__.d(components_namespaceObject, "CardPost", function() { return CardPost; });
 __webpack_require__.d(components_namespaceObject, "CardPostNormal", function() { return CardPostNormal; });
@@ -3800,15 +3800,15 @@ const LoadersBlog = () => __webpack_require__.e(/* import() | components/loaders
 const LoadersContent = () => __webpack_require__.e(/* import() | components/loaders-content */ 58).then(__webpack_require__.bind(null, 108)).then(c => wrapFunctional(c.default || c));
 const LoadersGoals = () => __webpack_require__.e(/* import() | components/loaders-goals */ 59).then(__webpack_require__.bind(null, 170)).then(c => wrapFunctional(c.default || c));
 const LoadersSongs = () => __webpack_require__.e(/* import() | components/loaders-songs */ 60).then(__webpack_require__.bind(null, 171)).then(c => wrapFunctional(c.default || c));
+const SmartFigure = () => __webpack_require__.e(/* import() | components/smart-figure */ 66).then(__webpack_require__.bind(null, 81)).then(c => wrapFunctional(c.default || c));
+const SmartImage = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 26)).then(c => wrapFunctional(c.default || c));
+const SmartLink = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 16)).then(c => wrapFunctional(c.default || c));
 const SkeletonLoaderIframe = () => __webpack_require__.e(/* import() | components/skeleton-loader-iframe */ 62).then(__webpack_require__.bind(null, 71)).then(c => wrapFunctional(c.default || c));
 const SkeletonLoader = () => __webpack_require__.e(/* import() | components/skeleton-loader */ 0).then(__webpack_require__.bind(null, 70)).then(c => wrapFunctional(c.default || c));
 const SkeletonLoaderLastfm = () => __webpack_require__.e(/* import() | components/skeleton-loader-lastfm */ 0).then(__webpack_require__.bind(null, 75)).then(c => wrapFunctional(c.default || c));
 const SkeletonLoaderRepository = () => __webpack_require__.e(/* import() | components/skeleton-loader-repository */ 63).then(__webpack_require__.bind(null, 72)).then(c => wrapFunctional(c.default || c));
 const SkeletonLoaderSong = () => __webpack_require__.e(/* import() | components/skeleton-loader-song */ 64).then(__webpack_require__.bind(null, 73)).then(c => wrapFunctional(c.default || c));
 const SkeletonLoaderSpinner = () => __webpack_require__.e(/* import() | components/skeleton-loader-spinner */ 65).then(__webpack_require__.bind(null, 74)).then(c => wrapFunctional(c.default || c));
-const SmartFigure = () => __webpack_require__.e(/* import() | components/smart-figure */ 66).then(__webpack_require__.bind(null, 81)).then(c => wrapFunctional(c.default || c));
-const SmartImage = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 26)).then(c => wrapFunctional(c.default || c));
-const SmartLink = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 16)).then(c => wrapFunctional(c.default || c));
 const BlogSectionsRatings = () => __webpack_require__.e(/* import() | components/blog-sections-ratings */ 7).then(__webpack_require__.bind(null, 148)).then(c => wrapFunctional(c.default || c));
 const CardPost = () => __webpack_require__.e(/* import() | components/card-post */ 13).then(__webpack_require__.bind(null, 149)).then(c => wrapFunctional(c.default || c));
 const CardPostNormal = () => __webpack_require__.e(/* import() | components/card-post-normal */ 14).then(__webpack_require__.bind(null, 116)).then(c => wrapFunctional(c.default || c));
@@ -5428,8 +5428,84 @@ async function createApp(ssrContext, config = {}) {
   // making them available everywhere as `this.$router` and `this.$store`.
   const app = {
     head: {
-      "meta": [],
-      "link": [],
+      "title": "Jérémy Caruelle",
+      "meta": [{
+        "charset": "utf-8"
+      }, {
+        "name": "viewport",
+        "content": "width=device-width, initial-scale=1",
+        "property": "viewport"
+      }, {
+        "hid": "description",
+        "name": "description",
+        "content": "A French developer, passionate about gaming and programming, who is eager to enhance their JavaScript skills.",
+        "property": "description"
+      }, {
+        "hid": "twitter:card",
+        "name": "twitter:card",
+        "content": "summary",
+        "property": "twitter:card"
+      }, {
+        "hid": "twitter:site",
+        "name": "twitter:site",
+        "content": "@asgarrrr",
+        "property": "twitter:site"
+      }, {
+        "hid": "twitter:creator",
+        "name": "twitter:creator",
+        "content": "@asgarrrr",
+        "property": "twitter:creator"
+      }, {
+        "hid": "twitter:title",
+        "name": "twitter:title",
+        "content": "Jérémy Caruelle",
+        "property": "twitter:title"
+      }, {
+        "hid": "twitter:description",
+        "name": "twitter:description",
+        "content": "A French developer, passionate about gaming and programming, who is eager to enhance their JavaScript skills.",
+        "property": "twitter:description"
+      }, {
+        "hid": "twitter:image",
+        "name": "twitter:image",
+        "content": "\u002Ficon.png",
+        "property": "twitter:image"
+      }, {
+        "hid": "og:type",
+        "name": "og:type",
+        "content": "website",
+        "property": "og:type"
+      }, {
+        "hid": "og:site_name",
+        "name": "og:site_name",
+        "content": "Jérémy Caruelle",
+        "property": "og:site_name"
+      }, {
+        "hid": "og:description",
+        "name": "og:description",
+        "content": "A French developer, passionate about gaming and programming, who is eager to enhance their JavaScript skills.",
+        "property": "og:description"
+      }, {
+        "hid": "og:image",
+        "name": "og:image",
+        "content": "\u002Ficon.png",
+        "property": "og:image"
+      }, {
+        "hid": "theme-color",
+        "name": "theme-color",
+        "content": "#171717",
+        "property": "theme-color"
+      }],
+      "link": [{
+        "rel": "icon",
+        "type": "image\u002Fx-icon",
+        "href": "\u002Fassets\u002Ficons\u002Ficon.ico"
+      }, {
+        "rel": "search",
+        "type": "application\u002Fopensearchdescription+xml",
+        "title": "Asgarrrr's Blog",
+        "href": "\u002Fopensearch.xml"
+      }],
       "style": [],
       "script": []
     },
