@@ -9,6 +9,7 @@ import type { Post } from "@/types/Post"
 import type { FetchReturn } from "@nuxt/content/types/query-builder"
 
 export default Vue.extend({
+
   data() {
     return {
       formatter: new Intl.DateTimeFormat("en-US", {
