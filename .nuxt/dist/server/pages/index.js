@@ -7,7 +7,7 @@ exports.modules = {
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(129);
+var content = __webpack_require__(128);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -391,7 +391,7 @@ installComponents(component, {SmartImage: __webpack_require__(26).default})
 
 /***/ }),
 
-/***/ 123:
+/***/ 122:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -441,7 +441,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 128:
+/***/ 127:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -453,7 +453,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 129:
+/***/ 128:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -468,7 +468,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 146:
+/***/ 144:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -728,7 +728,7 @@ var componentNormalizer = __webpack_require__(2);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(128)
+  var style0 = __webpack_require__(127)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -749,7 +749,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var pages = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Status: __webpack_require__(112).default,IconDev: __webpack_require__(83).default,Button: __webpack_require__(8).default,IconEllipsis: __webpack_require__(123).default,SmartImage: __webpack_require__(26).default,Title: __webpack_require__(27).default,Card: __webpack_require__(88).default,Button: __webpack_require__(8).default,CardExperience: __webpack_require__(113).default,CardSkill: __webpack_require__(114).default})
+installComponents(component, {Status: __webpack_require__(112).default,IconDev: __webpack_require__(83).default,Button: __webpack_require__(8).default,IconEllipsis: __webpack_require__(122).default,SmartImage: __webpack_require__(26).default,Title: __webpack_require__(27).default,Card: __webpack_require__(88).default,Button: __webpack_require__(8).default,CardExperience: __webpack_require__(113).default,CardSkill: __webpack_require__(114).default})
 
 
 /***/ }),

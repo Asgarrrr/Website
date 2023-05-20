@@ -21,13 +21,6 @@
     "url": "/projects"
   },
   {
-    "name": "me-anime",
-    "path": "/me/anime",
-    "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\me\\\\anime.vue",
-    "chunkName": "pages/me/anime",
-    "url": "/me/anime"
-  },
-  {
     "name": "me-contact",
     "path": "/me/contact",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\me\\\\contact.vue",

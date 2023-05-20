@@ -463,7 +463,7 @@ installComponents(component, {IconChevron: __webpack_require__(28).default})
 
 /***/ }),
 
-/***/ 121:
+/***/ 120:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -513,7 +513,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 122:
+/***/ 121:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -563,7 +563,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 126:
+/***/ 125:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -575,7 +575,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ 127:
+/***/ 126:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -590,7 +590,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 145:
+/***/ 143:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -866,7 +866,7 @@ var componentNormalizer = __webpack_require__(2);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(126)
+  var style0 = __webpack_require__(125)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -887,7 +887,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var _slug = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {LoadersContent: __webpack_require__(108).default,IconCalendar: __webpack_require__(91).default,IconEye: __webpack_require__(121).default,SmartFigure: __webpack_require__(81).default,BlogReadingIndicator: __webpack_require__(109).default,BlogTableOfContents: __webpack_require__(110).default,IconDocument: __webpack_require__(122).default,BlogPrevNext: __webpack_require__(111).default})
+installComponents(component, {LoadersContent: __webpack_require__(108).default,IconCalendar: __webpack_require__(91).default,IconEye: __webpack_require__(120).default,SmartFigure: __webpack_require__(81).default,BlogReadingIndicator: __webpack_require__(109).default,BlogTableOfContents: __webpack_require__(110).default,IconDocument: __webpack_require__(121).default,BlogPrevNext: __webpack_require__(111).default})
 
 
 /***/ }),
@@ -1097,7 +1097,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(127);
+var content = __webpack_require__(126);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;

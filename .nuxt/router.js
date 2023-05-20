@@ -7,7 +7,6 @@ import scrollBehavior from './router.scrollBehavior.js'
 const _181dacc1 = () => interopDefault(import('..\\src\\pages\\blog\\index.vue' /* webpackChunkName: "pages/blog/index" */))
 const _0e04e1a4 = () => interopDefault(import('..\\src\\pages\\donate.vue' /* webpackChunkName: "pages/donate" */))
 const _90e56f2e = () => interopDefault(import('..\\src\\pages\\projects\\index.vue' /* webpackChunkName: "pages/projects/index" */))
-const _2c9cac26 = () => interopDefault(import('..\\src\\pages\\me\\anime.vue' /* webpackChunkName: "pages/me/anime" */))
 const _b5c8394e = () => interopDefault(import('..\\src\\pages\\me\\contact.vue' /* webpackChunkName: "pages/me/contact" */))
 const _dc65e38c = () => interopDefault(import('..\\src\\pages\\me\\repos.vue' /* webpackChunkName: "pages/me/repos" */))
 const _cd701fe8 = () => interopDefault(import('..\\src\\pages\\projects\\riftmaker\\index.vue' /* webpackChunkName: "pages/projects/riftmaker/index" */))
@@ -38,10 +37,6 @@ export const routerOptions = {
     path: "/projects",
     component: _90e56f2e,
     name: "projects"
-  }, {
-    path: "/me/anime",
-    component: _2c9cac26,
-    name: "me-anime"
   }, {
     path: "/me/contact",
     component: _b5c8394e,
