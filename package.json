@@ -2,19 +2,19 @@
   "private": true,
   "license": "MIT",
   "version": "6.0.0",
-  "homepage": "https://jeremycaruelle.fr",
+  "homepage": "https://jeremycaruelle.com",
   "engines": {
     "node": ">=16.9"
   },
   "author": {
     "name": "Jérémy Caruelle",
-    "email": "hello@jeremycaruelle.fr",
-    "url": "https://jeremycaruelle.fr"
+    "email": "hello@jeremycaruelle.com",
+    "url": "https://jeremycaruelle.com"
   },
   "funding": [
     {
       "type": "individual",
-      "url": "https://jeremycaruelle.fr/donate"
+      "url": "https://jeremycaruelle.com/donate"
     },
     {
       "type": "github",

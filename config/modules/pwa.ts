@@ -1,7 +1,7 @@
 export default {
   manifest: {
-    name: "jeremycaruelle.fr",
-    short_name: "jeremycaruelle.fr",
+    name: "jeremycaruelle.com",
+    short_name: "jeremycaruelle.com",
     theme_color: "#f56565",
     lang: "en",
   },

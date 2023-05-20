@@ -72,7 +72,7 @@ export default Vue.extend({
       post.description || "You were invited to read this post on Asgarrr's blog."
 
     const tags = getTags?.join(", ") || title
-    const href = `https://jeremycaruelle.fr${this.$route?.path}`
+    const href = `https://jeremycaruelle.com${this.$route?.path}`
     const image = `/og-images/${post.slug}.png`
 
     return {
@@ -90,7 +90,7 @@ export default Vue.extend({
         {
           title,
           description,
-          image: `https://jeremycaruelle.fr${ image }`,
+          image: `https://jeremycaruelle.com${ image }`,
           keywords: `${tags}, Asgarrrr blog`,
           url: href,
         },

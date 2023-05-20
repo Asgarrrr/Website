@@ -94,7 +94,7 @@ installComponents(component, {SmartImage: __webpack_require__(26).default,SmartL
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/pages/donate.vue?vue&type=template&id=661dfa34&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/pages/donate.vue?vue&type=template&id=5362c144&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
@@ -212,7 +212,7 @@ var render = function render() {
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/pages/donate.vue?vue&type=template&id=661dfa34&
+// CONCATENATED MODULE: ./src/pages/donate.vue?vue&type=template&id=5362c144&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -248,11 +248,11 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
         title,
         description,
         keywords: "donate",
-        url: "https://jeremycaruelle.fr/donate"
+        url: "https://jeremycaruelle.com/donate"
       }),
       link: [{
         rel: "canonical",
-        href: "https://jeremycaruelle.fr/donate"
+        href: "https://jeremycaruelle.com/donate"
       }]
     };
   },

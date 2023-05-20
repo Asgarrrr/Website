@@ -8,7 +8,7 @@ export default async function () {
   }
 
   return {
-    hostname: "https://jeremycaruelle.fr",
+    hostname: "https://jeremycaruelle.com",
     gzip: true,
     routes,
   }

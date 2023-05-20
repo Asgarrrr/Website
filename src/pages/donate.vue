@@ -38,12 +38,12 @@ export default Vue.extend({
         title,
         description,
         keywords: "donate",
-        url: "https://jeremycaruelle.fr/donate",
+        url: "https://jeremycaruelle.com/donate",
       }),
       link: [
         {
           rel: "canonical",
-          href: "https://jeremycaruelle.fr/donate",
+          href: "https://jeremycaruelle.com/donate",
         },
       ],
     }

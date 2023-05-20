@@ -2,26 +2,26 @@
 <rss version="2.0">
     <channel>
         <title>Asgarrrr's Blog</title>
-        <link>https://jeremycaruelle.fr/blog</link>
+        <link>https://jeremycaruelle.com/blog</link>
         <description> --- </description>
-        <lastBuildDate>Sat, 20 May 2023 17:30:30 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 20 May 2023 17:42:46 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
             <title><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium a nulla nec rutrum.]]></title>
-            <link>https://jeremycaruelle.fr/blog/test</link>
-            <guid>https://jeremycaruelle.fr/blog/test</guid>
+            <link>https://jeremycaruelle.com/blog/test</link>
+            <guid>https://jeremycaruelle.com/blog/test</guid>
             <pubDate>Thu, 27 Apr 2023 19:03:24 GMT</pubDate>
             <description><![CDATA[Quisque suscipit mauris quis nisl cursus porttitor. Vivamus aliquam magna id semper semper. Aliquam a diam id nisi pretium consectetur.]]></description>
-            <enclosure url="https://jeremycaruelle.fr/assets/images/posts/test.jpg" length="0" type="image/jpg"/>
+            <enclosure url="https://jeremycaruelle.com/assets/images/posts/test.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium a nulla nec rutrum.]]></title>
-            <link>https://jeremycaruelle.fr/blog/test2</link>
-            <guid>https://jeremycaruelle.fr/blog/test2</guid>
+            <link>https://jeremycaruelle.com/blog/test2</link>
+            <guid>https://jeremycaruelle.com/blog/test2</guid>
             <pubDate>Thu, 27 Apr 2023 19:03:24 GMT</pubDate>
             <description><![CDATA[Quisque suscipit mauris quis nisl cursus porttitor. Vivamus aliquam magna id semper semper. Aliquam a diam id nisi pretium consectetur.]]></description>
-            <enclosure url="https://jeremycaruelle.fr/assets/images/posts/test2.jpg" length="0" type="image/jpg"/>
+            <enclosure url="https://jeremycaruelle.com/assets/images/posts/test2.jpg" length="0" type="image/jpg"/>
         </item>
     </channel>
 </rss>

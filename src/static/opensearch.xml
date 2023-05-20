@@ -4,5 +4,5 @@
     <Description>Search Asgarrrr's Blog!</Description>
     <InputEncoding>UTF-8</InputEncoding>
     <Image height="16" width="16" type="image/x-icon">assets/icon.ico</Image>
-    <Url type="text/html" method="get" template="https://jeremycaruelle.fr/blog/?q={searchTerms}" />
+    <Url type="text/html" method="get" template="https://jeremycaruelle.com/blog/?q={searchTerms}" />
 </OpenSearchDescription>

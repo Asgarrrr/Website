@@ -5,7 +5,7 @@ export default {
     github: "https://github.com/Asgarrrr",
     linkedIn: "https://www.linkedin.com/in/jérémy-caruelle/",
     instagram: "https://www.instagram.com/jcaruelle/",
-    email: "hello@jeremycaruelle.fr"
+    email: "hello@jeremycaruelle.com"
   },
   sponsor: {
     github: "https://github.com/sponsors/asgarrrr",

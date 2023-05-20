@@ -55,7 +55,7 @@ export default Vue.extend({
     getUtmLink(): string {
       try {
         const url = new URL(this.href)
-        url.searchParams.append("utm_source", "jeremycaruelle.fr")
+        url.searchParams.append("utm_source", "jeremycaruelle.com")
 
         return url.href
       } catch (err) {

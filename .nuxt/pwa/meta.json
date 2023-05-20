@@ -1,5 +1,5 @@
 {
-  "title": "jeremycaruelle.fr",
+  "title": "jeremycaruelle.com",
   "meta": [
     {
       "hid": "charset",
@@ -18,7 +18,7 @@
     {
       "hid": "apple-mobile-web-app-title",
       "name": "apple-mobile-web-app-title",
-      "content": "jeremycaruelle.fr"
+      "content": "jeremycaruelle.com"
     },
     {
       "hid": "theme-color",
@@ -35,13 +35,13 @@
       "hid": "og:title",
       "name": "og:title",
       "property": "og:title",
-      "content": "jeremycaruelle.fr"
+      "content": "jeremycaruelle.com"
     },
     {
       "hid": "og:site_name",
       "name": "og:site_name",
       "property": "og:site_name",
-      "content": "jeremycaruelle.fr"
+      "content": "jeremycaruelle.com"
     }
   ],
   "link": [
@@ -58,7 +58,7 @@
     },
     {
       "rel": "manifest",
-      "href": "/_nuxt/manifest.8cf2f4c8.json",
+      "href": "/_nuxt/manifest.533c5d59.json",
       "hid": "manifest"
     }
   ],

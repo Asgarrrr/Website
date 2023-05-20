@@ -1,5 +1,5 @@
 const Feed = () => {
-  const baseUrlArticles = "https://jeremycaruelle.fr/blog"
+  const baseUrlArticles = "https://jeremycaruelle.com/blog"
 
   const feedFormats = {
     rss: { type: "rss2", file: "rss.xml" },
@@ -23,7 +23,7 @@ const Feed = () => {
 
       const hostName =
         process.env.NODE_ENV === "production"
-          ? "https://jeremycaruelle.fr"
+          ? "https://jeremycaruelle.com"
           : "http://localhost:3000"
 
       const postImagesPath = `${hostName}/assets/images/posts`
