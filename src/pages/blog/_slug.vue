@@ -60,68 +60,80 @@ export default Vue.extend({
 
   head() {
 
-    const post = this.post
-    const { getTags } = this as {
-      getTags: string[]
-    }
-
-    console.log( post.description )
-
-    const title = post.title
-    const description =
-      post.description || "You were invited to read this post on Asgarrr's blog."
-
-    const tags = getTags?.join(", ") || title
-    const href = `https://jeremycaruelle.com${this.$route?.path}`
-    const image = `/og-images/${post.slug}.png`
-
     return {
-      bodyAttrs: {
-        class: "overflow-x-hidden",
-      },
-      title,
-      link: [
-        {
-          rel: "canonical",
-          href,
-        },
-      ],
-      meta: this.$prepareMeta(
-        {
-          title,
-          description,
-          image: `https://jeremycaruelle.com${ image }`,
-          keywords: `${tags}, Asgarrrr blog`,
-          url: href,
-        },
-        [
-          {
-            name: "twitter:card",
-            content: "summary_large_image",
-          },
-          {
-            name: "article:published-time",
-            content: post?.createdAt || null,
-          },
-          {
-            name: "twitter:label1",
-            content: "asgarrrr",
-          },
-          {
-            name: "twitter:data1",
-            content: post?.createdAt,
-          },
-          {
-            name: "twitter:label2",
-            content: "Jérémy Caruelle",
-          },
-          {
-            name: "twitter:data2",
-            content: `${this.getReadingTime} min read`,
-          },
-        ]
-      ),
+      title: this.post.title,
+      meta: this.$prepareMeta({
+        title: "this.post.title",
+        description: "this.post.description",
+        image: `https://jeremycaruelle.com${this.post.image}`,
+        keywords: `${this.post.tags?.join(", ")}, Asgarrrr blog`,
+        url: `https://jeremycaruelle.com${this.$route.path}`,
+      }),
     }
+
+    //
+    // const post = this.post
+    // const { getTags } = this as {
+    //   getTags: string[]
+    // }
+    //
+    // console.log( post.description )
+    //
+    // const title = post.title
+    // const description =
+    //   post.description || "You were invited to read this post on Asgarrr's blog."
+    //
+    // const tags = getTags?.join(", ") || title
+    // const href = `https://jeremycaruelle.com${this.$route?.path}`
+    // const image = `/og-images/${post.slug}.png`
+    //
+    // return {
+    //   bodyAttrs: {
+    //     class: "overflow-x-hidden",
+    //   },
+    //   title,
+    //   link: [
+    //     {
+    //       rel: "canonical",
+    //       href,
+    //     },
+    //   ],
+    //   meta: this.$prepareMeta(
+    //     {
+    //       title,
+    //       description,
+    //       image: `https://jeremycaruelle.com${ image }`,
+    //       keywords: `${tags}, Asgarrrr blog`,
+    //       url: href,
+    //     },
+    //     [
+    //       {
+    //         name: "twitter:card",
+    //         content: "summary_large_image",
+    //       },
+    //       {
+    //         name: "article:published-time",
+    //         content: post?.createdAt || null,
+    //       },
+    //       {
+    //         name: "twitter:label1",
+    //         content: "asgarrrr",
+    //       },
+    //       {
+    //         name: "twitter:data1",
+    //         content: post?.createdAt,
+    //       },
+    //       {
+    //         name: "twitter:label2",
+    //         content: "Jérémy Caruelle",
+    //       },
+    //       {
+    //         name: "twitter:data2",
+    //         content: `${this.getReadingTime} min read`,
+    //       },
+    //     ]
+    //   ),
+    // }
   },
   watch: {
     $fetchState: {
