@@ -60,7 +60,7 @@ export default Vue.extend({
 
   head() {
 
-    const title = "Asgarrr - Blog TEST"
+    const title = "Asgarrr - Blog TESTd"
     const description = "Not very interesting content, but always done with passion!"
 
     return {

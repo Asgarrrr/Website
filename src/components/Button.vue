@@ -4,6 +4,11 @@ import Vue, { PropType } from "vue"
 export default Vue.extend({
   props: {
     // String
+    name: {
+      type: String,
+      required: false,
+      default: null,
+    },
     href: {
       type: [] as PropType<any>,
       required: false,
@@ -54,6 +59,7 @@ export default Vue.extend({
       'w-max': !block,
       'rounded-full': rounded,
     }"
+    :name="name"
   >
     <component :is="getIconName" v-if="icon && !$slots.icon" class="h-4 w-4" />
 

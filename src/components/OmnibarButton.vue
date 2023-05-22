@@ -15,6 +15,7 @@ export default Vue.extend({
     v-tippy="{
       content: '⌘/Ctrl + K',
     }"
+    href="#"
     icon="Menu"
     class="focus:outline-none"
     rounded

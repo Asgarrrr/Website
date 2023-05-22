@@ -49,6 +49,7 @@ export default Vue.extend({
         education: [
           {
             title: "Self-taught",
+            url: "/",
             position: "A blend of passion, curiosity and fascination.",
             date: "For life",
           },
@@ -245,20 +246,21 @@ export default Vue.extend({
           <div
             class="flex items-center justify-center md:justify-start gap-x-3 gap-y-2 flex-wrap"
           >
-            <Button
+            <div
               v-for="item in ['JavaScript', 'React.js', 'Node.js' ]"
               :key="item"
-              class="inline-block"
+              class="cursor-pointer justify-center px-5 py-2 rounded-lg card-base flex items-center space-x-2"
             >
-              <IconDev :brand="item" class="h-5 w-5 filter grayscale" />
-            </Button>
+              <IconDev :brand="item" class="h-5 w-5 !fill-red-500 grayscale filter" />
+            </div>
 
-            <Button
+            <a
               v-tippy="{ content: 'More', placement: 'bottom' }"
-              @click.native="scrollToSection('#technologies')"
+              class="cursor-pointer justify-center px-5 py-2 rounded-lg card-base flex items-center space-x-2"
+              href="#technologies"
             >
               <IconEllipsis class="h-5 w-5" />
-            </Button>
+            </a>
           </div>
         </div>
       </div>

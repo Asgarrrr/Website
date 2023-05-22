@@ -40,15 +40,6 @@ export default Vue.extend({
 
           </Transition>
 
-
-<!--          <Transition name="fade" mode="out-in">-->
-<!--            <span v-if="routeIsBlog"  class="text-black/90 text-sm uppercase font-medium dark:text-white/90" >-->
-<!--              Blog-->
-<!--            </span>-->
-<!--            <span v-else-if="routeIsIndex" class="text-black/90 text-sm uppercase font-medium dark:text-white/90">-->
-<!--              Home-->
-<!--            </span>-->
-<!--          </Transition>-->
         </SmartLink>
 
         <div class="flex space-x-2 items-center">
