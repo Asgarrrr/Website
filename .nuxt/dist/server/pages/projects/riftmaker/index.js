@@ -1,14 +1,14 @@
-exports.ids = [76,12,45,61,66];
+exports.ids = [79,12,46,62,67];
 exports.modules = {
 
-/***/ 141:
+/***/ 147:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/pages/projects/riftmaker/index.vue?vue&type=template&id=cdb7c5fa&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/pages/projects/riftmaker/index.vue?vue&type=template&id=80640b4a&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
@@ -64,11 +64,6 @@ var render = function render() {
   }), _vm._v(" "), _c('section', {
     staticClass: "space-y-4"
   }, [_c('Title', {
-    attrs: {
-      "size": "1",
-      "uppercase": ""
-    }
-  }, [_vm._v(" In detail explanation")]), _vm._v(" "), _c('Title', {
     staticClass: "!mt-12",
     attrs: {
       "size": "2"
@@ -149,11 +144,13 @@ var render = function render() {
     staticClass: "dark:text-white/70 ml-2"
   }, [_vm._v("\n      The biggest challenge I faced while developing Riftmaker was finding a way to analyze the game state in real-time.\n      League of Legends is a complex game with many variables that change constantly throughout the match. It was difficult to\n      find a solution that could handle this complexity and provide accurate insights in real-time.\n    ")]), _vm._v(" "), _c('p', {
     staticClass: "dark:text-white/70 ml-2"
-  }, [_vm._v("\n      Without any knowledge in AI, I had to learn the basics of AI and machine learning to be able to create a model capable of predicting the actions of the opposing players.\n      I also had to learn how to use the Riot Games API / LCU to retrieve data about the current game state.\n\n    ")])], 1)], 1);
+  }, [_vm._v("\n      Without any knowledge in AI, I had to learn the basics of AI and machine learning to be able to create a model capable of predicting the actions of the opposing players.\n      I also had to learn how to use the Riot Games API / LCU to retrieve data about the current game state.\n    ")]), _vm._v(" "), _c('p', {
+    staticClass: "dark:text-white/70 ml-2"
+  }, [_vm._v("\n      Despite these challenges, I am proud of what I have accomplished so far and excited about the future of Riftmaker.\n      I look forward to continuing development on Riftmaker and making it the best League of Legends companion tool available.\n    ")])], 1)], 1);
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/pages/projects/riftmaker/index.vue?vue&type=template&id=cdb7c5fa&
+// CONCATENATED MODULE: ./src/pages/projects/riftmaker/index.vue?vue&type=template&id=80640b4a&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -163,7 +160,7 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
 var Title = __webpack_require__(27);
 
 // EXTERNAL MODULE: ./src/components/Card/LastFm.vue + 4 modules
-var LastFm = __webpack_require__(89);
+var LastFm = __webpack_require__(93);
 
 // EXTERNAL MODULE: ./src/components/Smart/Image.vue + 4 modules
 var Image = __webpack_require__(26);
@@ -185,9 +182,9 @@ var Image = __webpack_require__(26);
     };
   },
   head() {
-    const title = "Rogue";
+    const title = "Riftmaker";
     const image = "https://i.imgur.com/CuVtvKW.png";
-    const description = "Custom tools created for your PreMiD experience! Featuring Custom Status and Metadata Creator for free and fresh UI!";
+    const description = "A real-time League of Legends AI companion, delivering game insights and assisting players with up-to-date information";
     return {
       title,
       meta: this.$prepareMeta({
@@ -231,18 +228,18 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var riftmaker = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SmartFigure: __webpack_require__(81).default,Title: __webpack_require__(27).default,PageLayout: __webpack_require__(77).default})
+installComponents(component, {SmartFigure: __webpack_require__(80).default,Title: __webpack_require__(27).default,PageLayout: __webpack_require__(77).default})
 
 
 /***/ }),
 
-/***/ 76:
+/***/ 71:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(80);
+var content = __webpack_require__(79);
 if(content.__esModule) content = content.default;
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
@@ -328,19 +325,19 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 79:
+/***/ 78:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_windicss_webpack_plugin_dist_loaders_windicss_style_pitcher_cjs_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_windicss_webpack_plugin_dist_loaders_windicss_template_cjs_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Figure_vue_vue_type_style_index_0_id_6bdc1fc8_prod_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(76);
+/* harmony import */ var _node_modules_windicss_webpack_plugin_dist_loaders_windicss_style_pitcher_cjs_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_windicss_webpack_plugin_dist_loaders_windicss_template_cjs_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Figure_vue_vue_type_style_index_0_id_6bdc1fc8_prod_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(71);
 /* harmony import */ var _node_modules_windicss_webpack_plugin_dist_loaders_windicss_style_pitcher_cjs_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_windicss_webpack_plugin_dist_loaders_windicss_template_cjs_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Figure_vue_vue_type_style_index_0_id_6bdc1fc8_prod_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_windicss_webpack_plugin_dist_loaders_windicss_style_pitcher_cjs_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_windicss_webpack_plugin_dist_loaders_windicss_template_cjs_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Figure_vue_vue_type_style_index_0_id_6bdc1fc8_prod_lang_css___WEBPACK_IMPORTED_MODULE_0__);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_windicss_webpack_plugin_dist_loaders_windicss_style_pitcher_cjs_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_windicss_webpack_plugin_dist_loaders_windicss_template_cjs_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Figure_vue_vue_type_style_index_0_id_6bdc1fc8_prod_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_windicss_webpack_plugin_dist_loaders_windicss_style_pitcher_cjs_node_modules_vue_style_loader_index_js_ref_3_oneOf_1_0_node_modules_css_loader_dist_cjs_js_ref_3_oneOf_1_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_dist_cjs_js_ref_3_oneOf_1_2_node_modules_windicss_webpack_plugin_dist_loaders_windicss_template_cjs_node_modules_nuxt_components_dist_loader_js_ref_0_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Figure_vue_vue_type_style_index_0_id_6bdc1fc8_prod_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
 
-/***/ 80:
+/***/ 79:
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
@@ -355,7 +352,7 @@ module.exports = ___CSS_LOADER_EXPORT___;
 
 /***/ }),
 
-/***/ 81:
+/***/ 80:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -438,7 +435,7 @@ var componentNormalizer = __webpack_require__(2);
 
 function injectStyles (context) {
   
-  var style0 = __webpack_require__(79)
+  var style0 = __webpack_require__(78)
 if (style0.__inject__) style0.__inject__(context)
 
 }
@@ -460,7 +457,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 84:
+/***/ 88:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -508,7 +505,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 89:
+/***/ 93:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -624,7 +621,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var LastFm = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SmartImage: __webpack_require__(26).default,IconPlay: __webpack_require__(84).default,SmartLink: __webpack_require__(16).default})
+installComponents(component, {SmartImage: __webpack_require__(26).default,IconPlay: __webpack_require__(88).default,SmartLink: __webpack_require__(16).default})
 
 
 /***/ })

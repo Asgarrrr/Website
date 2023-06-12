@@ -100,7 +100,7 @@ export default Vue.extend({
     <input
       ref="share-url"
       readonly
-      :value="`https://jeremycaruelle.com${path}`"
+      :value="`https://jeremycaruelle.com${ path }`"
       class="hidden"
     />
   </div>

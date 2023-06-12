@@ -1,7 +1,7 @@
-exports.ids = [56];
+exports.ids = [57];
 exports.modules = {
 
-/***/ 135:
+/***/ 139:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -44,7 +44,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Kbd = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Kbd: __webpack_require__(135).default})
+installComponents(component, {Kbd: __webpack_require__(139).default})
 
 
 /***/ })

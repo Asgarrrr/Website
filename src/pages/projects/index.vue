@@ -48,9 +48,10 @@ export default {
       }, {
         client: "Personal",
         name: "Luna",
+        note: "This project is currently on hold",
         description:
-          "A Discord bot that allows you to create and manage your own Discord server templates.",
-        image: "",
+        "An intuitive and user-friendly Discord bot providing a wide range of features, like moderation, music, and more serving over 150k users across 2,000+ servers.",
+        image: "https://cdn.discordapp.com/attachments/883739697665417247/1113640056016609300/MacBook_Pro_16__-_3.png",
       },
       ],
     }),
@@ -93,23 +94,28 @@ export default {
     >
       <div class="space-y-4">
 
-        <span
-          v-if="project.client"
-          class="bg-blue-600/10 block w-max text-sm rounded-lg px-4 text-blue-600 py-1.5 dark:(bg-white/5 text-white/30)"
-        >
-          {{ project.client }}
-        </span>
+        <div class="flex">
+
+          <span
+            v-if="project.client"
+            class="bg-blue-600/10 block w-max text-sm rounded-lg px-4 text-blue-600 py-1.5 dark:(bg-white/5 text-white/30)"
+          >
+            {{ project.client }}
+
+          </span>
+
+          <span
+            v-if="project.note"
+            class="ml-3 bg-orange-600/10 block w-max text-sm rounded-lg px-4 text-orange-600 py-1.5 dark:(bg-white/5 text-white/30)"
+          >
+            {{ project.note }}
+          </span>
+
+        </div>
 
         <h2 class="text-4xl text-black/90 font-bold dark:text-white/90">
           {{ project.name }}
         </h2>
-
-        <span
-          v-if="project.note"
-          class="bg-orange-600/10 block w-max text-sm rounded-lg px-4 text-orange-600 py-1.5 dark:(bg-white/5 text-white/30)"
-        >
-          {{ project.note }}
-        </span>
 
         <p>
           {{ project.description }}

@@ -25,8 +25,7 @@ const imageOptions = {
     "cdn.jsdelivr.net",
     "avatars.githubusercontent.com",
     "proxy.duckduckgo.com",
-    "cdn.discordapp.com",
-    "cdn.myanimelist.net"
+    "cdn.discordapp.com"
   ],
   "alias": {}
 }

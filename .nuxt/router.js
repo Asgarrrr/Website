@@ -9,6 +9,8 @@ const _0e04e1a4 = () => interopDefault(import('..\\src\\pages\\donate.vue' /* we
 const _90e56f2e = () => interopDefault(import('..\\src\\pages\\projects\\index.vue' /* webpackChunkName: "pages/projects/index" */))
 const _b5c8394e = () => interopDefault(import('..\\src\\pages\\me\\contact.vue' /* webpackChunkName: "pages/me/contact" */))
 const _dc65e38c = () => interopDefault(import('..\\src\\pages\\me\\repos.vue' /* webpackChunkName: "pages/me/repos" */))
+const _3b2b3433 = () => interopDefault(import('..\\src\\pages\\projects\\abyss\\index.vue' /* webpackChunkName: "pages/projects/abyss/index" */))
+const _94dc41a6 = () => interopDefault(import('..\\src\\pages\\projects\\luna\\index.vue' /* webpackChunkName: "pages/projects/luna/index" */))
 const _cd701fe8 = () => interopDefault(import('..\\src\\pages\\projects\\riftmaker\\index.vue' /* webpackChunkName: "pages/projects/riftmaker/index" */))
 const _55b629f1 = () => interopDefault(import('..\\src\\pages\\projects\\rogue\\index.vue' /* webpackChunkName: "pages/projects/rogue/index" */))
 const _16670b79 = () => interopDefault(import('..\\src\\pages\\blog\\_slug.vue' /* webpackChunkName: "pages/blog/_slug" */))
@@ -45,6 +47,14 @@ export const routerOptions = {
     path: "/me/repos",
     component: _dc65e38c,
     name: "me-repos"
+  }, {
+    path: "/projects/abyss",
+    component: _3b2b3433,
+    name: "projects-abyss"
+  }, {
+    path: "/projects/luna",
+    component: _94dc41a6,
+    name: "projects-luna"
   }, {
     path: "/projects/riftmaker",
     component: _cd701fe8,

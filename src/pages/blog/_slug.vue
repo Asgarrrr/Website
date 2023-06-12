@@ -60,7 +60,7 @@ export default Vue.extend({
 
   head() {
 
-    const title = "Asgarrr - Blog TESTd"
+    const title = "Asgarrr - Blog TEST"
     const description = "Not very interesting content, but always done with passion!"
 
     return {
@@ -203,7 +203,7 @@ export default Vue.extend({
 
       <article>
 
-        <header class="space-y-8 leading-relaxed text-center mb-18">
+        <header class="space-y-8 leading-relaxed text-center mb-10">
 
           <div class="space-y-4">
 
@@ -242,8 +242,7 @@ export default Vue.extend({
           <SmartFigure
             v-if="post.header"
             :src="post.header"
-
-            class="object-cover object-top w-full transition-all rounded-lg max-h-xl ring-1 dark:ring-white/10 ring-black/10 hover:object-bottom duration-2000"  alt="Post header"
+            class="object-cover object-top w-full transition-all rounded-lg"  alt="Post header"
           />
 
         </header>
@@ -265,22 +264,22 @@ export default Vue.extend({
 
       <hr class="my-10 border-black/10 dark:border-white/10" />
 
-<!--      <script src="https://giscus.app/client.js"-->
-<!--        data-repo="Asgarrrr/blog_comments"-->
-<!--        data-repo-id="R_kgDOJd9fSg"-->
-<!--        data-category="Announcements"-->
-<!--        data-category-id="DIC_kwDOJd9fSs4CWNQy"-->
-<!--        data-mapping="pathname"-->
-<!--        data-strict="0"-->
-<!--        data-reactions-enabled="1"-->
-<!--        data-emit-metadata="0"-->
-<!--        data-input-position="top"-->
-<!--        data-theme="https://cdn.jsdelivr.net/gh/Asgarrrr/blog_comments/giscus.css"-->
-<!--        data-lang="fr"-->
-<!--        data-loading="lazy"-->
-<!--        crossorigin="anonymous"-->
-<!--        async>-->
-<!--      </script>-->
+      <script src="https://giscus.app/client.js"
+        data-repo="Asgarrrr/blog_comments"
+        data-repo-id="R_kgDOJd9fSg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOJd9fSs4CWNQy"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="dark"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+      </script>
 
       <div class="mt-16 space-y-10">
         <div v-if="getRelatedPosts.length > 0" class="space-y-2">

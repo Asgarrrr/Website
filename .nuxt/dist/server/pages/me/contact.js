@@ -1,7 +1,7 @@
-exports.ids = [73,10,22,25,61];
+exports.ids = [74,10,23,26,62];
 exports.modules = {
 
-/***/ 119:
+/***/ 123:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -50,7 +50,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 139:
+/***/ 143:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -194,7 +194,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var contact = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {IconBrand: __webpack_require__(78).default,Card: __webpack_require__(88).default,IconAt: __webpack_require__(119).default,PageLayout: __webpack_require__(77).default})
+installComponents(component, {IconBrand: __webpack_require__(82).default,Card: __webpack_require__(92).default,IconAt: __webpack_require__(123).default,PageLayout: __webpack_require__(77).default})
 
 
 /***/ }),
@@ -273,7 +273,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 78:
+/***/ 82:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -498,7 +498,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 88:
+/***/ 92:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

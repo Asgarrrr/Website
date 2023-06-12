@@ -4,16 +4,16 @@
         <title>Asgarrrr's Blog</title>
         <link>https://jeremycaruelle.com/blog</link>
         <description> --- </description>
-        <lastBuildDate>Mon, 22 May 2023 18:41:52 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 12 Jun 2023 10:06:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
-            <title><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium a nulla nec rutrum.]]></title>
-            <link>https://jeremycaruelle.com/blog/test</link>
-            <guid>https://jeremycaruelle.com/blog/test</guid>
-            <pubDate>Thu, 27 Apr 2023 19:03:24 GMT</pubDate>
-            <description><![CDATA[Quisque suscipit mauris quis nisl cursus porttitor. Vivamus aliquam magna id semper semper. Aliquam a diam id nisi pretium consectetur.]]></description>
-            <enclosure url="https://jeremycaruelle.com/assets/images/posts/test.jpg" length="0" type="image/jpg"/>
+            <title><![CDATA[JavaScript Generators: A Powerful Approach to Flow Control and Iterations]]></title>
+            <link>https://jeremycaruelle.com/blog/javascript-generators-a-powerful-approach-to-flow-control-and-iterations</link>
+            <guid>https://jeremycaruelle.com/blog/javascript-generators-a-powerful-approach-to-flow-control-and-iterations</guid>
+            <pubDate>Wed, 20 Jul 2022 19:03:24 GMT</pubDate>
+            <description><![CDATA[Explore the power of JavaScript generators for enhanced flow control and iteration, offering precise control and efficient code execution...]]></description>
+            <enclosure url="https://jeremycaruelle.com/assets/images/posts/javascript-generators-a-powerful-approach-to-flow-control-and-iterations.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pretium a nulla nec rutrum.]]></title>

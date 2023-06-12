@@ -13,10 +13,10 @@ export default Vue.extend({
     }
   },
   head() {
-    const title = "Rogue"
+    const title = "Riftmaker"
     const image = "https://i.imgur.com/CuVtvKW.png"
     const description =
-      "Custom tools created for your PreMiD experience! Featuring Custom Status and Metadata Creator for free and fresh UI!"
+      "A real-time League of Legends AI companion, delivering game insights and assisting players with up-to-date information"
 
     return {
       title,
@@ -87,7 +87,6 @@ export default Vue.extend({
     <hr class="dark:border-white/10 border-2 rounded-full">
 
     <section class="space-y-4">
-      <Title size="1" uppercase> In detail explanation</Title>
       <Title size="2" class="!mt-12"> What is League of Legends? </Title>
       <p class="dark:text-white/70 ml-2">
         League of Legends is a highly popular competitive online game set in a fantasy universe. In this game, two teams face off against each other to destroy the enemy's base while defending their own. Each player controls a unique champion with special abilities and must work together as a team to conquer objectives such as killing neutral monsters, destroying towers, and eliminating enemy champions. League of Legends combines strategy, individual skills, and team coordination to provide an engaging and competitive gaming experience. The game features a wide variety of champions with different playstyles, allowing players to find one that best suits their preferred style of play.
@@ -163,7 +162,7 @@ export default Vue.extend({
               and providing players with the best possible experience. I welcome feedback from the community and encourage players to share their ideas
               on how Riftmaker can be improved.
             </p>
-
+          </li>
         </ol>
       </p>
 
@@ -197,10 +196,13 @@ export default Vue.extend({
       <p class="dark:text-white/70 ml-2">
         Without any knowledge in AI, I had to learn the basics of AI and machine learning to be able to create a model capable of predicting the actions of the opposing players.
         I also had to learn how to use the Riot Games API / LCU to retrieve data about the current game state.
-
       </p>
+
+      <p class="dark:text-white/70 ml-2">
+        Despite these challenges, I am proud of what I have accomplished so far and excited about the future of Riftmaker.
+        I look forward to continuing development on Riftmaker and making it the best League of Legends companion tool available.
+      </p>
+
     </section>
-
-
   </PageLayout>
 </template>

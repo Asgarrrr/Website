@@ -3,6 +3,7 @@ import Vue from "vue"
 
 /* Interfaces */
 import type { Repository } from "../types/Response/GitHub"
+import Fire from "@/components/Fire.vue";
 
 interface Project {
   title: string
@@ -28,6 +29,7 @@ interface ExperienceObject {
 let firstLoad = true
 
 export default Vue.extend({
+  components: {Fire},
   data() {
     return {
       loading: true,
@@ -41,9 +43,9 @@ export default Vue.extend({
         jobs: [
           {
             title: "Coriolis Service",
-            url: "https://gdsc.community.dev/mus-alparslan-universitesi",
-            position: "Core Team Member",
-            date: "2022-",
+            url: "https://www.coriolis-service.fr/",
+            position: "Stage as a Full-Stack Developer",
+            date: "June to July 2021",
           },
         ],
         education: [
@@ -208,6 +210,8 @@ export default Vue.extend({
 </script>
 
 <template>
+
+
 
   <div v-if="loading"></div>
   <div v-else class="space-y-24 mb-10" id="loading">

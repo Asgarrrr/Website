@@ -40,6 +40,22 @@
     "_name": "_dc65e38c"
   },
   {
+    "name": "projects-abyss",
+    "path": "/projects/abyss",
+    "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\projects\\\\abyss\\\\index.vue",
+    "chunkName": "pages/projects/abyss/index",
+    "url": "/projects/abyss",
+    "_name": "_3b2b3433"
+  },
+  {
+    "name": "projects-luna",
+    "path": "/projects/luna",
+    "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\projects\\\\luna\\\\index.vue",
+    "chunkName": "pages/projects/luna/index",
+    "url": "/projects/luna",
+    "_name": "_94dc41a6"
+  },
+  {
     "name": "projects-riftmaker",
     "path": "/projects/riftmaker",
     "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\projects\\\\riftmaker\\\\index.vue",

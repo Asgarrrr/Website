@@ -1,7 +1,7 @@
-exports.ids = [71,0,20,25,61,62,63,64,65];
+exports.ids = [72,0,20,26,62,63,64,65,66];
 exports.modules = {
 
-/***/ 105:
+/***/ 109:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -87,7 +87,7 @@ installComponents(component, {SmartImage: __webpack_require__(26).default,SmartL
 
 /***/ }),
 
-/***/ 137:
+/***/ 141:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -301,7 +301,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var donate = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Title: __webpack_require__(27).default,IconBrand: __webpack_require__(78).default,Button: __webpack_require__(8).default,SkeletonLoader: __webpack_require__(70).default,CardSponsor: __webpack_require__(105).default,SmartImage: __webpack_require__(26).default,PageLayout: __webpack_require__(77).default})
+installComponents(component, {Title: __webpack_require__(27).default,IconBrand: __webpack_require__(82).default,Button: __webpack_require__(8).default,SkeletonLoader: __webpack_require__(70).default,CardSponsor: __webpack_require__(109).default,SmartImage: __webpack_require__(26).default,PageLayout: __webpack_require__(77).default})
 
 
 /***/ }),
@@ -384,12 +384,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Index = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SkeletonLoaderRepository: __webpack_require__(72).default,SkeletonLoaderIframe: __webpack_require__(71).default,SkeletonLoaderSong: __webpack_require__(73).default,SkeletonLoaderLastfm: __webpack_require__(75).default,SkeletonLoaderSpinner: __webpack_require__(74).default})
+installComponents(component, {SkeletonLoaderRepository: __webpack_require__(73).default,SkeletonLoaderIframe: __webpack_require__(72).default,SkeletonLoaderSong: __webpack_require__(74).default,SkeletonLoaderLastfm: __webpack_require__(76).default,SkeletonLoaderSpinner: __webpack_require__(75).default})
 
 
 /***/ }),
 
-/***/ 71:
+/***/ 72:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -456,7 +456,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 72:
+/***/ 73:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -500,7 +500,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 73:
+/***/ 74:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -544,7 +544,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 74:
+/***/ 75:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -597,7 +597,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 75:
+/***/ 76:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -743,7 +743,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 78:
+/***/ 82:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

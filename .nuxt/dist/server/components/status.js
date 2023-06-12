@@ -1,7 +1,7 @@
-exports.ids = [68,0,25,62,63,64,65];
+exports.ids = [69,0,26,63,64,65,66];
 exports.modules = {
 
-/***/ 112:
+/***/ 116:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -179,7 +179,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Status = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SkeletonLoader: __webpack_require__(70).default,IconBrand: __webpack_require__(78).default})
+installComponents(component, {SkeletonLoader: __webpack_require__(70).default,IconBrand: __webpack_require__(82).default})
 
 
 /***/ }),
@@ -262,12 +262,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Index = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SkeletonLoaderRepository: __webpack_require__(72).default,SkeletonLoaderIframe: __webpack_require__(71).default,SkeletonLoaderSong: __webpack_require__(73).default,SkeletonLoaderLastfm: __webpack_require__(75).default,SkeletonLoaderSpinner: __webpack_require__(74).default})
+installComponents(component, {SkeletonLoaderRepository: __webpack_require__(73).default,SkeletonLoaderIframe: __webpack_require__(72).default,SkeletonLoaderSong: __webpack_require__(74).default,SkeletonLoaderLastfm: __webpack_require__(76).default,SkeletonLoaderSpinner: __webpack_require__(75).default})
 
 
 /***/ }),
 
-/***/ 71:
+/***/ 72:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -334,7 +334,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 72:
+/***/ 73:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -378,7 +378,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 73:
+/***/ 74:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -422,7 +422,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 74:
+/***/ 75:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -475,7 +475,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 75:
+/***/ 76:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -547,7 +547,7 @@ installComponents(component, {SkeletonLoader: __webpack_require__(70).default})
 
 /***/ }),
 
-/***/ 78:
+/***/ 82:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
