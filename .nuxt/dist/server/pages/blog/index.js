@@ -1,7 +1,7 @@
-exports.ids = [71,0,58,63,64,65,66];
+exports.ids = [72,0,59,64,65,66,67];
 exports.modules = {
 
-/***/ 108:
+/***/ 109:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69,7 +69,7 @@ installComponents(component, {SkeletonLoader: __webpack_require__(70).default})
 
 /***/ }),
 
-/***/ 140:
+/***/ 142:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -259,7 +259,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var blog = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {LoadersBlog: __webpack_require__(108).default})
+installComponents(component, {LoadersBlog: __webpack_require__(109).default})
 
 
 /***/ }),

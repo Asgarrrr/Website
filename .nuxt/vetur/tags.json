@@ -47,6 +47,9 @@
   "BlogReadingIndicator": {
     "description": "Auto imported from components/Blog/ReadingIndicator.vue"
   },
+  "BlogSeparator": {
+    "description": "Auto imported from components/Blog/Separator.vue"
+  },
   "BlogShare": {
     "description": "Auto imported from components/Blog/Share.vue"
   },

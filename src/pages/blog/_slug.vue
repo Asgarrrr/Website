@@ -242,7 +242,7 @@ export default Vue.extend({
 
           </template>
 
-          <BlogTableOfContents :toc="post.toc" />
+<!--          <BlogTableOfContents :toc="post.toc" />-->
 
           <NuxtContent :document="post" class="max-w-full prose prose-black dark:prose-light" />
         </div>

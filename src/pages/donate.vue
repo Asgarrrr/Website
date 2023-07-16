@@ -79,9 +79,7 @@ export default Vue.extend({
 <template>
   <PageLayout
     title="Donate"
-    :description="[
-      'If you are interested in my projects or actions and would like to support me, you have the option to make a donation using the information provided on this page. Your contribution would be greatly appreciated. Thank you ♥'
-    ]"
+    description="If you are interested in my projects or actions and would like to support me, you have the option to make a donation using the information provided on this page. Your contribution would be greatly appreciated. Thank you ♥"
     class="space-y-12"
   >
     <section class="space-y-4">
@@ -97,9 +95,6 @@ export default Vue.extend({
 
             GitHub Sponsors
           </Button>
-        </div>
-
-        <div class="flex flex-wrap gap-x-4 gap-y-2">
           <Button :href="getSponsorLinks.buymeacoffee" blank>
             <template #icon>
               <IconBrand brand="BuyMeACoffee" class="h-5 w-5" />
@@ -108,7 +103,6 @@ export default Vue.extend({
             Buy me a coffee
           </Button>
         </div>
-
       </div>
 
     </section>

@@ -13,13 +13,10 @@ export default Vue.extend({
       required: false,
       default: "",
     },
-  },
-  computed: {
-    getIcon() {
-      if (this.type === "warning") return "❗️"
-      else if (this.type === "danger") return "🚨"
-      else if (this.type === "success") return "✅"
-      else return "💡"
+    icon: {
+      type: String,
+      required: false,
+      default: "",
     },
   },
 })
@@ -30,7 +27,7 @@ export default Vue.extend({
     class="notification flex flex-col md:(items-center flex-row) gap-x-4 gap-y-2"
     :class="type"
   >
-    <span class="text-xl md:text-lg">{{ getIcon }}</span>
+    <span class="text-xl md:text-lg">{{ icon }}</span>
 
     <div>
       <h1 v-if="title">{{ title }}</h1>

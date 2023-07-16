@@ -22,6 +22,7 @@ You can directly use them in pages and other components without the need to impo
 - `<BlogPrevNext>` | `<blog-prev-next>` (components/Blog/PrevNext.vue)
 - `<BlogRating>` | `<blog-rating>` (components/Blog/Rating.vue)
 - `<BlogReadingIndicator>` | `<blog-reading-indicator>` (components/Blog/ReadingIndicator.vue)
+- `<BlogSeparator>` | `<blog-separator>` (components/Blog/Separator.vue)
 - `<BlogShare>` | `<blog-share>` (components/Blog/Share.vue)
 - `<BlogTableOfContents>` | `<blog-table-of-contents>` (components/Blog/TableOfContents.vue)
 - `<CardExperience>` | `<card-experience>` (components/Card/Experience.vue)

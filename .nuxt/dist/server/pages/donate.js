@@ -1,7 +1,7 @@
-exports.ids = [72,0,20,26,62,63,64,65,66];
+exports.ids = [73,0,21,27,63,64,65,66,67];
 exports.modules = {
 
-/***/ 109:
+/***/ 110:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -87,14 +87,14 @@ installComponents(component, {SmartImage: __webpack_require__(26).default,SmartL
 
 /***/ }),
 
-/***/ 141:
+/***/ 143:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/pages/donate.vue?vue&type=template&id=5362c144&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/pages/donate.vue?vue&type=template&id=808f5958&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
@@ -103,7 +103,7 @@ var render = function render() {
     staticClass: "space-y-12",
     attrs: {
       "title": "Donate",
-      "description": ['If you are interested in my projects or actions and would like to support me, you have the option to make a donation using the information provided on this page. Your contribution would be greatly appreciated. Thank you ♥']
+      "description": "If you are interested in my projects or actions and would like to support me, you have the option to make a donation using the information provided on this page. Your contribution would be greatly appreciated. Thank you ♥"
     }
   }, [_c('section', {
     staticClass: "space-y-4"
@@ -128,9 +128,7 @@ var render = function render() {
       },
       proxy: true
     }])
-  }, [_vm._v("\n\n          GitHub Sponsors\n        ")])], 1), _vm._v(" "), _c('div', {
-    staticClass: "flex flex-wrap gap-x-4 gap-y-2"
-  }, [_c('Button', {
+  }, [_vm._v("\n\n          GitHub Sponsors\n        ")]), _vm._v(" "), _c('Button', {
     attrs: {
       "href": _vm.getSponsorLinks.buymeacoffee,
       "blank": ""
@@ -212,7 +210,7 @@ var render = function render() {
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/pages/donate.vue?vue&type=template&id=5362c144&
+// CONCATENATED MODULE: ./src/pages/donate.vue?vue&type=template&id=808f5958&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -301,7 +299,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var donate = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Title: __webpack_require__(27).default,IconBrand: __webpack_require__(82).default,Button: __webpack_require__(8).default,SkeletonLoader: __webpack_require__(70).default,CardSponsor: __webpack_require__(109).default,SmartImage: __webpack_require__(26).default,PageLayout: __webpack_require__(77).default})
+installComponents(component, {Title: __webpack_require__(27).default,IconBrand: __webpack_require__(82).default,Button: __webpack_require__(8).default,SkeletonLoader: __webpack_require__(70).default,CardSponsor: __webpack_require__(110).default,SmartImage: __webpack_require__(26).default,PageLayout: __webpack_require__(77).default})
 
 
 /***/ }),

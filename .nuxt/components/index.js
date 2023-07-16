@@ -14,6 +14,7 @@ export const BlogNotification = () => import('../..\\src\\components\\Blog\\Noti
 export const BlogPrevNext = () => import('../..\\src\\components\\Blog\\PrevNext.vue' /* webpackChunkName: "components/blog-prev-next" */).then(c => wrapFunctional(c.default || c))
 export const BlogRating = () => import('../..\\src\\components\\Blog\\Rating.vue' /* webpackChunkName: "components/blog-rating" */).then(c => wrapFunctional(c.default || c))
 export const BlogReadingIndicator = () => import('../..\\src\\components\\Blog\\ReadingIndicator.vue' /* webpackChunkName: "components/blog-reading-indicator" */).then(c => wrapFunctional(c.default || c))
+export const BlogSeparator = () => import('../..\\src\\components\\Blog\\Separator.vue' /* webpackChunkName: "components/blog-separator" */).then(c => wrapFunctional(c.default || c))
 export const BlogShare = () => import('../..\\src\\components\\Blog\\Share.vue' /* webpackChunkName: "components/blog-share" */).then(c => wrapFunctional(c.default || c))
 export const BlogTableOfContents = () => import('../..\\src\\components\\Blog\\TableOfContents.vue' /* webpackChunkName: "components/blog-table-of-contents" */).then(c => wrapFunctional(c.default || c))
 export const CardExperience = () => import('../..\\src\\components\\Card\\Experience.vue' /* webpackChunkName: "components/card-experience" */).then(c => wrapFunctional(c.default || c))

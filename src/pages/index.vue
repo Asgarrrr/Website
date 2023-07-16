@@ -194,27 +194,13 @@ export default Vue.extend({
     },
   },
 
-  mounted() {
-
-    if ( document?.styleSheets[0]?.cssRules?.length > 0 ) {
-      this.loading = false
-    } else {
-      window.addEventListener( "load", () => {
-        this.loading = false
-      })
-    }
-  }
-
 })
 
 </script>
 
 <template>
 
-
-
-  <div v-if="loading"></div>
-  <div v-else class="space-y-24 mb-10" id="loading">
+  <div class="space-y-24 mb-10" id="loading">
     <header
       class="rounded-md flex flex-col-reverse my-16 py-10 md:(flex-row items-center justify-between) justify-center"
     >

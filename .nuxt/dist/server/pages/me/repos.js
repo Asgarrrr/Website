@@ -1,7 +1,7 @@
-exports.ids = [75,0,17,32,50,62,63,64,65,66];
+exports.ids = [76,0,18,33,51,63,64,65,66,67];
 exports.modules = {
 
-/***/ 111:
+/***/ 112:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -114,7 +114,7 @@ installComponents(component, {IconStar: __webpack_require__(86).default,IconDev:
 
 /***/ }),
 
-/***/ 144:
+/***/ 146:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -225,7 +225,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var repos = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SkeletonLoader: __webpack_require__(70).default,CardRepository: __webpack_require__(111).default,SmartLink: __webpack_require__(16).default,PageLayout: __webpack_require__(77).default})
+installComponents(component, {SkeletonLoader: __webpack_require__(70).default,CardRepository: __webpack_require__(112).default,SmartLink: __webpack_require__(16).default,PageLayout: __webpack_require__(77).default})
 
 
 /***/ }),
