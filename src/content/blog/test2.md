@@ -1,9 +1,9 @@
 ---
 title: 'Creating a Node.js and MongoDB-Based Authentication System — Enhancing Security and Scalability'
 description: 'Defending user data and preserving confidentiality is'
-tags: [ ]
+tags: []
+related: []
 createdAt: 2023-04-27T19:03:24.368Z
-related: [ "javascript-generators-a-powerful-approach-to-flow-control-and-iterations", "javascript-generators-a-powerful-approach-to-flow-control-and-iterations" ]
 special: false
 ---
 
@@ -64,7 +64,6 @@ To learn more about JWT, you can consult the following resources:
 - [RFC 7519]( https://datatracker.ietf.org/doc/html/rfc7519 ): The official specification for JWT.
 - [Auth0 - JSON Web Tokens]( https://auth0.com/learn/json-web-tokens ): A detailed guide on JWT with usage examples.
 - [Google Cloud - Authenticating Users with JWT]( https://cloud.google.com/api-gateway/docs/authenticating-users-jwt ): A guide on user authentication with JWT in Google Cloud.
-
 
 ## Preparing the Development Environment
 Before we embark on building our authentication system, let's ensure our development environment is properly set up.
@@ -187,4 +186,4 @@ is used to set the expiration time of the JWT to 1 hour. The `generateAuthToken(
 
 Next, we'll create the authentication controller. The authentication controller will contain the logic for registering
 
-
+[ Article under construction ]

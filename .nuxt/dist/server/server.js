@@ -2050,10 +2050,6 @@ __webpack_require__.d(components_namespaceObject, "IconSync", function() { retur
 __webpack_require__.d(components_namespaceObject, "IconTag", function() { return IconTag; });
 __webpack_require__.d(components_namespaceObject, "IconTimes", function() { return IconTimes; });
 __webpack_require__.d(components_namespaceObject, "IconX", function() { return IconX; });
-__webpack_require__.d(components_namespaceObject, "LoadersBlog", function() { return LoadersBlog; });
-__webpack_require__.d(components_namespaceObject, "LoadersContent", function() { return LoadersContent; });
-__webpack_require__.d(components_namespaceObject, "LoadersGoals", function() { return LoadersGoals; });
-__webpack_require__.d(components_namespaceObject, "LoadersSongs", function() { return LoadersSongs; });
 __webpack_require__.d(components_namespaceObject, "SkeletonLoaderIframe", function() { return SkeletonLoaderIframe; });
 __webpack_require__.d(components_namespaceObject, "SkeletonLoader", function() { return SkeletonLoader; });
 __webpack_require__.d(components_namespaceObject, "SkeletonLoaderLastfm", function() { return SkeletonLoaderLastfm; });
@@ -2063,6 +2059,10 @@ __webpack_require__.d(components_namespaceObject, "SkeletonLoaderSpinner", funct
 __webpack_require__.d(components_namespaceObject, "SmartFigure", function() { return SmartFigure; });
 __webpack_require__.d(components_namespaceObject, "SmartImage", function() { return SmartImage; });
 __webpack_require__.d(components_namespaceObject, "SmartLink", function() { return SmartLink; });
+__webpack_require__.d(components_namespaceObject, "LoadersBlog", function() { return LoadersBlog; });
+__webpack_require__.d(components_namespaceObject, "LoadersContent", function() { return LoadersContent; });
+__webpack_require__.d(components_namespaceObject, "LoadersGoals", function() { return LoadersGoals; });
+__webpack_require__.d(components_namespaceObject, "LoadersSongs", function() { return LoadersSongs; });
 __webpack_require__.d(components_namespaceObject, "BlogSectionsRatings", function() { return BlogSectionsRatings; });
 __webpack_require__.d(components_namespaceObject, "CardPost", function() { return CardPost; });
 __webpack_require__.d(components_namespaceObject, "CardPostNormal", function() { return CardPostNormal; });
@@ -3818,10 +3818,6 @@ const IconSync = () => __webpack_require__.e(/* import() | components/icon-sync 
 const IconTag = () => __webpack_require__.e(/* import() | components/icon-tag */ 55).then(__webpack_require__.bind(null, 178)).then(c => wrapFunctional(c.default || c));
 const IconTimes = () => __webpack_require__.e(/* import() | components/icon-times */ 56).then(__webpack_require__.bind(null, 179)).then(c => wrapFunctional(c.default || c));
 const IconX = () => __webpack_require__.e(/* import() | components/icon-x */ 57).then(__webpack_require__.bind(null, 127)).then(c => wrapFunctional(c.default || c));
-const LoadersBlog = () => __webpack_require__.e(/* import() | components/loaders-blog */ 59).then(__webpack_require__.bind(null, 109)).then(c => wrapFunctional(c.default || c));
-const LoadersContent = () => __webpack_require__.e(/* import() | components/loaders-content */ 60).then(__webpack_require__.bind(null, 113)).then(c => wrapFunctional(c.default || c));
-const LoadersGoals = () => __webpack_require__.e(/* import() | components/loaders-goals */ 61).then(__webpack_require__.bind(null, 180)).then(c => wrapFunctional(c.default || c));
-const LoadersSongs = () => __webpack_require__.e(/* import() | components/loaders-songs */ 62).then(__webpack_require__.bind(null, 181)).then(c => wrapFunctional(c.default || c));
 const SkeletonLoaderIframe = () => __webpack_require__.e(/* import() | components/skeleton-loader-iframe */ 64).then(__webpack_require__.bind(null, 72)).then(c => wrapFunctional(c.default || c));
 const SkeletonLoader = () => __webpack_require__.e(/* import() | components/skeleton-loader */ 0).then(__webpack_require__.bind(null, 70)).then(c => wrapFunctional(c.default || c));
 const SkeletonLoaderLastfm = () => __webpack_require__.e(/* import() | components/skeleton-loader-lastfm */ 0).then(__webpack_require__.bind(null, 76)).then(c => wrapFunctional(c.default || c));
@@ -3831,6 +3827,10 @@ const SkeletonLoaderSpinner = () => __webpack_require__.e(/* import() | componen
 const SmartFigure = () => __webpack_require__.e(/* import() | components/smart-figure */ 68).then(__webpack_require__.bind(null, 80)).then(c => wrapFunctional(c.default || c));
 const SmartImage = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 26)).then(c => wrapFunctional(c.default || c));
 const SmartLink = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 16)).then(c => wrapFunctional(c.default || c));
+const LoadersBlog = () => __webpack_require__.e(/* import() | components/loaders-blog */ 59).then(__webpack_require__.bind(null, 109)).then(c => wrapFunctional(c.default || c));
+const LoadersContent = () => __webpack_require__.e(/* import() | components/loaders-content */ 60).then(__webpack_require__.bind(null, 113)).then(c => wrapFunctional(c.default || c));
+const LoadersGoals = () => __webpack_require__.e(/* import() | components/loaders-goals */ 61).then(__webpack_require__.bind(null, 180)).then(c => wrapFunctional(c.default || c));
+const LoadersSongs = () => __webpack_require__.e(/* import() | components/loaders-songs */ 62).then(__webpack_require__.bind(null, 181)).then(c => wrapFunctional(c.default || c));
 const BlogSectionsRatings = () => __webpack_require__.e(/* import() | components/blog-sections-ratings */ 7).then(__webpack_require__.bind(null, 158)).then(c => wrapFunctional(c.default || c));
 const CardPost = () => __webpack_require__.e(/* import() | components/card-post */ 14).then(__webpack_require__.bind(null, 159)).then(c => wrapFunctional(c.default || c));
 const CardPostNormal = () => __webpack_require__.e(/* import() | components/card-post-normal */ 15).then(__webpack_require__.bind(null, 120)).then(c => wrapFunctional(c.default || c));
