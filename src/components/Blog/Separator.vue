@@ -23,24 +23,7 @@ export default Vue.extend({
 </script>
 
 <template>
-  <div>
     <hr class="separator" />
-  </div>
-<!--  <div-->
-<!--    class="notification flex flex-col md:(items-center flex-row) gap-x-4 gap-y-2"-->
-<!--    :class="type"-->
-<!--  >-->
-<!--    <span class="text-xl md:text-lg">{{ icon }}</span>-->
-
-<!--    <div>-->
-<!--      <h1 v-if="title">{{ title }}</h1>-->
-
-<!--      <p v-if="!!$slots.default">-->
-<!--        <slot />-->
-<!--      </p>-->
-<!--    </div>-->
-<!--  </div>-->
-
 </template>
 
 <style lang="scss" scoped>

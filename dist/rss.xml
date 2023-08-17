@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Asgarrrr's Blog</title>
+        <link>https://jeremycaruelle.com/blog</link>
+        <description> --- </description>
+        <lastBuildDate>Thu, 17 Aug 2023 09:31:21 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[Creating a Node.js and MongoDB-Based Authentication System — Enhancing Security and Scalability]]></title>
+            <link>https://jeremycaruelle.com/blog/test2</link>
+            <guid>https://jeremycaruelle.com/blog/test2</guid>
+            <pubDate>Thu, 27 Apr 2023 19:03:24 GMT</pubDate>
+            <description><![CDATA[Defending user data and preserving confidentiality is]]></description>
+            <enclosure url="https://jeremycaruelle.com/assets/images/posts/test2.jpg" length="0" type="image/jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[JavaScript Generators: A Powerful Approach to Flow Control and Iterations]]></title>
+            <link>https://jeremycaruelle.com/blog/javascript-generators-a-powerful-approach-to-flow-control-and-iterations</link>
+            <guid>https://jeremycaruelle.com/blog/javascript-generators-a-powerful-approach-to-flow-control-and-iterations</guid>
+            <pubDate>Wed, 20 Jul 2022 19:03:24 GMT</pubDate>
+            <description><![CDATA[Explore the power of JavaScript generators for enhanced flow control and iteration, offering precise control and efficient code execution...]]></description>
+            <enclosure url="https://jeremycaruelle.com/assets/images/posts/javascript-generators-a-powerful-approach-to-flow-control-and-iterations.jpg" length="0" type="image/jpg"/>
+        </item>
+    </channel>
+</rss>
