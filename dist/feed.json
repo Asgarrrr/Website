@@ -12,6 +12,20 @@
             "date_modified": "2022-07-20T19:03:24.368Z"
         },
         {
+            "url": "https://jeremycaruelle.com/blog/naming-things-in-code",
+            "title": "x, temp & foo : Naming Things in Code",
+            "summary": "Finding the right name for a variable, a function or a class is hard, one of the hardest things in programming...",
+            "image": "https://jeremycaruelle.com/assets/images/posts/naming-things-in-code.jpg",
+            "date_modified": "2023-04-27T19:03:24.368Z"
+        },
+        {
+            "url": "https://jeremycaruelle.com/blog/premature_optimization",
+            "title": "Premature Optimization",
+            "summary": "Premature optimization is the root of all evil - Donald Knuth",
+            "image": "https://jeremycaruelle.com/assets/images/posts/premature_optimization.jpg",
+            "date_modified": "2023-04-27T19:03:24.368Z"
+        },
+        {
             "url": "https://jeremycaruelle.com/blog/test2",
             "title": "Creating a Node.js and MongoDB-Based Authentication System — Enhancing Security and Scalability",
             "summary": "Defending user data and preserving confidentiality is",

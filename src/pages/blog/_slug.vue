@@ -193,7 +193,7 @@ export default Vue.extend({
 
           <div class="space-y-4">
 
-            <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 dark:text-white/30 text-black/50 sm:text-sm">
+            <div class="flex flex-wrap flex-col items-center justify-center gap-x-6 gap-y-2 dark:text-white/30 text-black/50 sm:text-sm">
 
               <div class="flex items-center space-x-2 mb-4" v-for="tag in getTags">
                 <i class="">
@@ -201,9 +201,9 @@ export default Vue.extend({
                 </i>
               </div>
 
-              <div class="space-y-8 mb-8">
+              <div class="space-y-8 mb-8 min-w-full">
 
-                <h1 class="block mx-auto text-2xl font-bold text-black md:w-11/12 sm:text-4xl dark:text-white">
+                <h1 class="block mx-auto text-2xl font-bold text-black md:w-11/12 sm:text-4xl dark:text-white min-w-min min-w-full">
                   {{ post.title }}
                 </h1>
 
