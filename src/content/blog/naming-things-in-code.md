@@ -3,7 +3,7 @@ title       : 'x, temp & foo : Naming Things in Code'
 description : "Finding the right name for a variable, a function or a class is hard, one of the hardest things in programming..."
 tags        : []
 related     : []
-createdAt   : 2023-04-27T19:03:24.368Z
+createdAt   : 2023-06-27T19:03:24.368Z
 special     : false
 ---
 
