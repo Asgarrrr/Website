@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/", {data:[{_img:{"/_ipx/f_webp,fit_cover,s_600x600/assets/images/memoji.png":"\u002F_nuxt\u002Fimage\u002F293889.webp"}}],fetch:{},mutations:void 0});
