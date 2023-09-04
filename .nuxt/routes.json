@@ -1,0 +1,89 @@
+[
+  {
+    "name": "blog",
+    "path": "/blog",
+    "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\blog\\\\index.vue",
+    "chunkName": "pages/blog/index",
+    "url": "/blog",
+    "_name": "_181dacc1"
+  },
+  {
+    "name": "donate",
+    "path": "/donate",
+    "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\donate.vue",
+    "chunkName": "pages/donate",
+    "url": "/donate",
+    "_name": "_0e04e1a4"
+  },
+  {
+    "name": "projects",
+    "path": "/projects",
+    "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\projects\\\\index.vue",
+    "chunkName": "pages/projects/index",
+    "url": "/projects",
+    "_name": "_90e56f2e"
+  },
+  {
+    "name": "me-contact",
+    "path": "/me/contact",
+    "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\me\\\\contact.vue",
+    "chunkName": "pages/me/contact",
+    "url": "/me/contact",
+    "_name": "_b5c8394e"
+  },
+  {
+    "name": "me-repos",
+    "path": "/me/repos",
+    "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\me\\\\repos.vue",
+    "chunkName": "pages/me/repos",
+    "url": "/me/repos",
+    "_name": "_dc65e38c"
+  },
+  {
+    "name": "projects-abyss",
+    "path": "/projects/abyss",
+    "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\projects\\\\abyss\\\\index.vue",
+    "chunkName": "pages/projects/abyss/index",
+    "url": "/projects/abyss",
+    "_name": "_3b2b3433"
+  },
+  {
+    "name": "projects-luna",
+    "path": "/projects/luna",
+    "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\projects\\\\luna\\\\index.vue",
+    "chunkName": "pages/projects/luna/index",
+    "url": "/projects/luna",
+    "_name": "_94dc41a6"
+  },
+  {
+    "name": "projects-riftmaker",
+    "path": "/projects/riftmaker",
+    "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\projects\\\\riftmaker\\\\index.vue",
+    "chunkName": "pages/projects/riftmaker/index",
+    "url": "/projects/riftmaker",
+    "_name": "_cd701fe8"
+  },
+  {
+    "name": "projects-rogue",
+    "path": "/projects/rogue",
+    "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\projects\\\\rogue\\\\index.vue",
+    "chunkName": "pages/projects/rogue/index",
+    "url": "/projects/rogue",
+    "_name": "_55b629f1"
+  },
+  {
+    "name": "blog-slug",
+    "path": "/blog/:slug",
+    "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\blog\\\\_slug.vue",
+    "chunkName": "pages/blog/_slug",
+    "_name": "_16670b79"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "C:\\\\Users\\\\Asgarrrr\\\\Desktop\\\\test3432\\\\src\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "url": "/",
+    "_name": "_42e9203a"
+  }
+]
