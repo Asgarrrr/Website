@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/projects/luna", {data:[{_img:{"/_ipx/fit_cover/https://cdn.discordapp.com/attachments/883057183128969216/1111626523171110963/luna.png":"\u002F_nuxt\u002Fimage\u002F513d24.png"}}],fetch:{},mutations:void 0});
