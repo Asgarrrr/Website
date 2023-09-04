@@ -1,7 +1,7 @@
 exports.ids = [15,16,17,18,32,40,44];
 exports.modules = {
 
-/***/ 120:
+/***/ 121:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -115,12 +115,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Normal = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SmartImage: __webpack_require__(26).default,IconLink: __webpack_require__(89).default,SmartLink: __webpack_require__(16).default})
+installComponents(component, {SmartImage: __webpack_require__(26).default,IconLink: __webpack_require__(90).default,SmartLink: __webpack_require__(16).default})
 
 
 /***/ }),
 
-/***/ 121:
+/***/ 122:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -207,7 +207,7 @@ installComponents(component, {SmartImage: __webpack_require__(26).default,SmartL
 
 /***/ }),
 
-/***/ 122:
+/***/ 123:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -305,12 +305,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var TextTitle = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {IconFire: __webpack_require__(98).default,IconClock: __webpack_require__(97).default,SmartLink: __webpack_require__(16).default})
+installComponents(component, {IconFire: __webpack_require__(99).default,IconClock: __webpack_require__(98).default,SmartLink: __webpack_require__(16).default})
 
 
 /***/ }),
 
-/***/ 160:
+/***/ 161:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -412,12 +412,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Index = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {CardPostNormal: __webpack_require__(120).default,CardPostText: __webpack_require__(121).default,CardPostTextTitle: __webpack_require__(122).default})
+installComponents(component, {CardPostNormal: __webpack_require__(121).default,CardPostText: __webpack_require__(122).default,CardPostTextTitle: __webpack_require__(123).default})
 
 
 /***/ }),
 
-/***/ 89:
+/***/ 90:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -466,7 +466,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 97:
+/***/ 98:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -515,7 +515,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 98:
+/***/ 99:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

@@ -37,7 +37,7 @@ export default Vue.extend({
     <div class="relative z-10">
       <span class="text-gray-800 sm:text-xl dark:text-white">
         <em>
-           {{ quote }}
+           <slot />
         </em>
       </span>
     </div>

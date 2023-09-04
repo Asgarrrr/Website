@@ -1,7 +1,7 @@
 exports.ids = [18,32,40];
 exports.modules = {
 
-/***/ 122:
+/***/ 123:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -99,12 +99,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var TextTitle = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {IconFire: __webpack_require__(98).default,IconClock: __webpack_require__(97).default,SmartLink: __webpack_require__(16).default})
+installComponents(component, {IconFire: __webpack_require__(99).default,IconClock: __webpack_require__(98).default,SmartLink: __webpack_require__(16).default})
 
 
 /***/ }),
 
-/***/ 97:
+/***/ 98:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -153,7 +153,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 98:
+/***/ 99:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

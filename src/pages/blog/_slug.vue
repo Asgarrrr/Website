@@ -9,6 +9,7 @@ import 'prismjs/components/prism-markup.js'
 import 'prismjs/components/prism-css.js'
 import 'prismjs/components/prism-python.js'
 import 'prismjs/components/prism-json.js'
+import 'prismjs/components/prism-csharp.js'
 
 import Vue from "vue"
 /* Interfaces */

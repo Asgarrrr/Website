@@ -4,7 +4,7 @@
         <title>Asgarrrr's Blog</title>
         <link>https://jeremycaruelle.com/blog</link>
         <description> --- </description>
-        <lastBuildDate>Sat, 02 Sep 2023 16:57:25 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 04 Sep 2023 00:17:24 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
@@ -19,17 +19,9 @@
             <title><![CDATA[x, temp & foo : Naming Things in Code]]></title>
             <link>https://jeremycaruelle.com/blog/naming-things-in-code</link>
             <guid>https://jeremycaruelle.com/blog/naming-things-in-code</guid>
-            <pubDate>Thu, 27 Apr 2023 19:03:24 GMT</pubDate>
+            <pubDate>Sat, 02 Sep 2023 01:17:36 GMT</pubDate>
             <description><![CDATA[Finding the right name for a variable, a function or a class is hard, one of the hardest things in programming...]]></description>
             <enclosure url="https://jeremycaruelle.com/assets/images/posts/naming-things-in-code.jpg" length="0" type="image/jpg"/>
-        </item>
-        <item>
-            <title><![CDATA[Premature Optimization]]></title>
-            <link>https://jeremycaruelle.com/blog/premature_optimization</link>
-            <guid>https://jeremycaruelle.com/blog/premature_optimization</guid>
-            <pubDate>Thu, 27 Apr 2023 19:03:24 GMT</pubDate>
-            <description><![CDATA[Premature optimization is the root of all evil - Donald Knuth]]></description>
-            <enclosure url="https://jeremycaruelle.com/assets/images/posts/premature_optimization.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Creating a Node.js and MongoDB-Based Authentication System — Enhancing Security and Scalability]]></title>

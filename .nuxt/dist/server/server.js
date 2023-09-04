@@ -2055,15 +2055,15 @@ __webpack_require__.d(components_namespaceObject, "LoadersBlog", function() { re
 __webpack_require__.d(components_namespaceObject, "LoadersContent", function() { return LoadersContent; });
 __webpack_require__.d(components_namespaceObject, "LoadersGoals", function() { return LoadersGoals; });
 __webpack_require__.d(components_namespaceObject, "LoadersSongs", function() { return LoadersSongs; });
-__webpack_require__.d(components_namespaceObject, "SmartFigure", function() { return SmartFigure; });
-__webpack_require__.d(components_namespaceObject, "SmartImage", function() { return SmartImage; });
-__webpack_require__.d(components_namespaceObject, "SmartLink", function() { return SmartLink; });
 __webpack_require__.d(components_namespaceObject, "SkeletonLoaderIframe", function() { return SkeletonLoaderIframe; });
 __webpack_require__.d(components_namespaceObject, "SkeletonLoader", function() { return SkeletonLoader; });
 __webpack_require__.d(components_namespaceObject, "SkeletonLoaderLastfm", function() { return SkeletonLoaderLastfm; });
 __webpack_require__.d(components_namespaceObject, "SkeletonLoaderRepository", function() { return SkeletonLoaderRepository; });
 __webpack_require__.d(components_namespaceObject, "SkeletonLoaderSong", function() { return SkeletonLoaderSong; });
 __webpack_require__.d(components_namespaceObject, "SkeletonLoaderSpinner", function() { return SkeletonLoaderSpinner; });
+__webpack_require__.d(components_namespaceObject, "SmartFigure", function() { return SmartFigure; });
+__webpack_require__.d(components_namespaceObject, "SmartImage", function() { return SmartImage; });
+__webpack_require__.d(components_namespaceObject, "SmartLink", function() { return SmartLink; });
 __webpack_require__.d(components_namespaceObject, "BlogSectionsRatings", function() { return BlogSectionsRatings; });
 __webpack_require__.d(components_namespaceObject, "CardPost", function() { return CardPost; });
 __webpack_require__.d(components_namespaceObject, "CardPostNormal", function() { return CardPostNormal; });
@@ -2789,17 +2789,17 @@ function shouldScrollToTop(route) {
 
 
 
-const _181dacc1 = () => interopDefault(__webpack_require__.e(/* import() | pages/blog/index */ 73).then(__webpack_require__.bind(null, 142)));
-const _0e04e1a4 = () => interopDefault(__webpack_require__.e(/* import() | pages/donate */ 74).then(__webpack_require__.bind(null, 143)));
-const _90e56f2e = () => interopDefault(__webpack_require__.e(/* import() | pages/projects/index */ 79).then(__webpack_require__.bind(null, 144)));
-const _b5c8394e = () => interopDefault(__webpack_require__.e(/* import() | pages/me/contact */ 76).then(__webpack_require__.bind(null, 145)));
-const _dc65e38c = () => interopDefault(__webpack_require__.e(/* import() | pages/me/repos */ 77).then(__webpack_require__.bind(null, 146)));
-const _3b2b3433 = () => interopDefault(__webpack_require__.e(/* import() | pages/projects/abyss/index */ 78).then(__webpack_require__.bind(null, 147)));
-const _94dc41a6 = () => interopDefault(__webpack_require__.e(/* import() | pages/projects/luna/index */ 80).then(__webpack_require__.bind(null, 148)));
-const _cd701fe8 = () => interopDefault(__webpack_require__.e(/* import() | pages/projects/riftmaker/index */ 81).then(__webpack_require__.bind(null, 149)));
-const _55b629f1 = () => interopDefault(__webpack_require__.e(/* import() | pages/projects/rogue/index */ 82).then(__webpack_require__.bind(null, 150)));
-const _16670b79 = () => interopDefault(__webpack_require__.e(/* import() | pages/blog/_slug */ 72).then(__webpack_require__.bind(null, 151)));
-const _42e9203a = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 75).then(__webpack_require__.bind(null, 152)));
+const _181dacc1 = () => interopDefault(__webpack_require__.e(/* import() | pages/blog/index */ 73).then(__webpack_require__.bind(null, 143)));
+const _0e04e1a4 = () => interopDefault(__webpack_require__.e(/* import() | pages/donate */ 74).then(__webpack_require__.bind(null, 144)));
+const _90e56f2e = () => interopDefault(__webpack_require__.e(/* import() | pages/projects/index */ 79).then(__webpack_require__.bind(null, 145)));
+const _b5c8394e = () => interopDefault(__webpack_require__.e(/* import() | pages/me/contact */ 76).then(__webpack_require__.bind(null, 146)));
+const _dc65e38c = () => interopDefault(__webpack_require__.e(/* import() | pages/me/repos */ 77).then(__webpack_require__.bind(null, 147)));
+const _3b2b3433 = () => interopDefault(__webpack_require__.e(/* import() | pages/projects/abyss/index */ 78).then(__webpack_require__.bind(null, 148)));
+const _94dc41a6 = () => interopDefault(__webpack_require__.e(/* import() | pages/projects/luna/index */ 80).then(__webpack_require__.bind(null, 149)));
+const _cd701fe8 = () => interopDefault(__webpack_require__.e(/* import() | pages/projects/riftmaker/index */ 81).then(__webpack_require__.bind(null, 150)));
+const _55b629f1 = () => interopDefault(__webpack_require__.e(/* import() | pages/projects/rogue/index */ 82).then(__webpack_require__.bind(null, 151)));
+const _16670b79 = () => interopDefault(__webpack_require__.e(/* import() | pages/blog/_slug */ 72).then(__webpack_require__.bind(null, 152)));
+const _42e9203a = () => interopDefault(__webpack_require__.e(/* import() | pages/index */ 75).then(__webpack_require__.bind(null, 153)));
 
 const emptyFn = () => {};
 external_vue_default.a.use(external_vue_router_default.a);
@@ -3759,85 +3759,85 @@ const layouts = {
 // CONCATENATED MODULE: ./.nuxt/components/index.js
 const Button = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 8)).then(c => wrapFunctional(c.default || c));
 const ColorSwitcher = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 20)).then(c => wrapFunctional(c.default || c));
-const Fire = () => __webpack_require__.e(/* import() | components/fire */ 23).then(__webpack_require__.bind(null, 85)).then(c => wrapFunctional(c.default || c));
+const Fire = () => __webpack_require__.e(/* import() | components/fire */ 23).then(__webpack_require__.bind(null, 86)).then(c => wrapFunctional(c.default || c));
 const GoTop = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 44)).then(c => wrapFunctional(c.default || c));
-const Kbd = () => __webpack_require__.e(/* import() | components/kbd */ 59).then(__webpack_require__.bind(null, 141)).then(c => wrapFunctional(c.default || c));
+const Kbd = () => __webpack_require__.e(/* import() | components/kbd */ 59).then(__webpack_require__.bind(null, 142)).then(c => wrapFunctional(c.default || c));
 const Navbar = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 42)).then(c => wrapFunctional(c.default || c));
 const OmnibarButton = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 43)).then(c => wrapFunctional(c.default || c));
-const PageLayout = () => __webpack_require__.e(/* import() | components/page-layout */ 64).then(__webpack_require__.bind(null, 77)).then(c => wrapFunctional(c.default || c));
-const SponsorPopup = () => __webpack_require__.e(/* import() | components/sponsor-popup */ 70).then(__webpack_require__.bind(null, 153)).then(c => wrapFunctional(c.default || c));
-const Status = () => __webpack_require__.e(/* import() | components/status */ 71).then(__webpack_require__.bind(null, 116)).then(c => wrapFunctional(c.default || c));
+const PageLayout = () => __webpack_require__.e(/* import() | components/page-layout */ 64).then(__webpack_require__.bind(null, 78)).then(c => wrapFunctional(c.default || c));
+const SponsorPopup = () => __webpack_require__.e(/* import() | components/sponsor-popup */ 70).then(__webpack_require__.bind(null, 154)).then(c => wrapFunctional(c.default || c));
+const Status = () => __webpack_require__.e(/* import() | components/status */ 71).then(__webpack_require__.bind(null, 117)).then(c => wrapFunctional(c.default || c));
 const Title = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 27)).then(c => wrapFunctional(c.default || c));
-const BlogImageContainer = () => __webpack_require__.e(/* import() | components/blog-image-container */ 2).then(__webpack_require__.bind(null, 161)).then(c => wrapFunctional(c.default || c));
-const BlogNotification = () => __webpack_require__.e(/* import() | components/blog-notification */ 3).then(__webpack_require__.bind(null, 111)).then(c => wrapFunctional(c.default || c));
-const BlogPrevNext = () => __webpack_require__.e(/* import() | components/blog-prev-next */ 4).then(__webpack_require__.bind(null, 115)).then(c => wrapFunctional(c.default || c));
-const BlogQuote = () => __webpack_require__.e(/* import() | components/blog-quote */ 5).then(__webpack_require__.bind(null, 154)).then(c => wrapFunctional(c.default || c));
-const BlogRating = () => __webpack_require__.e(/* import() | components/blog-rating */ 6).then(__webpack_require__.bind(null, 119)).then(c => wrapFunctional(c.default || c));
-const BlogReadingIndicator = () => __webpack_require__.e(/* import() | components/blog-reading-indicator */ 7).then(__webpack_require__.bind(null, 114)).then(c => wrapFunctional(c.default || c));
-const BlogSeparator = () => __webpack_require__.e(/* import() | components/blog-separator */ 9).then(__webpack_require__.bind(null, 155)).then(c => wrapFunctional(c.default || c));
-const BlogShare = () => __webpack_require__.e(/* import() | components/blog-share */ 10).then(__webpack_require__.bind(null, 156)).then(c => wrapFunctional(c.default || c));
-const BlogTableOfContents = () => __webpack_require__.e(/* import() | components/blog-table-of-contents */ 11).then(__webpack_require__.bind(null, 157)).then(c => wrapFunctional(c.default || c));
-const CardExperience = () => __webpack_require__.e(/* import() | components/card-experience */ 13).then(__webpack_require__.bind(null, 117)).then(c => wrapFunctional(c.default || c));
-const Card = () => __webpack_require__.e(/* import() | components/card */ 12).then(__webpack_require__.bind(null, 92)).then(c => wrapFunctional(c.default || c));
-const CardLastFm = () => __webpack_require__.e(/* import() | components/card-last-fm */ 14).then(__webpack_require__.bind(null, 93)).then(c => wrapFunctional(c.default || c));
-const CardRepository = () => __webpack_require__.e(/* import() | components/card-repository */ 19).then(__webpack_require__.bind(null, 112)).then(c => wrapFunctional(c.default || c));
-const CardSkill = () => __webpack_require__.e(/* import() | components/card-skill */ 20).then(__webpack_require__.bind(null, 118)).then(c => wrapFunctional(c.default || c));
-const CardSong = () => __webpack_require__.e(/* import() | components/card-song */ 21).then(__webpack_require__.bind(null, 158)).then(c => wrapFunctional(c.default || c));
-const CardSponsor = () => __webpack_require__.e(/* import() | components/card-sponsor */ 22).then(__webpack_require__.bind(null, 110)).then(c => wrapFunctional(c.default || c));
-const IconAcademicHat = () => __webpack_require__.e(/* import() | components/icon-academic-hat */ 24).then(__webpack_require__.bind(null, 162)).then(c => wrapFunctional(c.default || c));
-const IconAt = () => __webpack_require__.e(/* import() | components/icon-at */ 25).then(__webpack_require__.bind(null, 123)).then(c => wrapFunctional(c.default || c));
-const IconBranch = () => __webpack_require__.e(/* import() | components/icon-branch */ 27).then(__webpack_require__.bind(null, 163)).then(c => wrapFunctional(c.default || c));
-const IconBrand = () => __webpack_require__.e(/* import() | components/icon-brand */ 28).then(__webpack_require__.bind(null, 82)).then(c => wrapFunctional(c.default || c));
-const IconCalendar = () => __webpack_require__.e(/* import() | components/icon-calendar */ 29).then(__webpack_require__.bind(null, 95)).then(c => wrapFunctional(c.default || c));
-const IconChannel = () => __webpack_require__.e(/* import() | components/icon-channel */ 30).then(__webpack_require__.bind(null, 94)).then(c => wrapFunctional(c.default || c));
-const IconCheck = () => __webpack_require__.e(/* import() | components/icon-check */ 31).then(__webpack_require__.bind(null, 128)).then(c => wrapFunctional(c.default || c));
+const BlogImageContainer = () => __webpack_require__.e(/* import() | components/blog-image-container */ 2).then(__webpack_require__.bind(null, 162)).then(c => wrapFunctional(c.default || c));
+const BlogNotification = () => __webpack_require__.e(/* import() | components/blog-notification */ 3).then(__webpack_require__.bind(null, 112)).then(c => wrapFunctional(c.default || c));
+const BlogPrevNext = () => __webpack_require__.e(/* import() | components/blog-prev-next */ 4).then(__webpack_require__.bind(null, 116)).then(c => wrapFunctional(c.default || c));
+const BlogQuote = () => __webpack_require__.e(/* import() | components/blog-quote */ 5).then(__webpack_require__.bind(null, 155)).then(c => wrapFunctional(c.default || c));
+const BlogRating = () => __webpack_require__.e(/* import() | components/blog-rating */ 6).then(__webpack_require__.bind(null, 120)).then(c => wrapFunctional(c.default || c));
+const BlogReadingIndicator = () => __webpack_require__.e(/* import() | components/blog-reading-indicator */ 7).then(__webpack_require__.bind(null, 115)).then(c => wrapFunctional(c.default || c));
+const BlogSeparator = () => __webpack_require__.e(/* import() | components/blog-separator */ 9).then(__webpack_require__.bind(null, 156)).then(c => wrapFunctional(c.default || c));
+const BlogShare = () => __webpack_require__.e(/* import() | components/blog-share */ 10).then(__webpack_require__.bind(null, 157)).then(c => wrapFunctional(c.default || c));
+const BlogTableOfContents = () => __webpack_require__.e(/* import() | components/blog-table-of-contents */ 11).then(__webpack_require__.bind(null, 158)).then(c => wrapFunctional(c.default || c));
+const CardExperience = () => __webpack_require__.e(/* import() | components/card-experience */ 13).then(__webpack_require__.bind(null, 118)).then(c => wrapFunctional(c.default || c));
+const Card = () => __webpack_require__.e(/* import() | components/card */ 12).then(__webpack_require__.bind(null, 93)).then(c => wrapFunctional(c.default || c));
+const CardLastFm = () => __webpack_require__.e(/* import() | components/card-last-fm */ 14).then(__webpack_require__.bind(null, 94)).then(c => wrapFunctional(c.default || c));
+const CardRepository = () => __webpack_require__.e(/* import() | components/card-repository */ 19).then(__webpack_require__.bind(null, 113)).then(c => wrapFunctional(c.default || c));
+const CardSkill = () => __webpack_require__.e(/* import() | components/card-skill */ 20).then(__webpack_require__.bind(null, 119)).then(c => wrapFunctional(c.default || c));
+const CardSong = () => __webpack_require__.e(/* import() | components/card-song */ 21).then(__webpack_require__.bind(null, 159)).then(c => wrapFunctional(c.default || c));
+const CardSponsor = () => __webpack_require__.e(/* import() | components/card-sponsor */ 22).then(__webpack_require__.bind(null, 111)).then(c => wrapFunctional(c.default || c));
+const IconAcademicHat = () => __webpack_require__.e(/* import() | components/icon-academic-hat */ 24).then(__webpack_require__.bind(null, 163)).then(c => wrapFunctional(c.default || c));
+const IconAt = () => __webpack_require__.e(/* import() | components/icon-at */ 25).then(__webpack_require__.bind(null, 124)).then(c => wrapFunctional(c.default || c));
+const IconBranch = () => __webpack_require__.e(/* import() | components/icon-branch */ 27).then(__webpack_require__.bind(null, 164)).then(c => wrapFunctional(c.default || c));
+const IconBrand = () => __webpack_require__.e(/* import() | components/icon-brand */ 28).then(__webpack_require__.bind(null, 83)).then(c => wrapFunctional(c.default || c));
+const IconCalendar = () => __webpack_require__.e(/* import() | components/icon-calendar */ 29).then(__webpack_require__.bind(null, 96)).then(c => wrapFunctional(c.default || c));
+const IconChannel = () => __webpack_require__.e(/* import() | components/icon-channel */ 30).then(__webpack_require__.bind(null, 95)).then(c => wrapFunctional(c.default || c));
+const IconCheck = () => __webpack_require__.e(/* import() | components/icon-check */ 31).then(__webpack_require__.bind(null, 129)).then(c => wrapFunctional(c.default || c));
 const IconChevron = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 28)).then(c => wrapFunctional(c.default || c));
-const IconClock = () => __webpack_require__.e(/* import() | components/icon-clock */ 32).then(__webpack_require__.bind(null, 97)).then(c => wrapFunctional(c.default || c));
-const IconCog = () => __webpack_require__.e(/* import() | components/icon-cog */ 33).then(__webpack_require__.bind(null, 164)).then(c => wrapFunctional(c.default || c));
-const IconDev = () => __webpack_require__.e(/* import() | components/icon-dev */ 34).then(__webpack_require__.bind(null, 87)).then(c => wrapFunctional(c.default || c));
-const IconDocument = () => __webpack_require__.e(/* import() | components/icon-document */ 35).then(__webpack_require__.bind(null, 125)).then(c => wrapFunctional(c.default || c));
-const IconDollar = () => __webpack_require__.e(/* import() | components/icon-dollar */ 36).then(__webpack_require__.bind(null, 165)).then(c => wrapFunctional(c.default || c));
-const IconEllipsis = () => __webpack_require__.e(/* import() | components/icon-ellipsis */ 37).then(__webpack_require__.bind(null, 126)).then(c => wrapFunctional(c.default || c));
-const IconExclamation = () => __webpack_require__.e(/* import() | components/icon-exclamation */ 38).then(__webpack_require__.bind(null, 166)).then(c => wrapFunctional(c.default || c));
-const IconEye = () => __webpack_require__.e(/* import() | components/icon-eye */ 39).then(__webpack_require__.bind(null, 124)).then(c => wrapFunctional(c.default || c));
-const IconFire = () => __webpack_require__.e(/* import() | components/icon-fire */ 40).then(__webpack_require__.bind(null, 98)).then(c => wrapFunctional(c.default || c));
-const IconFork = () => __webpack_require__.e(/* import() | components/icon-fork */ 41).then(__webpack_require__.bind(null, 167)).then(c => wrapFunctional(c.default || c));
-const IconHome = () => __webpack_require__.e(/* import() | components/icon-home */ 42).then(__webpack_require__.bind(null, 168)).then(c => wrapFunctional(c.default || c));
-const IconBack = () => __webpack_require__.e(/* import() | components/icon-back */ 26).then(__webpack_require__.bind(null, 169)).then(c => wrapFunctional(c.default || c));
-const IconInbox = () => __webpack_require__.e(/* import() | components/icon-inbox */ 43).then(__webpack_require__.bind(null, 170)).then(c => wrapFunctional(c.default || c));
-const IconLink = () => __webpack_require__.e(/* import() | components/icon-link */ 44).then(__webpack_require__.bind(null, 89)).then(c => wrapFunctional(c.default || c));
-const IconMenu = () => __webpack_require__.e(/* import() | components/icon-menu */ 45).then(__webpack_require__.bind(null, 171)).then(c => wrapFunctional(c.default || c));
-const IconMoon = () => __webpack_require__.e(/* import() | components/icon-moon */ 46).then(__webpack_require__.bind(null, 172)).then(c => wrapFunctional(c.default || c));
-const IconMusicNote = () => __webpack_require__.e(/* import() | components/icon-music-note */ 47).then(__webpack_require__.bind(null, 173)).then(c => wrapFunctional(c.default || c));
-const IconPlay = () => __webpack_require__.e(/* import() | components/icon-play */ 48).then(__webpack_require__.bind(null, 88)).then(c => wrapFunctional(c.default || c));
-const IconPlus = () => __webpack_require__.e(/* import() | components/icon-plus */ 49).then(__webpack_require__.bind(null, 96)).then(c => wrapFunctional(c.default || c));
-const IconQuestion = () => __webpack_require__.e(/* import() | components/icon-question */ 50).then(__webpack_require__.bind(null, 174)).then(c => wrapFunctional(c.default || c));
-const IconSearch = () => __webpack_require__.e(/* import() | components/icon-search */ 51).then(__webpack_require__.bind(null, 175)).then(c => wrapFunctional(c.default || c));
-const IconStar = () => __webpack_require__.e(/* import() | components/icon-star */ 52).then(__webpack_require__.bind(null, 86)).then(c => wrapFunctional(c.default || c));
-const IconStop = () => __webpack_require__.e(/* import() | components/icon-stop */ 53).then(__webpack_require__.bind(null, 176)).then(c => wrapFunctional(c.default || c));
-const IconSun = () => __webpack_require__.e(/* import() | components/icon-sun */ 54).then(__webpack_require__.bind(null, 177)).then(c => wrapFunctional(c.default || c));
-const IconSync = () => __webpack_require__.e(/* import() | components/icon-sync */ 55).then(__webpack_require__.bind(null, 178)).then(c => wrapFunctional(c.default || c));
-const IconTag = () => __webpack_require__.e(/* import() | components/icon-tag */ 56).then(__webpack_require__.bind(null, 179)).then(c => wrapFunctional(c.default || c));
-const IconTimes = () => __webpack_require__.e(/* import() | components/icon-times */ 57).then(__webpack_require__.bind(null, 180)).then(c => wrapFunctional(c.default || c));
-const IconX = () => __webpack_require__.e(/* import() | components/icon-x */ 58).then(__webpack_require__.bind(null, 127)).then(c => wrapFunctional(c.default || c));
-const LoadersBlog = () => __webpack_require__.e(/* import() | components/loaders-blog */ 60).then(__webpack_require__.bind(null, 109)).then(c => wrapFunctional(c.default || c));
-const LoadersContent = () => __webpack_require__.e(/* import() | components/loaders-content */ 61).then(__webpack_require__.bind(null, 113)).then(c => wrapFunctional(c.default || c));
-const LoadersGoals = () => __webpack_require__.e(/* import() | components/loaders-goals */ 62).then(__webpack_require__.bind(null, 181)).then(c => wrapFunctional(c.default || c));
-const LoadersSongs = () => __webpack_require__.e(/* import() | components/loaders-songs */ 63).then(__webpack_require__.bind(null, 182)).then(c => wrapFunctional(c.default || c));
-const SmartFigure = () => __webpack_require__.e(/* import() | components/smart-figure */ 69).then(__webpack_require__.bind(null, 80)).then(c => wrapFunctional(c.default || c));
+const IconClock = () => __webpack_require__.e(/* import() | components/icon-clock */ 32).then(__webpack_require__.bind(null, 98)).then(c => wrapFunctional(c.default || c));
+const IconCog = () => __webpack_require__.e(/* import() | components/icon-cog */ 33).then(__webpack_require__.bind(null, 165)).then(c => wrapFunctional(c.default || c));
+const IconDev = () => __webpack_require__.e(/* import() | components/icon-dev */ 34).then(__webpack_require__.bind(null, 88)).then(c => wrapFunctional(c.default || c));
+const IconDocument = () => __webpack_require__.e(/* import() | components/icon-document */ 35).then(__webpack_require__.bind(null, 126)).then(c => wrapFunctional(c.default || c));
+const IconDollar = () => __webpack_require__.e(/* import() | components/icon-dollar */ 36).then(__webpack_require__.bind(null, 166)).then(c => wrapFunctional(c.default || c));
+const IconEllipsis = () => __webpack_require__.e(/* import() | components/icon-ellipsis */ 37).then(__webpack_require__.bind(null, 127)).then(c => wrapFunctional(c.default || c));
+const IconExclamation = () => __webpack_require__.e(/* import() | components/icon-exclamation */ 38).then(__webpack_require__.bind(null, 167)).then(c => wrapFunctional(c.default || c));
+const IconEye = () => __webpack_require__.e(/* import() | components/icon-eye */ 39).then(__webpack_require__.bind(null, 125)).then(c => wrapFunctional(c.default || c));
+const IconFire = () => __webpack_require__.e(/* import() | components/icon-fire */ 40).then(__webpack_require__.bind(null, 99)).then(c => wrapFunctional(c.default || c));
+const IconFork = () => __webpack_require__.e(/* import() | components/icon-fork */ 41).then(__webpack_require__.bind(null, 168)).then(c => wrapFunctional(c.default || c));
+const IconHome = () => __webpack_require__.e(/* import() | components/icon-home */ 42).then(__webpack_require__.bind(null, 169)).then(c => wrapFunctional(c.default || c));
+const IconBack = () => __webpack_require__.e(/* import() | components/icon-back */ 26).then(__webpack_require__.bind(null, 170)).then(c => wrapFunctional(c.default || c));
+const IconInbox = () => __webpack_require__.e(/* import() | components/icon-inbox */ 43).then(__webpack_require__.bind(null, 171)).then(c => wrapFunctional(c.default || c));
+const IconLink = () => __webpack_require__.e(/* import() | components/icon-link */ 44).then(__webpack_require__.bind(null, 90)).then(c => wrapFunctional(c.default || c));
+const IconMenu = () => __webpack_require__.e(/* import() | components/icon-menu */ 45).then(__webpack_require__.bind(null, 172)).then(c => wrapFunctional(c.default || c));
+const IconMoon = () => __webpack_require__.e(/* import() | components/icon-moon */ 46).then(__webpack_require__.bind(null, 173)).then(c => wrapFunctional(c.default || c));
+const IconMusicNote = () => __webpack_require__.e(/* import() | components/icon-music-note */ 47).then(__webpack_require__.bind(null, 174)).then(c => wrapFunctional(c.default || c));
+const IconPlay = () => __webpack_require__.e(/* import() | components/icon-play */ 48).then(__webpack_require__.bind(null, 89)).then(c => wrapFunctional(c.default || c));
+const IconPlus = () => __webpack_require__.e(/* import() | components/icon-plus */ 49).then(__webpack_require__.bind(null, 97)).then(c => wrapFunctional(c.default || c));
+const IconQuestion = () => __webpack_require__.e(/* import() | components/icon-question */ 50).then(__webpack_require__.bind(null, 175)).then(c => wrapFunctional(c.default || c));
+const IconSearch = () => __webpack_require__.e(/* import() | components/icon-search */ 51).then(__webpack_require__.bind(null, 176)).then(c => wrapFunctional(c.default || c));
+const IconStar = () => __webpack_require__.e(/* import() | components/icon-star */ 52).then(__webpack_require__.bind(null, 87)).then(c => wrapFunctional(c.default || c));
+const IconStop = () => __webpack_require__.e(/* import() | components/icon-stop */ 53).then(__webpack_require__.bind(null, 177)).then(c => wrapFunctional(c.default || c));
+const IconSun = () => __webpack_require__.e(/* import() | components/icon-sun */ 54).then(__webpack_require__.bind(null, 178)).then(c => wrapFunctional(c.default || c));
+const IconSync = () => __webpack_require__.e(/* import() | components/icon-sync */ 55).then(__webpack_require__.bind(null, 179)).then(c => wrapFunctional(c.default || c));
+const IconTag = () => __webpack_require__.e(/* import() | components/icon-tag */ 56).then(__webpack_require__.bind(null, 180)).then(c => wrapFunctional(c.default || c));
+const IconTimes = () => __webpack_require__.e(/* import() | components/icon-times */ 57).then(__webpack_require__.bind(null, 181)).then(c => wrapFunctional(c.default || c));
+const IconX = () => __webpack_require__.e(/* import() | components/icon-x */ 58).then(__webpack_require__.bind(null, 128)).then(c => wrapFunctional(c.default || c));
+const LoadersBlog = () => __webpack_require__.e(/* import() | components/loaders-blog */ 60).then(__webpack_require__.bind(null, 110)).then(c => wrapFunctional(c.default || c));
+const LoadersContent = () => __webpack_require__.e(/* import() | components/loaders-content */ 61).then(__webpack_require__.bind(null, 114)).then(c => wrapFunctional(c.default || c));
+const LoadersGoals = () => __webpack_require__.e(/* import() | components/loaders-goals */ 62).then(__webpack_require__.bind(null, 182)).then(c => wrapFunctional(c.default || c));
+const LoadersSongs = () => __webpack_require__.e(/* import() | components/loaders-songs */ 63).then(__webpack_require__.bind(null, 183)).then(c => wrapFunctional(c.default || c));
+const SkeletonLoaderIframe = () => __webpack_require__.e(/* import() | components/skeleton-loader-iframe */ 65).then(__webpack_require__.bind(null, 73)).then(c => wrapFunctional(c.default || c));
+const SkeletonLoader = () => __webpack_require__.e(/* import() | components/skeleton-loader */ 0).then(__webpack_require__.bind(null, 71)).then(c => wrapFunctional(c.default || c));
+const SkeletonLoaderLastfm = () => __webpack_require__.e(/* import() | components/skeleton-loader-lastfm */ 0).then(__webpack_require__.bind(null, 77)).then(c => wrapFunctional(c.default || c));
+const SkeletonLoaderRepository = () => __webpack_require__.e(/* import() | components/skeleton-loader-repository */ 66).then(__webpack_require__.bind(null, 74)).then(c => wrapFunctional(c.default || c));
+const SkeletonLoaderSong = () => __webpack_require__.e(/* import() | components/skeleton-loader-song */ 67).then(__webpack_require__.bind(null, 75)).then(c => wrapFunctional(c.default || c));
+const SkeletonLoaderSpinner = () => __webpack_require__.e(/* import() | components/skeleton-loader-spinner */ 68).then(__webpack_require__.bind(null, 76)).then(c => wrapFunctional(c.default || c));
+const SmartFigure = () => __webpack_require__.e(/* import() | components/smart-figure */ 69).then(__webpack_require__.bind(null, 81)).then(c => wrapFunctional(c.default || c));
 const SmartImage = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 26)).then(c => wrapFunctional(c.default || c));
 const SmartLink = () => Promise.resolve(/* import() */).then(__webpack_require__.bind(null, 16)).then(c => wrapFunctional(c.default || c));
-const SkeletonLoaderIframe = () => __webpack_require__.e(/* import() | components/skeleton-loader-iframe */ 65).then(__webpack_require__.bind(null, 72)).then(c => wrapFunctional(c.default || c));
-const SkeletonLoader = () => __webpack_require__.e(/* import() | components/skeleton-loader */ 0).then(__webpack_require__.bind(null, 70)).then(c => wrapFunctional(c.default || c));
-const SkeletonLoaderLastfm = () => __webpack_require__.e(/* import() | components/skeleton-loader-lastfm */ 0).then(__webpack_require__.bind(null, 76)).then(c => wrapFunctional(c.default || c));
-const SkeletonLoaderRepository = () => __webpack_require__.e(/* import() | components/skeleton-loader-repository */ 66).then(__webpack_require__.bind(null, 73)).then(c => wrapFunctional(c.default || c));
-const SkeletonLoaderSong = () => __webpack_require__.e(/* import() | components/skeleton-loader-song */ 67).then(__webpack_require__.bind(null, 74)).then(c => wrapFunctional(c.default || c));
-const SkeletonLoaderSpinner = () => __webpack_require__.e(/* import() | components/skeleton-loader-spinner */ 68).then(__webpack_require__.bind(null, 75)).then(c => wrapFunctional(c.default || c));
-const BlogSectionsRatings = () => __webpack_require__.e(/* import() | components/blog-sections-ratings */ 8).then(__webpack_require__.bind(null, 159)).then(c => wrapFunctional(c.default || c));
-const CardPost = () => __webpack_require__.e(/* import() | components/card-post */ 15).then(__webpack_require__.bind(null, 160)).then(c => wrapFunctional(c.default || c));
-const CardPostNormal = () => __webpack_require__.e(/* import() | components/card-post-normal */ 16).then(__webpack_require__.bind(null, 120)).then(c => wrapFunctional(c.default || c));
-const CardPostText = () => __webpack_require__.e(/* import() | components/card-post-text */ 17).then(__webpack_require__.bind(null, 121)).then(c => wrapFunctional(c.default || c));
-const CardPostTextTitle = () => __webpack_require__.e(/* import() | components/card-post-text-title */ 18).then(__webpack_require__.bind(null, 122)).then(c => wrapFunctional(c.default || c));
+const BlogSectionsRatings = () => __webpack_require__.e(/* import() | components/blog-sections-ratings */ 8).then(__webpack_require__.bind(null, 160)).then(c => wrapFunctional(c.default || c));
+const CardPost = () => __webpack_require__.e(/* import() | components/card-post */ 15).then(__webpack_require__.bind(null, 161)).then(c => wrapFunctional(c.default || c));
+const CardPostNormal = () => __webpack_require__.e(/* import() | components/card-post-normal */ 16).then(__webpack_require__.bind(null, 121)).then(c => wrapFunctional(c.default || c));
+const CardPostText = () => __webpack_require__.e(/* import() | components/card-post-text */ 17).then(__webpack_require__.bind(null, 122)).then(c => wrapFunctional(c.default || c));
+const CardPostTextTitle = () => __webpack_require__.e(/* import() | components/card-post-text-title */ 18).then(__webpack_require__.bind(null, 123)).then(c => wrapFunctional(c.default || c));
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {
@@ -4409,7 +4409,7 @@ async function imageMeta(ctx, url) {
 }
 async function _imageMeta(url) {
   if (true) {
-    const imageMeta2 = await Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, 69, 7)).then(r => r.default || r);
+    const imageMeta2 = await Promise.resolve(/* import() */).then(__webpack_require__.t.bind(null, 70, 7)).then(r => r.default || r);
     const data = await fetch(url).then(res => res.buffer());
     const metadata = imageMeta2(data);
     if (!metadata) {
@@ -6441,10 +6441,16 @@ module.exports = require("prismjs/components/prism-python.js");
 module.exports = require("prismjs/components/prism-json.js");
 
 /***/ }),
-/* 66 */,
+/* 66 */
+/***/ (function(module, exports) {
+
+module.exports = require("prismjs/components/prism-csharp.js");
+
+/***/ }),
 /* 67 */,
 /* 68 */,
-/* 69 */
+/* 69 */,
+/* 70 */
 /***/ (function(module, exports) {
 
 module.exports = require("image-meta");
