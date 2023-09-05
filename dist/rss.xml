@@ -4,7 +4,7 @@
         <title>Asgarrrr's Blog</title>
         <link>https://jeremycaruelle.com/blog</link>
         <description> --- </description>
-        <lastBuildDate>Mon, 04 Sep 2023 00:17:24 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 05 Sep 2023 20:36:57 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <item>
@@ -30,6 +30,14 @@
             <pubDate>Thu, 27 Apr 2023 19:03:24 GMT</pubDate>
             <description><![CDATA[Defending user data and preserving confidentiality is]]></description>
             <enclosure url="https://jeremycaruelle.com/assets/images/posts/test2.jpg" length="0" type="image/jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Premature Optimization]]></title>
+            <link>https://jeremycaruelle.com/blog/premature_optimization</link>
+            <guid>https://jeremycaruelle.com/blog/premature_optimization</guid>
+            <pubDate>Tue, 05 Sep 2023 10:15:00 GMT</pubDate>
+            <description><![CDATA[Premature optimization can be tempting, but it often leads to code that's harder to maintain and understand.]]></description>
+            <enclosure url="https://jeremycaruelle.com/assets/images/posts/premature_optimization.jpg" length="0" type="image/jpg"/>
         </item>
     </channel>
 </rss>

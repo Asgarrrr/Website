@@ -24,6 +24,13 @@
             "summary": "Defending user data and preserving confidentiality is",
             "image": "https://jeremycaruelle.com/assets/images/posts/test2.jpg",
             "date_modified": "2023-04-27T19:03:24.368Z"
+        },
+        {
+            "url": "https://jeremycaruelle.com/blog/premature_optimization",
+            "title": "Premature Optimization",
+            "summary": "Premature optimization can be tempting, but it often leads to code that's harder to maintain and understand.",
+            "image": "https://jeremycaruelle.com/assets/images/posts/premature_optimization.jpg",
+            "date_modified": "2023-09-05T10:15:00.000Z"
         }
     ]
 }

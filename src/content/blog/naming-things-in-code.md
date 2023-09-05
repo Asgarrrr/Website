@@ -3,7 +3,7 @@ title       : 'x, temp & foo : Naming Things in Code'
 description : "Finding the right name for a variable, a function or a class is hard, one of the hardest things in programming..."
 header      : https://cdn.discordapp.com/attachments/1071595350437134456/1148012712434094221/andre-benz-JnB8Gio4GZo.jpg
 tags        : []
-related     : []
+related     : [ "premature-optimization" ]
 createdAt   : 2023-09-027T19:03:24.368Z
 special     : false
 ---
@@ -40,7 +40,7 @@ and then come back to where it's being used, and then try to understand what it'
 Check out this example:
 
 ```javascript
-function fp ( m, s, e ) { 
+function fp( m, s, e ) { 
   const o = []
       , c = []
       , h = ( a, b ) => Math.abs( a.x - b.x ) + Math.abs( a.y - b.y );
@@ -72,7 +72,7 @@ I intentionally picked a function that's not too complex, but it's still hard to
 Now, let's try to improve it by giving our variables meaningful names:
 
 ```javascript
-function findPathInMaze ( maze, start, end ) { 
+function findPathInMaze( maze, start, end ) { 
   const open = []
       , closed = []
       , heuristicCost = ( a, b ) => Math.abs( a.x - b.x ) + Math.abs( a.y - b.y );
@@ -182,3 +182,68 @@ class Renderer:
   def __init__ ( self, renderIntervalSeconds ):
     self.renderIntervalSeconds = renderIntervalSeconds
 ```
+
+### Choosing Descriptive Function and Class Names
+
+So far, we've talked about naming variables, but equally important is naming functions and classes. 
+Functions and classes are the building blocks of your code, and giving them clear,
+descriptive names can significantly improve code readability and maintainability.
+
+Consider this scenario: you have a function that calculates the average of a list of numbers. What would you name it?
+
+```python
+# Bad
+def calc_avg(nums):
+    # ...
+
+# Better
+def calculate_average(numbers):
+    # ...
+```
+
+In the "Bad" example, it's not immediately clear what the function does. In the "Better" example, the function's purpose is clear from the name itself.
+
+#### Avoid Generic Names
+
+Another common pitfall is using overly generic or vague names for functions and classes. Generic names can make your codebase confusing and hinder collaboration. For instance:
+
+```javascript
+// Not ideal
+function process( data ) {
+    // ...
+
+// Better
+function analyzeSensorData( sensorData ) {
+    // ...
+```
+
+The "process" function doesn't convey what it does with "data," whereas "analyzeSensorData" clearly indicates the function's purpose.
+
+#### Consistent Naming Conventions
+
+Maintaining consistency in naming conventions throughout your codebase is crucial. If you use camelCase for variables in one part of your code and snake_case in another, or if you mix different styles, it can make the code harder to read and understand.
+
+```python
+# Inconsistent
+def calculateAverage( numbers ):
+    # ...
+
+# Consistent
+def calculate_average( numbers ):
+    # ...
+```
+
+In the "Inconsistent" example, the naming style doesn't match the rest of the codebase, causing confusion. The "Consistent" example aligns with the established convention.
+
+#### Documentation
+
+Finally, don't underestimate the power of documentation. Even with clear names, providing documentation for complex functions or classes can greatly aid understanding, especially for other developers who may work on your code in the future. Use comments or docstrings to explain the purpose, inputs, and expected outputs of your functions and classes.
+
+## In Conclusion...
+
+...naming things in code is a crucial aspect of programming that impacts code readability, maintainability, and collaboration. By adhering to descriptive and consistent naming conventions for variables, functions, and classes, you can make your code more accessible to both others and your future self. Remember that code is read more often than it's written, so investing time in choosing good names is an investment in the long-term success of your project.
+
+<blog-notification icon="💜">
+  As programmers, our ability to communicate effectively through code is paramount. By following these guidelines and avoiding common naming pitfalls, you can ensure that your code speaks clearly and concisely to both collaborators and future maintainers, making the development process smoother and more efficient.
+</blog-notification>
+

@@ -196,8 +196,8 @@ export default Vue.extend({
 
             <div class="flex flex-wrap flex-col items-center justify-center gap-x-6 gap-y-2 dark:text-white/30 text-black/50 sm:text-sm">
 
-              <div class="flex items-center space-x-2 mb-4" v-for="tag in getTags">
-                <i class="">
+              <div class="flex items-center space-x-2 mb-4">
+                <i class=""  v-for="tag in getTags">
                   # {{ tag }}
                 </i>
               </div>
