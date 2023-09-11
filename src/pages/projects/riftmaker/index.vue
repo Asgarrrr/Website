@@ -153,6 +153,7 @@ export default Vue.extend({
             <p class="ml-4 border-l-3 border-transparent mb-4">
               Riftmaker features an in-game overlay that provides real-time information and recommendations without interrupting gameplay.
               This seamless integration ensures players can focus on the game while still benefiting from Riftmaker's insights and assistance.
+            </p>
           </li>
 
           <li>

@@ -246,6 +246,7 @@ export default Vue.extend({
 <!--          <BlogTableOfContents :toc="post.toc" />-->
 
           <NuxtContent :document="post" class="max-w-full prose prose-black dark:prose-light" />
+
         </div>
       </article>
 
@@ -302,6 +303,15 @@ export default Vue.extend({
 <style lang="scss">
 
 .nuxt-content {
+
+  p {
+    letter-spacing: 0.3px;
+    line-height: 1.9;
+    font-size: 18px
+  }
+
+
+
   .nuxt-content-highlight {
 
     @apply relative;

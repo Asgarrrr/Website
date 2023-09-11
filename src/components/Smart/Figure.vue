@@ -43,7 +43,7 @@ export default Vue.extend({
       :is="src.endsWith('.gif') ? 'img' : 'nuxt-img'"
       :src="src"
       :alt="alt || caption || 'image'"
-      loading="lazy" 
+      loading="lazy"
       draggable="false"
       fit="cover"
       class="object-cover w-full rounded-md"

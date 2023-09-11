@@ -1,4 +1,4 @@
-{
+export default {
   "publicPath": "",
   "all": [
     "empty.js"

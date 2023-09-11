@@ -146,6 +146,37 @@ export default Vue.extend({
   <div class="min-h-screen bg-gray-50 dark:bg-neutral-900">
     <Navbar class="pt-10" />
 
+
+<!--    If blog article -->
+
+    <div v-if="routeIsBlog" class="max-w-3xl mx-auto">
+      <div class="flex flex-col items-center">
+        <h1 class="text-4xl font-bold mb-4">{{ post.title }}</h1>
+
+        <div class="flex flex-row items-center gap-x-2">
+          <span class="text-black/50 dark:text-white/30 text-sm">
+            {{ post.readingTime.text }}
+          </span>
+
+          <span class="text-black/50 dark:text-white/30 text-sm">
+            {{ post.createdAt }}
+          </span>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <smart-figure
+          :src="post.cover"
+          imageClass="w-full"
+          style="max-width: 1000px;"
+        ></smart-figure>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <nuxt-content :document="post" />
+      </div>
+
+
     <!-- Nuxt component -->
     <main class="responsive-screen min-h-screen pb-8">
       <Nuxt />

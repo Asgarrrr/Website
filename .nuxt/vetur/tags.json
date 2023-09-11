@@ -41,6 +41,9 @@
   "BlogPrevNext": {
     "description": "Auto imported from components/Blog/PrevNext.vue"
   },
+  "BlogProduct": {
+    "description": "Auto imported from components/Blog/Product.vue"
+  },
   "BlogQuote": {
     "description": "Auto imported from components/Blog/Quote.vue"
   },

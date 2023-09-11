@@ -42,7 +42,7 @@ export default Vue.extend({
       </span>
     </div>
 
-    <footer v-if="author" class="mt-2">
+    <div v-if="author" class="mt-2">
       <div class="flex items-center">
         <div v-if="authorimage" class="flex-shrink-0">
           <img class="!my-0 h-10 w-10 rounded-full" :src="authorimage" alt="" />
@@ -52,7 +52,7 @@ export default Vue.extend({
           <div class="text-xs text-neutral-500">{{ authorinfo }}</div>
         </div>
       </div>
-    </footer>
+    </div>
   </div>
 
 </template>

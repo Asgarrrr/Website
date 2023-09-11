@@ -4,17 +4,17 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _181dacc1 = () => interopDefault(import('..\\src\\pages\\blog\\index.vue' /* webpackChunkName: "pages/blog/index" */))
-const _0e04e1a4 = () => interopDefault(import('..\\src\\pages\\donate.vue' /* webpackChunkName: "pages/donate" */))
-const _90e56f2e = () => interopDefault(import('..\\src\\pages\\projects\\index.vue' /* webpackChunkName: "pages/projects/index" */))
-const _b5c8394e = () => interopDefault(import('..\\src\\pages\\me\\contact.vue' /* webpackChunkName: "pages/me/contact" */))
-const _dc65e38c = () => interopDefault(import('..\\src\\pages\\me\\repos.vue' /* webpackChunkName: "pages/me/repos" */))
-const _3b2b3433 = () => interopDefault(import('..\\src\\pages\\projects\\abyss\\index.vue' /* webpackChunkName: "pages/projects/abyss/index" */))
-const _94dc41a6 = () => interopDefault(import('..\\src\\pages\\projects\\luna\\index.vue' /* webpackChunkName: "pages/projects/luna/index" */))
-const _cd701fe8 = () => interopDefault(import('..\\src\\pages\\projects\\riftmaker\\index.vue' /* webpackChunkName: "pages/projects/riftmaker/index" */))
-const _55b629f1 = () => interopDefault(import('..\\src\\pages\\projects\\rogue\\index.vue' /* webpackChunkName: "pages/projects/rogue/index" */))
-const _16670b79 = () => interopDefault(import('..\\src\\pages\\blog\\_slug.vue' /* webpackChunkName: "pages/blog/_slug" */))
-const _42e9203a = () => interopDefault(import('..\\src\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _cce8b9fa = () => interopDefault(import('..\\src\\pages\\blog\\index.vue' /* webpackChunkName: "pages/blog/index" */))
+const _1edb37ac = () => interopDefault(import('..\\src\\pages\\donate.vue' /* webpackChunkName: "pages/donate" */))
+const _48b24dab = () => interopDefault(import('..\\src\\pages\\projects\\index.vue' /* webpackChunkName: "pages/projects/index" */))
+const _2689d99b = () => interopDefault(import('..\\src\\pages\\me\\contact.vue' /* webpackChunkName: "pages/me/contact" */))
+const _0f67acfc = () => interopDefault(import('..\\src\\pages\\me\\repos.vue' /* webpackChunkName: "pages/me/repos" */))
+const _345420b1 = () => interopDefault(import('..\\src\\pages\\projects\\abyss\\index.vue' /* webpackChunkName: "pages/projects/abyss/index" */))
+const _397a6aef = () => interopDefault(import('..\\src\\pages\\projects\\luna\\index.vue' /* webpackChunkName: "pages/projects/luna/index" */))
+const _79eb24ec = () => interopDefault(import('..\\src\\pages\\projects\\riftmaker\\index.vue' /* webpackChunkName: "pages/projects/riftmaker/index" */))
+const _4edf166f = () => interopDefault(import('..\\src\\pages\\projects\\rogue\\index.vue' /* webpackChunkName: "pages/projects/rogue/index" */))
+const _a39080b6 = () => interopDefault(import('..\\src\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _d055fc8a = () => interopDefault(import('..\\src\\pages\\blog\\_slug.vue' /* webpackChunkName: "pages/blog/_slug" */))
 
 const emptyFn = () => {}
 
@@ -29,48 +29,48 @@ export const routerOptions = {
 
   routes: [{
     path: "/blog",
-    component: _181dacc1,
+    component: _cce8b9fa,
     name: "blog"
   }, {
     path: "/donate",
-    component: _0e04e1a4,
+    component: _1edb37ac,
     name: "donate"
   }, {
     path: "/projects",
-    component: _90e56f2e,
+    component: _48b24dab,
     name: "projects"
   }, {
     path: "/me/contact",
-    component: _b5c8394e,
+    component: _2689d99b,
     name: "me-contact"
   }, {
     path: "/me/repos",
-    component: _dc65e38c,
+    component: _0f67acfc,
     name: "me-repos"
   }, {
     path: "/projects/abyss",
-    component: _3b2b3433,
+    component: _345420b1,
     name: "projects-abyss"
   }, {
     path: "/projects/luna",
-    component: _94dc41a6,
+    component: _397a6aef,
     name: "projects-luna"
   }, {
     path: "/projects/riftmaker",
-    component: _cd701fe8,
+    component: _79eb24ec,
     name: "projects-riftmaker"
   }, {
     path: "/projects/rogue",
-    component: _55b629f1,
+    component: _4edf166f,
     name: "projects-rogue"
   }, {
-    path: "/blog/:slug",
-    component: _16670b79,
-    name: "blog-slug"
-  }, {
     path: "/",
-    component: _42e9203a,
+    component: _a39080b6,
     name: "index"
+  }, {
+    path: "/blog/:slug",
+    component: _d055fc8a,
+    name: "blog-slug"
   }],
 
   fallback: false

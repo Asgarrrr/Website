@@ -20,6 +20,7 @@ You can directly use them in pages and other components without the need to impo
 - `<BlogImageContainer>` | `<blog-image-container>` (components/Blog/ImageContainer.vue)
 - `<BlogNotification>` | `<blog-notification>` (components/Blog/Notification.vue)
 - `<BlogPrevNext>` | `<blog-prev-next>` (components/Blog/PrevNext.vue)
+- `<BlogProduct>` | `<blog-product>` (components/Blog/Product.vue)
 - `<BlogQuote>` | `<blog-quote>` (components/Blog/Quote.vue)
 - `<BlogRating>` | `<blog-rating>` (components/Blog/Rating.vue)
 - `<BlogReadingIndicator>` | `<blog-reading-indicator>` (components/Blog/ReadingIndicator.vue)

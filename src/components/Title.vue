@@ -32,8 +32,8 @@ export default Vue.extend({
       'text-sm': size === 'sm',
       'text-xs': size === 'xs',
       'text-lg': !['1', '2', 'sm', 'xs'].includes(size),
-      'font-bold': bold === true,
-      'font-medium': bold === false,
+      'font-bold': bold,
+      'font-medium': !bold,
       uppercase: uppercase === true,
     }"
   >
