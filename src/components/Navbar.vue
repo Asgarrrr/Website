@@ -7,6 +7,10 @@ export default Vue.extend({
       return this.$route.name?.includes("blog")
     },
 
+    routeIsBlogPost() {
+      return this.$route.params?.slug
+    },
+
     routeIsIndex() {
       return this.$route.name === "index"
     },
@@ -34,8 +38,8 @@ export default Vue.extend({
 
           <Transition name="fade" mode="out-in">
 
-            <span v-if="!routeIsIndex"  class="text-black/90 text-sm uppercase font-medium dark:text-white/90" >
-              < Back
+            <span v-if="!routeIsIndex && !routeIsBlogPost" key="home" class="text-black/90 text-sm font-medium dark:text-white/90 flex items-center space-x-2">
+              <Back>Back</Back>
             </span>
 
           </Transition>

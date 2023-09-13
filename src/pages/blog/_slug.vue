@@ -16,6 +16,7 @@ import 'giscus';
 import Vue from "vue"
 /* Interfaces */
 import type { Post } from "~/src/types/Post"
+import Back from "@/components/Back.vue";
 
 interface RelatedPost {
   title: string
@@ -23,6 +24,9 @@ interface RelatedPost {
 }
 
 export default Vue.extend({
+  components: {
+    Back,
+  },
 
   data() {
     return {
@@ -220,37 +224,26 @@ export default Vue.extend({
             <div
               class="flex flex-wrap flex-col justify-center gap-x-6 gap-y-2 dark:text-white/30 text-black/50 sm:text-sm">
 
-              <div class="flex space-x-2 mb-4">
+              <div class="flex space-x-2 mb-4 mx-auto">
                 <i class="" v-for="tag in getTags">
                   # {{ tag }}
                 </i>
               </div>
 
 
-              <div class="space-y-8 mb-8 min-w-full">
+              <div class="space-y-5 mb-8 min-w-full">
 
-                <div class="flex justify-center items-center space-x-4">
+                <Back>Home</Back>
 
-                  <div class="flex items-center space-x-2">
-                    <IconCalendar class="w-4 h-4" />
-                    <span>{{ getReadableDate }}</span>
-                  </div>
-
-                  <div class="flex items-center space-x-2">
-                    <IconEye class="w-4 h-4" />
-                    <span>{{ getReadingTime }} minute reading</span>
-                  </div>
-
-                </div>
-
-                <h1
-                  class="block mx-auto text-center text-2xl font-bold text-black md:w-11/12 sm:text-4xl dark:text-white min-w-min min-w-full">
+                <h1 class="block text-2xl font-bold text-black sm:text-4xl dark:text-white min-w-min min-w-full !leading-normal">
                   {{ post.title }}
                 </h1>
 
-                <p class="text-black/50 mx-auto text-center md:w-9/12 dark:text-white/50">
-                  {{ post.description }}
-                </p>
+                <div class="flex space-x-2 text-black/50 dark:text-white/50">
+                  <span>{{ getReadableDate }}</span>
+                  <span>/</span>
+                  <span>{{ getReadingTime }} min read </span>
+                </div>
 
               </div>
 
@@ -279,26 +272,11 @@ export default Vue.extend({
         </div>
       </article>
 
-
       <blog-separator class="max-w-screen-md mx-auto" />
 
-        <div class="max-w-screen-md mx-auto">
-            <giscus-widget
-                id="comments"
-                repo="Asgarrrr/blog_comments"
-                repoid="R_kgDOJd9fSg"
-                category="Announcements"
-                categoryid="DIC_kwDOJd9fSs4CWNQy"
-                mapping="pathname"
-                term="Welcome to giscus!"
-                reactionsenabled="1"
-                emitmetadata="0"
-                inputposition="top"
-                :theme="$colorMode.value === 'dark' ? 'https://foregoing-chocolate-newt.glitch.me/dark.css' : 'https://foregoing-chocolate-newt.glitch.me/light.css'"
-                lang="en"
-                loading="lazy" />
+      <div class="max-w-screen-md mx-auto">
+          <giscus-widget id="comments" repo="Asgarrrr/blog_comments" repoid="R_kgDOJd9fSg" category="Announcements" categoryid="DIC_kwDOJd9fSs4CWNQy" mapping="pathname" term="Welcome to giscus!" reactionsenabled="1" emitmetadata="0" inputposition="top" :theme="$colorMode.value === 'dark' ? 'https://foregoing-chocolate-newt.glitch.me/dark.css' : 'https://foregoing-chocolate-newt.glitch.me/light.css'" lang="en" loading="lazy" />
       </div>
-
 
       <div class="mt-16 space-y-10 max-w-screen-md mx-auto">
         <div v-if="getRelatedPosts.length > 0" class="space-y-2">
@@ -330,15 +308,44 @@ export default Vue.extend({
 
 <style lang="scss">
 
-.nuxt-content {
-
-  p {
-    @apply text-black/70 dark:text-white/60;
-    letter-spacing: 0.3px;
-    line-height: 1.9;
-    font-size: 1rem;
-    font-weight: 500
+  ::selection {
+    @apply dark:(bg-white/10 text-white/90) bg-black/10 text-black/90;
   }
+
+  ::-moz-selection {
+    @apply dark:(bg-white/10 text-white/90) bg-black/10 text-black/90;
+  }
+
+  .prose > p {
+    @apply text-black/70 dark:text-white/50 md:text-18px text-16px;
+    letter-spacing: 0.3px;
+    line-height: 1.9 !important;
+    font-weight: 400;
+  }
+
+  .prose > ul,
+  .prose > ol {
+    @apply text-black/70 dark:text-white/50 md:text-18px text-16px;
+    letter-spacing: 0.3px;
+    line-height: 1.9 !important;
+    font-weight: 400;
+  }
+
+  .prose > ol > li:before,
+  .prose > ul > li:before {
+    @apply text-black/50 dark:(text-white/50);
+  }
+
+  .nuxt-content {
+
+    a {
+      @apply decoration-2 decoration-transparent transition-all duration-400 ease-in-out underline-offset-4;
+      color: #5686f5 !important;
+    }
+
+    a:hover {
+      text-decoration-color: #5686f5;
+    }
 
   .nuxt-content-highlight {
 
@@ -372,6 +379,7 @@ export default Vue.extend({
     ::-webkit-scrollbar-corner {
       background-color: transparent;
     }
+
   }
 
     code {

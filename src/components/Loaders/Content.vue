@@ -14,7 +14,7 @@ export default Vue.extend({
 
 <template>
   <!-- Loader -->
-  <div v-if="error === false" class="w-full pt-14">
+  <div v-if="error === false" class="w-full mx-auto !max-w-screen-md pt-14">
     <section class="space-y-8">
 
       <div class="space-y-4">
@@ -23,24 +23,18 @@ export default Vue.extend({
         </div>
       </div>
 
+      <!-- Reading time & date  -->
+      <div class="flex space-x-2 justify-center">
+        <div class="bg-black/10 h-4 animate-pulse w-1/4 sm:w-1/6 dark:bg-white/5" />
+        <div class="bg-black/10 h-4 animate-pulse w-1/4 sm:w-1/6 dark:bg-white/5" />
+      </div>
+
       <!-- Title -->
       <div class="bg-black/10 h-10 mx-auto w-full animate-pulse sm:w-8/12 dark:bg-white/5" />
       <div class="bg-black/10 h-4 animate-pulse dark:bg-white/5" />
 
-      <!-- Reading time & date  -->
-      <div class="flex space-x-2 justify-center">
-        <div
-          class="bg-black/10 h-4 animate-pulse w-1/4 sm:w-1/6 dark:bg-white/5"
-        />
-        <div
-          class="bg-black/10 h-4 animate-pulse w-1/4 sm:w-1/6 dark:bg-white/5"
-        />
-      </div>
-
       <!-- Header -->
-      <div
-        class="bg-black/10 h-xl rounded-lg animate-pulse w-full dark:bg-white/5"
-      />
+      <div class="bg-black/10 h-xl rounded-lg animate-pulse w-full dark:bg-white/5" />
 
     </section>
 

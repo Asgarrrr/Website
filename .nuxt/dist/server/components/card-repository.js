@@ -1,7 +1,7 @@
 exports.ids = [20,35,53];
 exports.modules = {
 
-/***/ 116:
+/***/ 120:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -102,19 +102,19 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "267ca16c"
+  "76edfc6a"
   
 )
 
 /* harmony default export */ var Repository = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {IconStar: __webpack_require__(88).default,IconDev: __webpack_require__(89).default})
+installComponents(component, {IconStar: __webpack_require__(93).default,IconDev: __webpack_require__(94).default})
 
 
 /***/ }),
 
-/***/ 88:
+/***/ 93:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -180,7 +180,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "4814c909"
+  "6f6d23ae"
   
 )
 
@@ -188,7 +188,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 89:
+/***/ 94:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1704,14 +1704,14 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "0cdd09a4"
+  "88b89be4"
   
 )
 
 /* harmony default export */ var Dev = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Title: __webpack_require__(26).default})
+installComponents(component, {Title: __webpack_require__(28).default})
 
 
 /***/ })

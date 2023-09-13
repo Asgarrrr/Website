@@ -6,6 +6,7 @@ You can directly use them in pages and other components without the need to impo
 
 **Tip:** If a component is conditionally rendered with `v-if` and is big, it is better to use `Lazy` or `lazy-` prefix to lazy load.
 
+- `<Back>` | `<back>` (components/Back.vue)
 - `<Button>` | `<button>` (components/Button.vue)
 - `<ColorSwitcher>` | `<color-switcher>` (components/ColorSwitcher.vue)
 - `<Fire>` | `<fire>` (components/Fire.vue)
@@ -34,6 +35,10 @@ You can directly use them in pages and other components without the need to impo
 - `<CardSkill>` | `<card-skill>` (components/Card/Skill.vue)
 - `<CardSong>` | `<card-song>` (components/Card/Song.vue)
 - `<CardSponsor>` | `<card-sponsor>` (components/Card/Sponsor.vue)
+- `<LoadersBlog>` | `<loaders-blog>` (components/Loaders/Blog.vue)
+- `<LoadersContent>` | `<loaders-content>` (components/Loaders/Content.vue)
+- `<LoadersGoals>` | `<loaders-goals>` (components/Loaders/Goals.vue)
+- `<LoadersSongs>` | `<loaders-songs>` (components/Loaders/Songs.vue)
 - `<IconAcademicHat>` | `<icon-academic-hat>` (components/Icon/AcademicHat.vue)
 - `<IconAt>` | `<icon-at>` (components/Icon/At.vue)
 - `<IconBranch>` | `<icon-branch>` (components/Icon/Branch.vue)
@@ -70,10 +75,6 @@ You can directly use them in pages and other components without the need to impo
 - `<IconTag>` | `<icon-tag>` (components/Icon/Tag.vue)
 - `<IconTimes>` | `<icon-times>` (components/Icon/Times.vue)
 - `<IconX>` | `<icon-x>` (components/Icon/X.vue)
-- `<LoadersBlog>` | `<loaders-blog>` (components/Loaders/Blog.vue)
-- `<LoadersContent>` | `<loaders-content>` (components/Loaders/Content.vue)
-- `<LoadersGoals>` | `<loaders-goals>` (components/Loaders/Goals.vue)
-- `<LoadersSongs>` | `<loaders-songs>` (components/Loaders/Songs.vue)
 - `<SkeletonLoaderIframe>` | `<skeleton-loader-iframe>` (components/SkeletonLoader/Iframe.vue)
 - `<SkeletonLoader>` | `<skeleton-loader>` (components/SkeletonLoader/Index.vue)
 - `<SkeletonLoaderLastfm>` | `<skeleton-loader-lastfm>` (components/SkeletonLoader/Lastfm.vue)

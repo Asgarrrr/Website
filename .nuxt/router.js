@@ -4,17 +4,17 @@ import { normalizeURL, decode } from 'ufo'
 import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
-const _271547c6 = () => interopDefault(import('../src/pages/blog/index.vue' /* webpackChunkName: "pages/blog/index" */))
-const _0455f532 = () => interopDefault(import('../src/pages/donate.vue' /* webpackChunkName: "pages/donate" */))
-const _513e26f5 = () => interopDefault(import('../src/pages/projects/index.vue' /* webpackChunkName: "pages/projects/index" */))
-const _bfdf16be = () => interopDefault(import('../src/pages/me/contact.vue' /* webpackChunkName: "pages/me/contact" */))
-const _ac755cfc = () => interopDefault(import('../src/pages/me/repos.vue' /* webpackChunkName: "pages/me/repos" */))
-const _7a6b323e = () => interopDefault(import('../src/pages/projects/abyss/index.vue' /* webpackChunkName: "pages/projects/abyss/index" */))
-const _2b7bd36c = () => interopDefault(import('../src/pages/projects/luna/index.vue' /* webpackChunkName: "pages/projects/luna/index" */))
-const _a9d51d76 = () => interopDefault(import('../src/pages/projects/riftmaker/index.vue' /* webpackChunkName: "pages/projects/riftmaker/index" */))
-const _0feb8cc0 = () => interopDefault(import('../src/pages/projects/rogue/index.vue' /* webpackChunkName: "pages/projects/rogue/index" */))
-const _103fce8a = () => interopDefault(import('../src/pages/index.vue' /* webpackChunkName: "pages/index" */))
-const _2a828a56 = () => interopDefault(import('../src/pages/blog/_slug.vue' /* webpackChunkName: "pages/blog/_slug" */))
+const _cce8b9fa = () => interopDefault(import('..\\src\\pages\\blog\\index.vue' /* webpackChunkName: "pages/blog/index" */))
+const _1edb37ac = () => interopDefault(import('..\\src\\pages\\donate.vue' /* webpackChunkName: "pages/donate" */))
+const _48b24dab = () => interopDefault(import('..\\src\\pages\\projects\\index.vue' /* webpackChunkName: "pages/projects/index" */))
+const _2689d99b = () => interopDefault(import('..\\src\\pages\\me\\contact.vue' /* webpackChunkName: "pages/me/contact" */))
+const _0f67acfc = () => interopDefault(import('..\\src\\pages\\me\\repos.vue' /* webpackChunkName: "pages/me/repos" */))
+const _345420b1 = () => interopDefault(import('..\\src\\pages\\projects\\abyss\\index.vue' /* webpackChunkName: "pages/projects/abyss/index" */))
+const _397a6aef = () => interopDefault(import('..\\src\\pages\\projects\\luna\\index.vue' /* webpackChunkName: "pages/projects/luna/index" */))
+const _79eb24ec = () => interopDefault(import('..\\src\\pages\\projects\\riftmaker\\index.vue' /* webpackChunkName: "pages/projects/riftmaker/index" */))
+const _4edf166f = () => interopDefault(import('..\\src\\pages\\projects\\rogue\\index.vue' /* webpackChunkName: "pages/projects/rogue/index" */))
+const _a39080b6 = () => interopDefault(import('..\\src\\pages\\index.vue' /* webpackChunkName: "pages/index" */))
+const _d055fc8a = () => interopDefault(import('..\\src\\pages\\blog\\_slug.vue' /* webpackChunkName: "pages/blog/_slug" */))
 
 const emptyFn = () => {}
 
@@ -29,47 +29,47 @@ export const routerOptions = {
 
   routes: [{
     path: "/blog",
-    component: _271547c6,
+    component: _cce8b9fa,
     name: "blog"
   }, {
     path: "/donate",
-    component: _0455f532,
+    component: _1edb37ac,
     name: "donate"
   }, {
     path: "/projects",
-    component: _513e26f5,
+    component: _48b24dab,
     name: "projects"
   }, {
     path: "/me/contact",
-    component: _bfdf16be,
+    component: _2689d99b,
     name: "me-contact"
   }, {
     path: "/me/repos",
-    component: _ac755cfc,
+    component: _0f67acfc,
     name: "me-repos"
   }, {
     path: "/projects/abyss",
-    component: _7a6b323e,
+    component: _345420b1,
     name: "projects-abyss"
   }, {
     path: "/projects/luna",
-    component: _2b7bd36c,
+    component: _397a6aef,
     name: "projects-luna"
   }, {
     path: "/projects/riftmaker",
-    component: _a9d51d76,
+    component: _79eb24ec,
     name: "projects-riftmaker"
   }, {
     path: "/projects/rogue",
-    component: _0feb8cc0,
+    component: _4edf166f,
     name: "projects-rogue"
   }, {
     path: "/",
-    component: _103fce8a,
+    component: _a39080b6,
     name: "index"
   }, {
     path: "/blog/:slug",
-    component: _2a828a56,
+    component: _d055fc8a,
     name: "blog-slug"
   }],
 

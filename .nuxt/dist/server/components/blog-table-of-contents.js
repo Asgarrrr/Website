@@ -1,7 +1,7 @@
 exports.ids = [12];
 exports.modules = {
 
-/***/ 162:
+/***/ 166:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -82,14 +82,14 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "200d31c1"
+  "a5b7cebe"
   
 )
 
 /* harmony default export */ var TableOfContents = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {IconChevron: __webpack_require__(27).default})
+installComponents(component, {IconChevron: __webpack_require__(29).default})
 
 
 /***/ })

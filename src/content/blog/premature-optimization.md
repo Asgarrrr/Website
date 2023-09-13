@@ -2,7 +2,7 @@
 title       : 'Premature Optimization'
 description : "Premature optimization can be tempting, but it often leads to code that's harder to maintain and understand."
 header      : https://cdn.discordapp.com/attachments/1071595350437134456/1148681770993197118/412384123012347134.jpg
-tags        : [ ]
+tags        : [  ]
 related     : [ "naming-things-in-code" ]
 createdAt   : 2023-09-05T10:15:00.000Z
 special     : false
@@ -15,7 +15,7 @@ One of the most challenging dilemmas programmers face is the temptation of prema
   Premature optimization is the root of all evil.
 </blog-quote>
 
-The allure of premature optimization :github-button can be strong, but it often leads to code that's harder to maintain and understand.
+The allure of premature optimization can be strong, but it often leads to code that's harder to maintain and understand.
 In this article, we'll explore the dangers of premature optimization and how to avoid them.
 
 ## The Allure of Premature Optimization

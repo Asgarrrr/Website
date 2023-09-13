@@ -4,9 +4,25 @@
         <title>Asgarrrr's Blog</title>
         <link>https://jeremycaruelle.com/blog</link>
         <description> --- </description>
-        <lastBuildDate>Wed, 13 Sep 2023 17:21:53 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 13 Sep 2023 22:14:28 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <item>
+            <title><![CDATA[x, temp & foo : Naming Things in Code]]></title>
+            <link>https://jeremycaruelle.com/blog/naming-things-in-code</link>
+            <guid>https://jeremycaruelle.com/blog/naming-things-in-code</guid>
+            <pubDate>Sun, 27 Aug 2023 19:03:24 GMT</pubDate>
+            <description><![CDATA[Finding the right name for a variable, a function or a class is hard, one of the hardest things in programming...]]></description>
+            <enclosure url="https://jeremycaruelle.com/assets/images/posts/naming-things-in-code.jpg" length="0" type="image/jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Premature Optimization]]></title>
+            <link>https://jeremycaruelle.com/blog/premature-optimization</link>
+            <guid>https://jeremycaruelle.com/blog/premature-optimization</guid>
+            <pubDate>Tue, 05 Sep 2023 10:15:00 GMT</pubDate>
+            <description><![CDATA[Premature optimization can be tempting, but it often leads to code that's harder to maintain and understand.]]></description>
+            <enclosure url="https://jeremycaruelle.com/assets/images/posts/premature-optimization.jpg" length="0" type="image/jpg"/>
+        </item>
         <item>
             <title><![CDATA[JavaScript Generators: A Powerful Approach to Flow Control and Iterations]]></title>
             <link>https://jeremycaruelle.com/blog/javascript-generators-a-powerful-approach-to-flow-control-and-iterations</link>
@@ -30,22 +46,6 @@
             <pubDate>Fri, 08 Sep 2023 01:03:24 GMT</pubDate>
             <description><![CDATA[Test page]]></description>
             <enclosure url="https://jeremycaruelle.com/assets/images/posts/test.jpg" length="0" type="image/jpg"/>
-        </item>
-        <item>
-            <title><![CDATA[Premature Optimization]]></title>
-            <link>https://jeremycaruelle.com/blog/premature-optimization</link>
-            <guid>https://jeremycaruelle.com/blog/premature-optimization</guid>
-            <pubDate>Tue, 05 Sep 2023 10:15:00 GMT</pubDate>
-            <description><![CDATA[Premature optimization can be tempting, but it often leads to code that's harder to maintain and understand.]]></description>
-            <enclosure url="https://jeremycaruelle.com/assets/images/posts/premature-optimization.jpg" length="0" type="image/jpg"/>
-        </item>
-        <item>
-            <title><![CDATA[x, temp & foo : Naming Things in Code]]></title>
-            <link>https://jeremycaruelle.com/blog/naming-things-in-code</link>
-            <guid>https://jeremycaruelle.com/blog/naming-things-in-code</guid>
-            <pubDate>Sun, 27 Aug 2023 19:03:24 GMT</pubDate>
-            <description><![CDATA[Finding the right name for a variable, a function or a class is hard, one of the hardest things in programming...]]></description>
-            <enclosure url="https://jeremycaruelle.com/assets/images/posts/naming-things-in-code.jpg" length="0" type="image/jpg"/>
         </item>
     </channel>
 </rss>

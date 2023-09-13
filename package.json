@@ -53,6 +53,7 @@
     "prismjs": "^1.29.0",
     "sass": "^1.62.0",
     "typescript": "^5.0.4",
+    "vue": "^2.7.14",
     "vue-cmd-menu": "^0.1.9",
     "vue-tippy": "^4.16.0"
   },

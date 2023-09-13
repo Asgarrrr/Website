@@ -7,9 +7,8 @@ createdAt: 2023-09-08T01:03:24.368Z
 special: false
 ---
 
-<blog-notification icon=":worried:">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum, quos, quod, quibusdam voluptatem
-    voluptas quia quae voluptatibus quas natus doloribus. Quisquam, voluptatum, quos, quod, quibusdam voluptatem
+<blog-notification icon="🚨" type="error">
+    This page is a work in progress. It is not finished yet !
 </blog-notification>
 
 <blog-separator> </blog-separator>
@@ -43,18 +42,5 @@ issues with the butterfly mechanism. Over time, and after many hours of use, the
 I'm considering buying a new laptop with an M1/2 chip, but I don't have the budget for it right now.
 
 <div class="flex flex-col space-y-1 md:space-y-0 md:flex-row md:space-x-2">
-<blog-product
-  product="Logitech G502 HERO"
-  image="https://cdn.discordapp.com/attachments/1071595350437134456/1150025801752907856/macbook-pro-13-touch-bar-2018-intel-i5-23-ghz-8-go-ram.png"
-  link="https://www.logitechg.com/fr-ca/products/gaming-mice/g502-hero-gaming-mouse.html"
-  price="99,99 $">
-  Souris gaming RVB filaire haute performance avec capteur HERO 25K
-</blog-product>
-<blog-product
-  product="Logitech G502 HERO"
-  image="https://cdn.discordapp.com/attachments/1071595350437134456/1150025801752907856/macbook-pro-13-touch-bar-2018-intel-i5-23-ghz-8-go-ram.png"
-  link="https://www.logitechg.com/fr-ca/products/gaming-mice/g502-hero-gaming-mouse.html"
-  price="99,99 $">
-  Souris gaming RVB filaire haute performance avec capteur HERO 25K
-</blog-product>
+
 </div>

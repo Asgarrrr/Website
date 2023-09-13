@@ -1,7 +1,7 @@
 exports.ids = [21];
 exports.modules = {
 
-/***/ 119:
+/***/ 123:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -77,14 +77,14 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "5c7695fe"
+  "5824b3e1"
   
 )
 
 /* harmony default export */ var Skill = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SmartImage: __webpack_require__(25).default})
+installComponents(component, {SmartImage: __webpack_require__(27).default})
 
 
 /***/ })

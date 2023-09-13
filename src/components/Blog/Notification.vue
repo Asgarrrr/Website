@@ -6,7 +6,7 @@ export default Vue.extend({
     type: {
       type: String,
       required: false,
-      default: "information",
+      default: "",
     },
     title: {
       type: String,
@@ -57,6 +57,24 @@ export default Vue.extend({
   a {
     @apply font-medium text-current underline hover:underline;
   }
+
+
+  &.information {
+    @apply bg-blue-100 border-blue-200 dark:(bg-blue-800/30 border-blue-800);
+  }
+
+  &.warning {
+    @apply bg-yellow-100 border-yellow-200 dark:(bg-yellow-800/30 border-yellow-800);
+  }
+
+  &.error {
+    @apply bg-red-100 border-red-200 dark:(bg-red-800/30 border-red-800);
+  }
+
+  &.success {
+    @apply bg-green-100 border-green-200 dark:(bg-green-800/30 border-green-800);
+  }
+
 }
 
 

@@ -1,7 +1,7 @@
 exports.ids = [77,13,26,29,65];
 exports.modules = {
 
-/***/ 128:
+/***/ 132:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42,7 +42,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "4df4b22a"
+  "915fc16c"
   
 )
 
@@ -50,7 +50,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 150:
+/***/ 154:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -187,19 +187,19 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "0b54c224"
+  "ab5ae1e4"
   
 )
 
 /* harmony default export */ var contact = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {IconBrand: __webpack_require__(83).default,Card: __webpack_require__(94).default,IconAt: __webpack_require__(128).default,PageLayout: __webpack_require__(78).default})
+installComponents(component, {IconBrand: __webpack_require__(88).default,Card: __webpack_require__(99).default,IconAt: __webpack_require__(132).default,PageLayout: __webpack_require__(83).default})
 
 
 /***/ }),
 
-/***/ 78:
+/***/ 83:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -265,7 +265,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "4ddc9da8"
+  "39588bd6"
   
 )
 
@@ -273,7 +273,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 83:
+/***/ 88:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -490,7 +490,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "0e3b7d60"
+  "d6c90780"
   
 )
 
@@ -498,7 +498,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 94:
+/***/ 99:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -616,7 +616,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "2af3eb02"
+  "9d582c3c"
   
 )
 

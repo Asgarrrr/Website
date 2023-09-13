@@ -54,33 +54,35 @@ export default Vue.extend({
             url: "/",
             position: "A blend of passion, curiosity and fascination.",
             date: "For life",
-          },
-          {
+          }, {
             title: "Technological degree in Baccalaureate in STI2D",
             url: "https://edouard-branly.ac-amiens.fr/",
             position: "Edouard Branly / France, Amiens",
-            date: "2016-2018",
-          },
-          {
+            date: "2016 › 2018",
+          }, {
             title: "Two-year technical degree in Computer Science",
             url: "https://www.la-providence.net/fr/",
             position: "La Providence / France, Amiens",
-            date: "2020-2022",
-          },
-          {
+            date: "2020 › 2022",
+          }, {
             title: "Bachelor's in Web and Mobile Development",
             url: "http://www.insset.u-picardie.fr/",
             position: "INSSET / France, Saint-Quentin",
-            date: "2022-2023",
-          },
+            date: "2022 › 2023",
+          }, {
+            title: "Master's in Cloud Computing & Mobility",
+            url: "http://www.insset.u-picardie.fr/",
+            position: "INSSET / France, Saint-Quentin",
+            date: "2023 › 2025",
+          }
+
         ],
       } as ExperienceObject,
       cards: {
         me: [
           {
             title: "Repositories",
-            description:
-              "Want to see and/or contribute to my code and public repositories?",
+            description: "Want to see and/or contribute to my code and public repositories?",
             href: "/me/repos",
           },
           // {
@@ -91,28 +93,24 @@ export default Vue.extend({
           // },
           {
             title: "Contact",
-            description:
-              "Need help with anything? Want to get in touch? Send me a message!",
+            description: "Need help with anything? Want to get in touch? Send me a message!",
             href: "/me/contact",
           },
         ],
         pages: [
           {
             title: "Blog",
-            description:
-              "My personal blog where I write about development, technology and non-sense stuff.",
+            description: "My personal blog where I write about development, technology and non-sense stuff.",
             href: "/blog",
           },
           {
             title: "Projects",
-            description:
-              "My projects and contributions to the open-source community.",
+            description: "My projects and contributions to the open-source community.",
             href: "/projects",
           },
           {
             title: "Donate",
-            description:
-              "Want to support me and my projects so that I can create better stuff in the future?",
+            description: "Want to support me and my projects so that I can create better stuff in the future?",
             href: "/donate",
           },
         ],
@@ -218,24 +216,20 @@ export default Vue.extend({
 
           <h2 class="font-normal text-center text-2xl md:(text-2xl text-left) text-black/60 leading-normal dark:text-white/60" >
             I'm a {{ (( ) => {
+              const today = new Date()
+                  , bday  = new Date( 2000, 11, 14 )
+                  , m     = today.getMonth() - bday.getMonth();
 
-            const today = new Date()
-                , bday  = new Date( 2000, 11, 14 )
-                , m     = today.getMonth() - bday.getMonth();
+                let age = today.getFullYear() - bday.getFullYear();
 
-              let age     = today.getFullYear() - bday.getFullYear();
+                if ( m < 0 || ( m === 0 && today.getDate() < bday.getDate() ) )
+                  age--;
 
-              if ( m < 0 || ( m === 0 && today.getDate() < bday.getDate() ) )
-                age--;
-
-              return age;
-
-          })() }} years old French fullstack developer
+                return age;
+            })() }} years old French fullstack developer
           </h2>
 
-          <div
-            class="flex items-center justify-center md:justify-start gap-x-3 gap-y-2 flex-wrap"
-          >
+          <div class="flex items-center justify-center md:justify-start gap-x-3 gap-y-2 flex-wrap" >
             <div
               v-for="item in ['JavaScript', 'React.js', 'Node.js' ]"
               :key="item"
