@@ -83,18 +83,6 @@
   "CardSponsor": {
     "description": "Auto imported from components/Card/Sponsor.vue"
   },
-  "LoadersBlog": {
-    "description": "Auto imported from components/Loaders/Blog.vue"
-  },
-  "LoadersContent": {
-    "description": "Auto imported from components/Loaders/Content.vue"
-  },
-  "LoadersGoals": {
-    "description": "Auto imported from components/Loaders/Goals.vue"
-  },
-  "LoadersSongs": {
-    "description": "Auto imported from components/Loaders/Songs.vue"
-  },
   "IconAcademicHat": {
     "description": "Auto imported from components/Icon/AcademicHat.vue"
   },
@@ -202,6 +190,18 @@
   },
   "IconX": {
     "description": "Auto imported from components/Icon/X.vue"
+  },
+  "LoadersBlog": {
+    "description": "Auto imported from components/Loaders/Blog.vue"
+  },
+  "LoadersContent": {
+    "description": "Auto imported from components/Loaders/Content.vue"
+  },
+  "LoadersGoals": {
+    "description": "Auto imported from components/Loaders/Goals.vue"
+  },
+  "LoadersSongs": {
+    "description": "Auto imported from components/Loaders/Songs.vue"
   },
   "SkeletonLoaderIframe": {
     "description": "Auto imported from components/SkeletonLoader/Iframe.vue"

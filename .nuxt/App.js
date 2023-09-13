@@ -2,16 +2,16 @@ import Vue from 'vue'
 import { decode, parsePath, withoutBase, withoutTrailingSlash, normalizeURL } from 'ufo'
 
 import { getMatchedComponentsInstances, getChildrenComponentInstancesUsingFetch, promisify, globalHandleError, urlJoin, sanitizeComponent } from './utils'
-import NuxtError from '..\\src\\layouts\\error.vue'
+import NuxtError from '../src/layouts/error.vue'
 import NuxtLoading from './components/nuxt-loading.vue'
 
 import 'virtual:windi.css'
 
-import '..\\src\\stylesheets\\root.scss'
+import '../src/stylesheets/root.scss'
 
-import '..\\node_modules\\prism-themes\\themes\\prism-one-dark.css'
+import '../node_modules/prism-themes/themes/prism-one-dark.css'
 
-import _6f6c098b from '..\\src\\layouts\\default.vue'
+import _6f6c098b from '../src/layouts/default.vue'
 
 const layouts = { "_default": sanitizeComponent(_6f6c098b) }
 

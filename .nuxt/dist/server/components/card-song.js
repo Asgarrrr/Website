@@ -87,14 +87,14 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "62b87eb5"
+  "3af84cd6"
   
 )
 
 /* harmony default export */ var Song = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SmartImage: __webpack_require__(27).default,IconStar: __webpack_require__(88).default,IconCalendar: __webpack_require__(97).default})
+installComponents(component, {SmartImage: __webpack_require__(25).default,IconStar: __webpack_require__(88).default,IconCalendar: __webpack_require__(98).default})
 
 
 /***/ }),
@@ -165,7 +165,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "6f6d23ae"
+  "4814c909"
   
 )
 
@@ -173,7 +173,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 97:
+/***/ 98:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -214,7 +214,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "1a86d595"
+  "852c7f16"
   
 )
 

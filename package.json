@@ -40,8 +40,9 @@
     "@nuxtjs/robots": "^2.5.0",
     "@nuxtjs/sitemap": "^2.4.0",
     "@types/prismjs": "^1.26.0",
-    "@vue/runtime-dom": "^3.2.47",
+    "@vueuse/core": "^10.4.1",
     "core-js": "^3.30.1",
+    "giscus": "^1.3.0",
     "medium-zoom": "^1.0.8",
     "moment-timezone": "^0.5.43",
     "node-html-parser": "^6.1.5",
@@ -53,7 +54,6 @@
     "sass": "^1.62.0",
     "typescript": "^5.0.4",
     "vue-cmd-menu": "^0.1.9",
-    "vue-disqus": "^4.0.1",
     "vue-tippy": "^4.16.0"
   },
   "devDependencies": {

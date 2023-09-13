@@ -1,14 +1,14 @@
 exports.ids = [8];
 exports.modules = {
 
-/***/ 119:
+/***/ 121:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Blog/ReadingIndicator.vue?vue&type=template&id=49218130&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Blog/ReadingIndicator.vue?vue&type=template&id=40e80355&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
@@ -32,9 +32,9 @@ var render = function render() {
       expression: "{ content: getPercentLeftBottom === 100 ? '100% <3' : `${getPercentLeftBottom}% left ^^` }"
     }]
   }, [_c('div', {
-    staticClass: "rounded-md bg-gray-200 h-40 w-4 hidden relative md:block dark:bg-neutral-800"
+    staticClass: "rounded-md bg-gray-200 h-40 w-1 hidden relative md:block dark:bg-neutral-800"
   }, [_c('div', {
-    staticClass: "rounded-md inset-x-0 transition bottom-0 absolute",
+    staticClass: "rounded-md inset-x-0 transition bottom-0 absolute left-0 right-0",
     class: {
       'bg-green-500': _vm.getPercentLeftBottom === 100,
       'bg-gray-300 dark:bg-neutral-600': _vm.getPercentLeftBottom < 100
@@ -46,7 +46,7 @@ var render = function render() {
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/components/Blog/ReadingIndicator.vue?vue&type=template&id=49218130&
+// CONCATENATED MODULE: ./src/components/Blog/ReadingIndicator.vue?vue&type=template&id=40e80355&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -77,29 +77,26 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
     };
   },
   computed: {
-    /**
-     * Calculates the position of the element and returns percentage value.
-     */
+    // —— Calculates the position of the element and returns percentage value.
     getPercentLeftBottom() {
       const {
         top,
         bottom
       } = this.rect;
-      const percent = Math.round((top - this.window.height) / (top - bottom) * 100);
+      const percent = ~~((top - this.window.height) / (top - bottom) * 100);
       return percent > 100 ? 100 : percent;
     },
-    /**
-     * Checks if the position is higher than a specific number and returns a boolean value.
-     */
+    // —— Checks if the position is higher than a specific number and returns a boolean value.
     isElementVisible() {
       return this.scrollY > 175;
     }
   },
   mounted() {
-    // Find element in the document and set if exists
+    // —— Find element in the document and set if exists
     const element = document.querySelector(this.selector);
-    if (element) this.el = element;else return;
-    // Set window dimensions
+    if (!element) return;
+    this.el = element;
+    // —— Set window dimensions
     const {
       innerHeight,
       innerWidth
@@ -108,19 +105,19 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
       height: innerHeight,
       width: innerWidth
     };
-    // Add scroll event to update positions
+    // —— Add scroll event to update positions
     window.addEventListener("scroll", this.handleScroll);
   },
   beforeDestroy() {
-    // Remove scroll event before changing the page
+    // —— Remove scroll event before changing the page
     window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
     handleScroll() {
       var _a;
-      // Set currenc scroll position
+      // —— Set scroll position
       this.scrollY = window.scrollY;
-      // Set window height and width
+      // —— Set window height and width
       const {
         innerHeight,
         innerWidth
@@ -129,12 +126,12 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
         height: innerHeight,
         width: innerWidth
       };
-      // Get element's position
+      // —— Get element's position
       const {
         top,
         bottom
       } = ((_a = this.el) === null || _a === void 0 ? void 0 : _a.getBoundingClientRect()) || {};
-      // Save element's position to Vue data
+      // —— Save element's position to Vue data
       if (!top || !bottom) return;
       this.rect = {
         top,
@@ -163,7 +160,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "2bb6ce31"
+  "15f0d911"
   
 )
 

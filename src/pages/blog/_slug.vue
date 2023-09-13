@@ -11,6 +11,8 @@ import 'prismjs/components/prism-python.js'
 import 'prismjs/components/prism-json.js'
 import 'prismjs/components/prism-csharp.js'
 
+import 'giscus';
+
 import Vue from "vue"
 /* Interfaces */
 import type { Post } from "~/src/types/Post"
@@ -130,31 +132,51 @@ export default Vue.extend({
         this.$applyMediumZoom()
         Prism.highlightAll()
 
-        document.querySelectorAll(".nuxt-content-highlight").forEach((el) => {
-          // Add a copy button to each code block
-          const button = document.createElement("button")
-          button.className = "copy-button"
-          button.textContent = "copy"
+        if ( window.isSecureContext ) {
 
-          button.addEventListener("click", () => {
-            const pre = el.querySelector("pre")
-            navigator.clipboard.writeText( pre?.textContent || "" )
+            document.querySelectorAll(".nuxt-content-highlight").forEach( ( el ) => {
+                const button = document.createElement( "button" )
+                button.className = "copy-button"
+                button.textContent = "ctrl+c ?"
+                el.appendChild( button )
 
-            // Sparkle, firework, Flame, Heath emoji array
+                button.addEventListener( "click", () => {
 
-            button.textContent = [ "✨", "🍾", "🔥", "❤️", "🎉", "🎊" ][ ~~( Math.random() * 6 ) ];
-            setTimeout(() => {
-              button.textContent = "copy"
-              button.classList.remove("decoration-green-500")
-            }, 2000)
+                    if ( el.querySelector("pre")?.textContent ) {
 
+                        navigator.clipboard.writeText( el.querySelector("pre")?.textContent || "" ).then(() => {
 
-          })
+                            button.textContent = "copied 🔥";
+                            button.classList.add( "!text-green-500" )
+                            el.querySelector("pre")?.classList.add( "!border-green-500" )
 
-          el.appendChild(button)
+                            setTimeout( () => {
+                                button.textContent = "ctrl+c ?"
+                                button.classList.remove( "!text-green-500" )
+                                el.querySelector("pre")?.classList.remove("!border-green-500" )
+                            }, 2000 )
 
+                        }).catch( ( err ) => {
 
-        })
+                            button.textContent = "error";
+                            button.classList.add( "!text-red-500" )
+                            el.querySelector("pre")?.classList.add( "!border-red-500" )
+
+                            setTimeout( () => {
+                                button.textContent = "ctrl+c ?"
+                                button.classList.remove( "!text-red-500" )
+                                el.querySelector("pre")?.classList.remove("!border-red-500" )
+                            }, 2000 )
+
+                        })
+
+                    }
+
+                })
+
+            });
+
+        }
 
       },
       deep: true,
@@ -173,115 +195,121 @@ export default Vue.extend({
     },
     getRelatedPosts(): RelatedPost[] {
       return this.related || []
-    },
+    }
   },
-})
+});
+
+
 
 </script>
 
 <template>
   <Transition name="fade">
-    <LoadersContent
-      v-if="$fetchState.pending === true || $fetchState.error !== null"
-      :error="$fetchState.pending === false && $fetchState.error !== null"
-    />
+
+    <LoadersContent v-if="$fetchState.pending === true || $fetchState.error !== null"
+      :error="$fetchState.pending === false && $fetchState.error !== null" />
 
     <div v-else class="pt-4 mt-10">
 
-      <article>
+      <article class="!max-w-screen-md mx-auto">
 
-        <header class="space-y-8 leading-relaxed text-center mb-10">
+        <header class="space-y-8 leading-relaxed mb-10">
 
           <div class="space-y-4">
 
-            <div class="flex flex-wrap flex-col items-center justify-center gap-x-6 gap-y-2 dark:text-white/30 text-black/50 sm:text-sm">
+            <div
+              class="flex flex-wrap flex-col justify-center gap-x-6 gap-y-2 dark:text-white/30 text-black/50 sm:text-sm">
 
-              <div class="flex items-center space-x-2 mb-4">
-                <i class=""  v-for="tag in getTags">
+              <div class="flex space-x-2 mb-4">
+                <i class="" v-for="tag in getTags">
                   # {{ tag }}
                 </i>
               </div>
 
+
               <div class="space-y-8 mb-8 min-w-full">
 
-                <h1 class="block mx-auto text-2xl font-bold text-black md:w-11/12 sm:text-4xl dark:text-white min-w-min min-w-full">
+                <div class="flex justify-center items-center space-x-4">
+
+                  <div class="flex items-center space-x-2">
+                    <IconCalendar class="w-4 h-4" />
+                    <span>{{ getReadableDate }}</span>
+                  </div>
+
+                  <div class="flex items-center space-x-2">
+                    <IconEye class="w-4 h-4" />
+                    <span>{{ getReadingTime }} minute reading</span>
+                  </div>
+
+                </div>
+
+                <h1
+                  class="block mx-auto text-center text-2xl font-bold text-black md:w-11/12 sm:text-4xl dark:text-white min-w-min min-w-full">
                   {{ post.title }}
                 </h1>
 
-                <p class="mx-auto text-black/50 md:w-9/12 dark:text-white/50">
+                <p class="text-black/50 mx-auto text-center md:w-9/12 dark:text-white/50">
                   {{ post.description }}
                 </p>
+
               </div>
 
-              <div class="flex items-center space-x-2">
-                <IconCalendar class="w-4 h-4" />
-                <span>{{ getReadableDate }}</span>
-              </div>
-
-              <div class="flex items-center space-x-2">
-                <IconEye class="w-4 h-4" />
-                <span>{{ getReadingTime }} minute reading</span>
-              </div>
             </div>
 
           </div>
 
-          <SmartFigure
-            v-if="post.header"
-            :src="post.header"
-            class="object-cover object-top w-full transition-all rounded-lg"  alt="Post header"
-          />
+          <SmartFigure v-if="post.header" :src="post.header" class="object-cover object-top w-full transition-all rounded-lg" alt="Post header" />
 
         </header>
+
 
         <div class="mt-4">
           <template v-if="!post.indicatorsHidden">
 
-            <div class="sticky z-10 hidden float-right text-left -mr-14 top-4 md:block" >
+            <div class="sticky z-10 hidden float-right text-left -mr-14 top-4 md:block">
               <BlogReadingIndicator selector=".nuxt-content" />
             </div>
 
           </template>
 
-<!--          <BlogTableOfContents :toc="post.toc" />-->
+        <!-- <BlogTableOfContents :toc="post.toc" /> -->
 
           <NuxtContent :document="post" class="max-w-full prose prose-black dark:prose-light" />
 
         </div>
       </article>
 
-      <hr class="my-10 border-black/10 dark:border-white/10" />
 
-      <script src="https://giscus.app/client.js"
-        data-repo="Asgarrrr/blog_comments"
-        data-repo-id="R_kgDOJd9fSg"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOJd9fSs4CWNQy"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="dark"
-        data-lang="en"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-      </script>
+      <blog-separator class="max-w-screen-md mx-auto" />
 
-      <div class="mt-16 space-y-10">
+        <div class="max-w-screen-md mx-auto">
+            <giscus-widget
+                id="comments"
+                repo="Asgarrrr/blog_comments"
+                repoid="R_kgDOJd9fSg"
+                category="Announcements"
+                categoryid="DIC_kwDOJd9fSs4CWNQy"
+                mapping="pathname"
+                term="Welcome to giscus!"
+                reactionsenabled="1"
+                emitmetadata="0"
+                inputposition="top"
+                :theme="$colorMode.value === 'dark' ? 'https://foregoing-chocolate-newt.glitch.me/dark.css' : 'https://foregoing-chocolate-newt.glitch.me/light.css'"
+                lang="en"
+                loading="lazy" />
+      </div>
+
+
+      <div class="mt-16 space-y-10 max-w-screen-md mx-auto">
         <div v-if="getRelatedPosts.length > 0" class="space-y-2">
           <h3 class="text-sm dark:text-white/30 text-black/50">
             Similar Posts
           </h3>
 
           <div v-if="getRelatedPosts.length" class="grid gap-4 sm:grid-cols-2">
-            <NuxtLink
-              v-for="(relatedPost, index) in getRelatedPosts"
-              :key="`related-${index}`"
+            <NuxtLink v-for="(relatedPost, index) in getRelatedPosts" :key="`related-${index}`"
               :to="`/blog/${relatedPost.slug}`"
-              class="rounded-lg border-[0.1px] p-4 bg-opacity-25 bg-neutral-300 border-neutral-200 dark:(bg-neutral-800/30 border-neutral-800) flex items-center space-x-2 hover:bg-opacity-40 transition-colors dark:text-white/80 dark:hover:text-white transition-colors"
-            >
+              class="rounded-lg border-[0.1px] p-4 bg-opacity-25 bg-neutral-300 border-neutral-200 dark:(bg-neutral-800/30 border-neutral-800) flex items-center space-x-2 hover:bg-opacity-40 transition-colors dark:text-white/80 dark:hover:text-white transition-colors">
               <IconDocument class="w-4 h-4" />
               <span class="truncate">{{ relatedPost.title }}</span>
             </NuxtLink>
@@ -305,12 +333,12 @@ export default Vue.extend({
 .nuxt-content {
 
   p {
+    @apply text-black/70 dark:text-white/60;
     letter-spacing: 0.3px;
     line-height: 1.9;
-    font-size: 18px
+    font-size: 1rem;
+    font-weight: 500
   }
-
-
 
   .nuxt-content-highlight {
 
@@ -321,7 +349,7 @@ export default Vue.extend({
     }
 
     pre {
-      @apply rounded-lg border-[0.1px] my-5 p-4 bg-opacity-25 bg-neutral-300 border-neutral-200 dark:(bg-neutral-800/30 border-neutral-800) max-h-35rem overflow-auto;
+      @apply rounded-lg border-[0.1px] my-5 p-4 bg-opacity-25 bg-neutral-300 border-neutral-200 dark:(bg-neutral-800/30 border-neutral-800) max-h-35rem overflow-auto transition-border-colors duration-500 ease-in-out;
     }
 
     ::-webkit-scrollbar {
@@ -362,18 +390,16 @@ code[class*="language-"], pre[class*="language-"] {
 }
 
 .copy-button {
-  @apply font-light mt-3 mr-3 text-xs top-0 right-0 text-white/50 z-10 absolute opacity-0 transition-opacity duration-200;
+    @apply font-light mt-3 mr-3 text-xs bottom-4 right-0 text-neutral-500 z-10 absolute opacity-0 transition-opacity duration-200 cursor-pointer hover:(text-neutral-600 opacity-100) dark:(text-white/50 hover:text-white/80);
+
 }
 
 .nuxt-content-highlight:hover .copy-button {
   @apply opacity-100;
 }
 
-.gsc-reactions-count {
-  @apply text-xs text-white/50 font-light ml-2 flex items-center space-x-1 transition-colors duration-200 hover:text-white dark:hover:text-white/80 dark:text-white/30;
-  display: none !important;
-}
 
+//  @apply font-light mt-3 mr-3 text-xs bottom-4 right-0 text-white/50 z-10 absolute opacity-0 transition-opacity duration-200 cursor-pointer hover:(text-white/80 opacity-100);
 
 //.dark .prose .nuxt-content-highlight {
 //  box-shadow: 0 0 0 100vmax #262626;

@@ -1,7 +1,7 @@
 exports.ids = [4];
 exports.modules = {
 
-/***/ 120:
+/***/ 123:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -104,14 +104,14 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "78ccdd94"
+  "1bafc874"
   
 )
 
 /* harmony default export */ var PrevNext = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {IconChevron: __webpack_require__(30).default})
+installComponents(component, {IconChevron: __webpack_require__(27).default})
 
 
 /***/ })

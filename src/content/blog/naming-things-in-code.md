@@ -4,7 +4,7 @@ description : "Finding the right name for a variable, a function or a class is h
 header      : https://cdn.discordapp.com/attachments/1071595350437134456/1148012712434094221/andre-benz-JnB8Gio4GZo.jpg
 tags        : []
 related     : [ "premature-optimization" ]
-createdAt   : 2023-09-027T19:03:24.368Z
+createdAt   : 2023-08-27T19:03:24.368Z
 special     : false
 ---
 
@@ -14,19 +14,19 @@ One of the classic quotes in programming is...
   There are only two hard things in Computer Science: cache invalidation and naming things.
 </blog-quote>
 
-And I don't think I've ever heard a programmer disagree with it. Finding the right name for a variable, a function or a class is hard, 
-one of the hardest things in programming. And it's not just about naming things, 
+And I don't think I've ever heard a programmer disagree with it. Finding the right name for a variable, a function or a class is hard,
+one of the hardest things in programming. And it's not just about naming things,
 it's about **naming things in a way that makes sense to other people, and to your future self**.
 
-I agree that these can be challenging to get right, but they're also easy to get wrong, and we can get 80% of the way 
+I agree that these can be challenging to get right, but they're also easy to get wrong, and we can get 80% of the way
 there by following a few simple rules / avoiding bad patterns.
 
-I want to discuss what I perceive as poor naming practices—practices that, if you steer clear of them, will naturally 
+I want to discuss what I perceive as poor naming practices—practices that, if you steer clear of them, will naturally
 lead you toward better naming. These are the classic...
 
 ## Variables with a single letter name
 
-Mathematicians like to crystallize down to the simplest possible form, most concise way of expressing something, 
+Mathematicians like to crystallize down to the simplest possible form, most concise way of expressing something,
 and so they have been using single letter variables for centuries, they like to use `x` and `y` and `z` and so on.
 
 But in programming, **we're not trying to be concise**, _**we're trying to be expressive**_, we're trying to be clear,
@@ -35,12 +35,12 @@ and so we should avoid single letter variables.
 You don't need to edit math, but you do need to edit code. And **when you're editing code**, _you need to understand it_.
 
 So, if you're using a single letter variable, you're forcing the reader to go and find the declaration of that variable,
-and then come back to where it's being used, and then try to understand what it's doing. 
+and then come back to where it's being used, and then try to understand what it's doing.
 
 Check out this example:
 
-```javascript
-function fp( m, s, e ) { 
+```js [src/index.js] {data-line="3,8-10"}
+function fp( m, s, e ) {
   const o = []
       , c = []
       , h = ( a, b ) => Math.abs( a.x - b.x ) + Math.abs( a.y - b.y );
@@ -72,7 +72,7 @@ I intentionally picked a function that's not too complex, but it's still hard to
 Now, let's try to improve it by giving our variables meaningful names:
 
 ```javascript
-function findPathInMaze( maze, start, end ) { 
+function findPathInMaze( maze, start, end ) {
   const open = []
       , closed = []
       , heuristicCost = ( a, b ) => Math.abs( a.x - b.x ) + Math.abs( a.y - b.y );
@@ -98,7 +98,7 @@ function findPathInMaze( maze, start, end ) {
 ```
 
 Hooo, okay, that's much better. So, "findPathInMaze" is a function that takes a maze, a start point and an end point,
-and it finds a path from the start point to the end point. We're using the A* algorithm to find the path, and we're 
+and it finds a path from the start point to the end point. We're using the A* algorithm to find the path, and we're
 using the "open" and "closed" arrays to keep track of the nodes we've visited.
 
 <blog-notification icon="🧐">
@@ -107,7 +107,7 @@ using the "open" and "closed" arrays to keep track of the nodes we've visited.
     Now, I'm not saying that you should never use single letter variables...
   </b>
 
-  ...But you should use them sparingly, and only 
+  ...But you should use them sparingly, and only
   when they're obvious. For example, if you're iterating over an array, you can use `i` as the index, or if you're
   iterating over an object, you can use `k` as the key.
 
@@ -116,7 +116,7 @@ using the "open" and "closed" arrays to keep track of the nodes we've visited.
 
 ## Abbreviations
 
-Abbreviations rely on context, which may or may not be present, and reading code takes more time than writing it. 
+Abbreviations rely on context, which may or may not be present, and reading code takes more time than writing it.
 Therefore, compelling yourself to understand system-specific naming patterns can make delving into unfamiliar code much more challenging.
 
 Abbreviations are often used for 2 reasons:
@@ -127,7 +127,7 @@ But now, we have IDEs that autocomplete, and screens are much wider, so we don't
 
 <smart-figure src="https://cdn.discordapp.com/attachments/1071595350437134456/1148040434950611025/423523452134258976056.png"></smart-figure>
 
-It takes less keyboard strokes than ever to write a variable name, and we have massive 4K screens, so there's no 
+It takes less keyboard strokes than ever to write a variable name, and we have massive 4K screens, so there's no
 reason to use abbreviations.
 
 ## Don't put the type in the name
@@ -165,12 +165,12 @@ But even better than that is to have a type that removes the ambiguity completel
 `TimeSpan` type, or in C++ you can have a `std::chrono::duration` type, and these types have a unit associated with
 them, so you don't need to put the unit in the name.
 
-The type abstracts the user from understanding the exact underlying unit, you need to explicitly ask for a unit back, 
+The type abstracts the user from understanding the exact underlying unit, you need to explicitly ask for a unit back,
 like here, we're asking for the total number of seconds:
 
 ```csharp
 void execute ( TimeSpan delay ) {
-  double seconds = delay.TotalSeconds;  
+  double seconds = delay.TotalSeconds;
 }
 ```
 
@@ -185,7 +185,7 @@ class Renderer:
 
 ### Choosing Descriptive Function and Class Names
 
-So far, we've talked about naming variables, but equally important is naming functions and classes. 
+So far, we've talked about naming variables, but equally important is naming functions and classes.
 Functions and classes are the building blocks of your code, and giving them clear,
 descriptive names can significantly improve code readability and maintainability.
 
@@ -246,4 +246,3 @@ Finally, don't underestimate the power of documentation. Even with clear names, 
 <blog-notification icon="💜">
   As programmers, our ability to communicate effectively through code is paramount. By following these guidelines and avoiding common naming pitfalls, you can ensure that your code speaks clearly and concisely to both collaborators and future maintainers, making the development process smoother and more efficient.
 </blog-notification>
-

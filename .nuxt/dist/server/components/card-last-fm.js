@@ -41,7 +41,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "2c529bea"
+  "69a20ceb"
   
 )
 
@@ -49,7 +49,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 94:
+/***/ 95:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -158,14 +158,14 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "a7803cc6"
+  "66a0047d"
   
 )
 
 /* harmony default export */ var LastFm = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SmartImage: __webpack_require__(27).default,IconPlay: __webpack_require__(90).default,SmartLink: __webpack_require__(16).default})
+installComponents(component, {SmartImage: __webpack_require__(25).default,IconPlay: __webpack_require__(90).default,SmartLink: __webpack_require__(16).default})
 
 
 /***/ })

@@ -1,7 +1,7 @@
-exports.ids = [76,13,26,29,65];
+exports.ids = [77,13,26,29,65];
 exports.modules = {
 
-/***/ 125:
+/***/ 128:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -42,7 +42,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "915fc16c"
+  "4df4b22a"
   
 )
 
@@ -50,7 +50,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 149:
+/***/ 150:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -187,19 +187,19 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "ab5ae1e4"
+  "0b54c224"
   
 )
 
 /* harmony default export */ var contact = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {IconBrand: __webpack_require__(83).default,Card: __webpack_require__(93).default,IconAt: __webpack_require__(125).default,PageLayout: __webpack_require__(81).default})
+installComponents(component, {IconBrand: __webpack_require__(83).default,Card: __webpack_require__(94).default,IconAt: __webpack_require__(128).default,PageLayout: __webpack_require__(78).default})
 
 
 /***/ }),
 
-/***/ 81:
+/***/ 78:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -265,7 +265,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "39588bd6"
+  "4ddc9da8"
   
 )
 
@@ -490,7 +490,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "d6c90780"
+  "0e3b7d60"
   
 )
 
@@ -498,7 +498,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 93:
+/***/ 94:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -616,7 +616,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "9d582c3c"
+  "2af3eb02"
   
 )
 

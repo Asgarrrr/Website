@@ -1,7 +1,7 @@
 exports.ids = [31];
 exports.modules = {
 
-/***/ 95:
+/***/ 96:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -117,7 +117,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "53dfab7c"
+  "34f836c8"
   
 )
 

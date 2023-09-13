@@ -3,50 +3,50 @@ title: 'Creating a Node.js and MongoDB-Based Authentication System — Enhancing
 description: 'Defending user data and preserving confidentiality is'
 tags: []
 related: []
-createdAt: 2023-04-27T19:03:24.368Z
+createdAt: 2023-01-25T19:03:24.368Z
 special: false
 ---
 
 <blog-notification icon="😟">
-  Yes, this post is relativly dense, but it is a great resource for anyone looking to build a secure authentication system. 
+  Yes, this post is relativly dense, but it is a great resource for anyone looking to build a secure authentication system.
   I would recommend reading it through once, and then coming back to it when you need to implement a system like this
 </blog-notification>
 
 <blog-separator> </blog-separator>
 
 Defending user data and preserving confidentiality is of utmost significance in the dynamic world of web development.
-A robust authentication and authorization framework serves as the shield against potential vulnerabilities, ensuring 
-the protection of user accounts and enabling precise control over application access. 
+A robust authentication and authorization framework serves as the shield against potential vulnerabilities, ensuring
+the protection of user accounts and enabling precise control over application access.
 
-In this comprehensive guide, we explore the intricate process of crafting an impregnable authentication and authorization 
-system by harnessing the power of Node.js, Express.js, and MongoDB. Immerse yourself in the depths of this article as we 
+In this comprehensive guide, we explore the intricate process of crafting an impregnable authentication and authorization
+system by harnessing the power of Node.js, Express.js, and MongoDB. Immerse yourself in the depths of this article as we
 uncover the essential steps and components required to fortify your web application's security posture.
 
 _But first, let's briefly understand some basic ideas before we go into the specifics of how it will be put into action._
 
 ## Grasping the Concept of Authentication and Authorization
 
-Before diving into implementation, I think it's necessary to highlight the difference between these two concepts. 
-Authentication and authorization are fundamental concepts in the realm of security and access control within web applications. 
+Before diving into implementation, I think it's necessary to highlight the difference between these two concepts.
+Authentication and authorization are fundamental concepts in the realm of security and access control within web applications.
 
-**Authentication** refers to the process of **verifying the identity of a user**, ensuring they are who they claim to be. 
-It involves the collection and validation of credentials, such as usernames and passwords, to grant access to specific resources 
-or functionalities. 
+**Authentication** refers to the process of **verifying the identity of a user**, ensuring they are who they claim to be.
+It involves the collection and validation of credentials, such as usernames and passwords, to grant access to specific resources
+or functionalities.
 
-On the other hand, **authorization** deals with **determining what actions or resources a user is allowed to access** based 
-on their authenticated identity and assigned permissions. 
-It involves defining and enforcing access control policies to protect sensitive data and maintain the integrity of the system. 
+On the other hand, **authorization** deals with **determining what actions or resources a user is allowed to access** based
+on their authenticated identity and assigned permissions.
+It involves defining and enforcing access control policies to protect sensitive data and maintain the integrity of the system.
 
-Together, authentication and authorization form a vital duo, safeguarding user accounts and providing the necessary controls 
+Together, authentication and authorization form a vital duo, safeguarding user accounts and providing the necessary controls
 to manage access effectively in web applications.
 
 ## J W ... T ?
 
-A JSON Web Token ( JWT ) is a concise and secure way to exchange information between two parties. 
+A JSON Web Token ( JWT ) is a concise and secure way to exchange information between two parties.
 
-The information, known as claims, is encoded as a JSON object. It can be used as the payload of a JSON Web Signature (JWS) 
-structure for digital signing or as the plaintext of a JSON Web Encryption (JWE) structure for encryption. 
-This allows the claims to be protected against tampering with a Message Authentication Code (MAC) and/or encrypted for 
+The information, known as claims, is encoded as a JSON object. It can be used as the payload of a JSON Web Signature (JWS)
+structure for digital signing or as the plaintext of a JSON Web Encryption (JWE) structure for encryption.
+This allows the claims to be protected against tampering with a Message Authentication Code (MAC) and/or encrypted for
 confidentiality.
 
 To summarize simply:
@@ -76,8 +76,8 @@ npm init -y
 npm install express mongoose bcrypt jsonwebtoken dotenv
 ```
 
-During development, we'll be using a local MongoDB database. To set up a local MongoDB instance, you can follow the 
-instructions in the [official documentation]( https://docs.mongodb.com/manual/installation/ ). Alternatively, you can 
+During development, we'll be using a local MongoDB database. To set up a local MongoDB instance, you can follow the
+instructions in the [official documentation]( https://docs.mongodb.com/manual/installation/ ). Alternatively, you can
 use a cloud-based MongoDB service such as [MongoDB Atlas]( https://www.mongodb.com/cloud/atlas ).
 
 After installing the required packages, create a new file named `.env` in the project directory. This file will contain
@@ -149,12 +149,12 @@ const userSchema = new mongoose.Schema({
 
 // —— Hash the password before saving the user model
 userSchema.pre( "save", async function( next ) {
-    
+
     const user = this;
-    
+
     if ( user.isModified( "password" ) )
         user.password = await bcrypt.hash( user.password, 10 );
-    
+
     next();
 
 });

@@ -1,7 +1,7 @@
-exports.ids = [71,0,29,66,67,68,69];
+exports.ids = [72,0,29,66,67,68,69];
 exports.modules = {
 
-/***/ 115:
+/***/ 117:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -172,19 +172,19 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "3637a4ee"
+  "4e0f4a01"
   
 )
 
 /* harmony default export */ var Status = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SkeletonLoader: __webpack_require__(75).default,IconBrand: __webpack_require__(83).default})
+installComponents(component, {SkeletonLoader: __webpack_require__(71).default,IconBrand: __webpack_require__(83).default})
 
 
 /***/ }),
 
-/***/ 75:
+/***/ 71:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -255,19 +255,19 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "0043e6dc"
+  "3950f1f2"
   
 )
 
 /* harmony default export */ var Index = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SkeletonLoaderRepository: __webpack_require__(77).default,SkeletonLoaderIframe: __webpack_require__(76).default,SkeletonLoaderSong: __webpack_require__(78).default,SkeletonLoaderLastfm: __webpack_require__(80).default,SkeletonLoaderSpinner: __webpack_require__(79).default})
+installComponents(component, {SkeletonLoaderRepository: __webpack_require__(74).default,SkeletonLoaderIframe: __webpack_require__(73).default,SkeletonLoaderSong: __webpack_require__(75).default,SkeletonLoaderLastfm: __webpack_require__(77).default,SkeletonLoaderSpinner: __webpack_require__(76).default})
 
 
 /***/ }),
 
-/***/ 76:
+/***/ 73:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -326,7 +326,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "24989e14"
+  "198264b4"
   
 )
 
@@ -334,7 +334,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 77:
+/***/ 74:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -370,7 +370,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "4083f08c"
+  "27237e5a"
   
 )
 
@@ -378,7 +378,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 78:
+/***/ 75:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -414,7 +414,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "7e074605"
+  "7c1b96b6"
   
 )
 
@@ -422,7 +422,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 79:
+/***/ 76:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -467,7 +467,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "12d3b059"
+  "89ba848e"
   
 )
 
@@ -475,7 +475,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 
 /***/ }),
 
-/***/ 80:
+/***/ 77:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -535,14 +535,14 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "659528cd"
+  "5a7eef6d"
   
 )
 
 /* harmony default export */ var Lastfm = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SkeletonLoader: __webpack_require__(75).default})
+installComponents(component, {SkeletonLoader: __webpack_require__(71).default})
 
 
 /***/ }),
@@ -764,7 +764,7 @@ var component = Object(componentNormalizer["a" /* default */])(
   false,
   null,
   null,
-  "d6c90780"
+  "0e3b7d60"
   
 )
 

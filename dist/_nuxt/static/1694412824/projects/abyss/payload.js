@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/projects/abyss", {data:[{_img:{}}],fetch:{},mutations:void 0});
