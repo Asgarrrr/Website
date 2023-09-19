@@ -69,10 +69,7 @@ export default Vue.extend({
 <template>
   <!-- Internal URL -->
   <nuxt-link
-    v-if="
-      href &&
-      ((isInternalPage === true && external === false) || internal === true)
-    "
+    v-if=" href && ( ( isInternalPage && !external ) || internal ) "
     :to="href"
     :target="blank && '_blank'"
     :title="title"

@@ -59,9 +59,9 @@ export default Vue.extend({
     class="rounded-lg card-base"
     :class="{
       [classes]: true,
-      'p-2': tight === true,
-      'p-4': tight === false,
-      'cursor-pointer': cursor === true,
+      'p-2': tight,
+      'p-4': !tight,
+      'cursor-pointer': cursor,
       'items-center flex space-x-4': $slots.icon || $slots['icon-left'],
       'justify-between': $slots.icon && !$slots['icon-left'],
     }"
@@ -79,7 +79,7 @@ export default Vue.extend({
       <p
         v-if="$slots.default"
         class="text-black/50 dark:text-white/30 text-sm"
-        :class="truncate === true && 'line-clamp-2'"
+        :class="truncate && 'line-clamp-2'"
       >
         <slot />
       </p>

@@ -34,7 +34,7 @@ export default Vue.extend({
       'text-lg': !['1', '2', 'sm', 'xs'].includes(size),
       'font-bold': bold,
       'font-medium': !bold,
-      uppercase: uppercase === true,
+      uppercase: uppercase,
     }"
   >
     <slot></slot>

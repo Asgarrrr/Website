@@ -8,7 +8,7 @@ exports.modules = {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Icon/Dev.vue?vue&type=template&id=09b2f521&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Icon/Dev.vue?vue&type=template&id=3146cd30&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
@@ -1322,7 +1322,7 @@ var render = function render() {
     }
   }, [_c('dc:format', [_vm._v("image/svg+xml")]), _vm._v(" "), _c('dc:type', {
     attrs: {
-      "rdf:resource": "http://purl.org/dc/dcmitype/StillImage"
+      "rdf:resource": "https://purl.org/dc/dcmitype/StillImage"
     }
   }), _vm._v(" "), _c('dc:title')], 1)], 1)], 1), _vm._ssrNode(" <defs id=\"defs14\"></defs> "), _c('sodipodi:namedview', {
     attrs: {
@@ -1469,7 +1469,7 @@ var render = function render() {
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/components/Icon/Dev.vue?vue&type=template&id=09b2f521&
+// CONCATENATED MODULE: ./src/components/Icon/Dev.vue?vue&type=template&id=3146cd30&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);

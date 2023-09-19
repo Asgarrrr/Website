@@ -14,7 +14,7 @@ export default Vue.extend({
 
 <template>
   <!-- Loader -->
-  <div v-if="error === false" class="w-full mx-auto !max-w-screen-md pt-14">
+  <div v-if="!error" class="w-full mx-auto !max-w-screen-md pt-14">
     <section class="space-y-8">
 
       <div class="space-y-4">

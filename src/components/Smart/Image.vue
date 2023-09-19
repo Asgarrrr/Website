@@ -60,8 +60,8 @@ export default Vue.extend({
      * Optimizes images and returns optimized image URL.
      */
     getBackgroundUrl(): string {
-      if (this.error === true || !this.src) return "/icon.png"
-      else if (this.optimize === false)
+      if (this.error || !this.src) return "/icon.png"
+      else if (!this.optimize)
         return this.getProxifiedImageUrl(this.src)
 
       const { format, height, width, fit, src } = this
@@ -92,7 +92,7 @@ export default Vue.extend({
       else return url
     },
     handleError() {
-      if (this.optimize === false) return
+      if (!this.optimize) return
 
       this.error = true
       this.loaded = true
@@ -105,7 +105,7 @@ export default Vue.extend({
   <div
     v-if="src"
     :style="
-      loaded === true
+      loaded
         ? {
             backgroundImage: `url('${getBackgroundUrl}')`,
             backgroundPosition: 'center',
@@ -115,7 +115,7 @@ export default Vue.extend({
     "
     :class="{
       'bg-gray-100 animate-pulse dark:bg-neutral-700 bg-no-repeat':
-        loaded === false,
+        !loaded,
       'relative caption': caption,
     }"
     :smart-image="true"

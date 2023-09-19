@@ -1,7 +1,7 @@
 <template>
   <!-- Up -->
   <svg
-    v-if="up === true"
+    v-if="up"
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
@@ -17,7 +17,7 @@
 
   <!-- Down -->
   <svg
-    v-else-if="down === true"
+    v-else-if="down"
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
@@ -33,7 +33,7 @@
 
   <!-- Right -->
   <svg
-    v-else-if="right === true"
+    v-else-if="right"
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
@@ -49,7 +49,7 @@
 
   <!-- Left -->
   <svg
-    v-else-if="left === true"
+    v-else-if="left"
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
@@ -65,7 +65,7 @@
 
   <!-- Double Left -->
   <svg
-    v-else-if="doubleLeft === true"
+    v-else-if="doubleLeft"
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"

@@ -15,9 +15,7 @@ export default Vue.extend({
   },
   computed: {
     getDescriptions() {
-      return typeof this.description === "string"
-        ? [this.description]
-        : this.description
+      return [this.description]
     },
   },
 })

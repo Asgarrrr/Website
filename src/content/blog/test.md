@@ -1,17 +1,19 @@
 ---
 title: '~⁄.dotfiles'
-description: 'Test page'
+description: ''
+header: https://cdn.discordapp.com/attachments/1071595350437134456/1152579950386364517/charlie-harutaka.jpg
 tags: []
 related: []
 createdAt: 2023-09-08T01:03:24.368Z
+updatedAt: 2023-09-16T01:03:24.368Z
 special: false
 ---
 
-<blog-notification icon="🚨" type="error">
-    This page is a work in progress. It is not finished yet !
-</blog-notification>
+Small optimizations to your workflow can have a significant impact on your productivity, This is why I spend a lot of time
+customizing my environment to make it as efficient as possible. I use a lot of tools to help me with this, and I'm always
+looking for new ways to improve my workflow. I'm also a big fan of the Unix philosophy, and I try to follow it as much as
+possible.
 
-<blog-separator> </blog-separator>
 
 ## Hardware stuff
 
@@ -44,3 +46,4 @@ I'm considering buying a new laptop with an M1/2 chip, but I don't have the budg
 <div class="flex flex-col space-y-1 md:space-y-0 md:flex-row md:space-x-2">
 
 </div>
+

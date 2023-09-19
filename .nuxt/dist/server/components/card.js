@@ -8,7 +8,7 @@ exports.modules = {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Card/Index.vue?vue&type=template&id=4ffb0162&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Card/Index.vue?vue&type=template&id=6ad423d6&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
@@ -18,9 +18,9 @@ var render = function render() {
     staticClass: "rounded-lg card-base",
     class: {
       [_vm.classes]: true,
-      'p-2': _vm.tight === true,
-      'p-4': _vm.tight === false,
-      'cursor-pointer': _vm.cursor === true,
+      'p-2': _vm.tight,
+      'p-4': !_vm.tight,
+      'cursor-pointer': _vm.cursor,
       'items-center flex space-x-4': _vm.$slots.icon || _vm.$slots['icon-left'],
       'justify-between': _vm.$slots.icon && !_vm.$slots['icon-left']
     },
@@ -35,14 +35,14 @@ var render = function render() {
     staticClass: "font-medium text-black dark:text-white truncate"
   }, [_vm._v("\n      " + _vm._s(_vm.title) + "\n    ")]) : _vm._e(), _vm._v(" "), _vm.$slots.default ? _c('p', {
     staticClass: "text-black/50 dark:text-white/30 text-sm",
-    class: _vm.truncate === true && 'line-clamp-2'
+    class: _vm.truncate && 'line-clamp-2'
   }, [_vm._t("default")], 2) : _vm._e()]), _vm._v(" "), _vm.$slots.icon ? _c('div', {
     staticClass: "flex-shrink-0"
   }, [_vm._t("icon")], 2) : _vm._e()]);
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/components/Card/Index.vue?vue&type=template&id=4ffb0162&
+// CONCATENATED MODULE: ./src/components/Card/Index.vue?vue&type=template&id=6ad423d6&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);

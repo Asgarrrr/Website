@@ -93,7 +93,7 @@ export default Vue.extend({
     </Button>
 
     <Button rounded @click.native="share('url')">
-      <IconCheck v-if="copied === true" class="text-green-500 h-6 w-6" />
+      <IconCheck v-if="copied" class="text-green-500 h-6 w-6" />
       <IconLink v-else class="text-gray-800 dark:text-gray-200 h-6 w-6" />
     </Button>
 

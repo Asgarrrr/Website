@@ -372,7 +372,7 @@ module.exports.__inject__ = function (context) {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/PageLayout.vue?vue&type=template&id=238cef4c&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/PageLayout.vue?vue&type=template&id=25d503b0&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
@@ -385,7 +385,7 @@ var render = function render() {
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/components/PageLayout.vue?vue&type=template&id=238cef4c&
+// CONCATENATED MODULE: ./src/components/PageLayout.vue?vue&type=template&id=25d503b0&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -407,7 +407,7 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
   },
   computed: {
     getDescriptions() {
-      return typeof this.description === "string" ? [this.description] : this.description;
+      return [this.description];
     }
   }
 }));

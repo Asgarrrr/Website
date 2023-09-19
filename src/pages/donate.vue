@@ -121,8 +121,7 @@ export default Vue.extend({
           <p v-else-if="$fetchState.error !== null">An error occured.</p>
           <p
             v-else-if="
-              !$fetchState.pending &&
-              !$fetchState.error &&
+              !$fetchState.pending && true &&
               sponsors.length === 0
             "
           >

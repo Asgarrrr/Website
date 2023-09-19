@@ -1,4 +1,4 @@
-import type { IContentOptions } from "@nuxt/content/types/index"
+import type { IContentOptions } from "@nuxt/content"
 
 
 const Content: IContentOptions = {

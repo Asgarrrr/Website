@@ -19,7 +19,7 @@ export default Vue.extend({
     }
   },
   async fetch() {
-    const [prev, next] = (await this.$content("blog")
+    const [ prev, next ] = ( await this.$content("blog")
       .only(["title", "slug"])
       .sortBy("createdAt", "asc")
       .surround(this.currentSlug)
@@ -34,37 +34,27 @@ export default Vue.extend({
 <template>
   <transition name="fade" mode="out-in">
     <div
-      v-if="$fetchState.pending === false && !$fetchState.error"
+      v-if="!$fetchState.pending && !$fetchState.error"
       class="grid gap-x-4 gap-y-2 grid-cols-1 md:grid-cols-2"
     >
       <component
         :is="prev ? 'SmartLink' : 'div'"
-        :href="prev && `/blog/${prev.slug}`"
+        :href="prev && `/blog/${ prev.slug }`"
         class="rounded-lg card-base flex items-center space-x-2"
-        :class="
-          !prev
-            ? 'cursor-not-allowed'
-            : 'dark:hover:text-white hover:bg-opacity-40'
-        "
+        :class="!prev ? 'cursor-not-allowed' : 'dark:hover:text-white hover:bg-opacity-40'"
       >
         <IconChevron left class="h-4 w-4 flex-shrink-0" />
+        <span class="truncate">{{ prev && prev.title || "No Older Posts" }}</span>
 
-        <span v-if="prev" class="truncate">{{ prev.title }}</span>
-        <span v-else class="truncate">No Older Posts</span>
       </component>
 
       <component
         :is="next ? 'SmartLink' : 'div'"
         :href="next && `/blog/${next.slug}`"
         class="rounded-lg card-base flex items-center space-x-2 justify-end"
-        :class="
-          !next
-            ? 'cursor-not-allowed'
-            : 'dark:hover:text-white hover:bg-opacity-40'
-        "
+        :class="!next ? 'cursor-not-allowed' : 'dark:hover:text-white hover:bg-opacity-40'"
       >
-        <span v-if="next" class="truncate">{{ next.title }}</span>
-        <span v-else class="truncate">No Newer Posts</span>
+        <span class="truncate">{{ next && next.title || "No Newer Posts" }}</span>
 
         <IconChevron right class="h-4 w-4 flex-shrink-0" />
       </component>

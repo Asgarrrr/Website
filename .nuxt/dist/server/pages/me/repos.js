@@ -8,14 +8,14 @@ exports.modules = {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Card/Repository.vue?vue&type=template&id=47d68ded&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Card/Repository.vue?vue&type=template&id=6bf00818&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
     _setup = _vm._self._setupProxy;
   return _c('div', {
     staticClass: "rounded-lg card-base"
-  }, [_vm._ssrNode("<div class=\"space-y-2\">", "</div>", [_vm._ssrNode("<div" + _vm._ssrClass(null, _vm.top && 'flex justify-between space-x-2') + ">", "</div>", [_vm._ssrNode("<h3 class=\"text-black/90 dark:text-white/90 items-center truncate space-x-1\"><span class=\"text-black/50 dark:text-white/30\">Asgarrrr/</span><span>" + _vm._ssrEscape(_vm._s(_vm.name)) + "</span></h3> "), _vm.top === true ? _c('IconStar', {
+  }, [_vm._ssrNode("<div class=\"space-y-2\">", "</div>", [_vm._ssrNode("<div" + _vm._ssrClass(null, _vm.top && 'flex justify-between space-x-2') + ">", "</div>", [_vm._ssrNode("<h3 class=\"text-black/90 dark:text-white/90 items-center truncate space-x-1\"><span class=\"text-black/50 dark:text-white/30\">Asgarrrr/</span><span>" + _vm._ssrEscape(_vm._s(_vm.name)) + "</span></h3> "), _vm.top ? _c('IconStar', {
     staticClass: "h-6 text-yellow-600 w-6",
     attrs: {
       "title": "Top repository",
@@ -30,7 +30,7 @@ var render = function render() {
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/components/Card/Repository.vue?vue&type=template&id=47d68ded&
+// CONCATENATED MODULE: ./src/components/Card/Repository.vue?vue&type=template&id=6bf00818&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -121,7 +121,7 @@ installComponents(component, {IconStar: __webpack_require__(93).default,IconDev:
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/pages/me/repos.vue?vue&type=template&id=0b8b35ee&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/pages/me/repos.vue?vue&type=template&id=a5df2cf8&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
@@ -131,7 +131,7 @@ var render = function render() {
       "title": "Repositories",
       "description": "My public projects on GitHub."
     }
-  }, [_vm.$fetchState.pending === true ? _c('div', {
+  }, [_vm.$fetchState.pending ? _c('div', {
     staticClass: "grid gap-4 md:grid-cols-2"
   }, _vm._l(9, function (i) {
     return _c('SkeletonLoader', {
@@ -164,7 +164,7 @@ var render = function render() {
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/pages/me/repos.vue?vue&type=template&id=0b8b35ee&
+// CONCATENATED MODULE: ./src/pages/me/repos.vue?vue&type=template&id=a5df2cf8&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -184,7 +184,7 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
     // Avoid showing these repositories
     const filter = ["Asgarrrr"];
     const repos = (await this.$axios.get("https://api.github.com/users/asgarrrr/repos?per_page=100")).data;
-    this.repos = (_a = repos === null || repos === void 0 ? void 0 : repos.filter(repo => repo.fork === false && !filter.includes(repo.name))) === null || _a === void 0 ? void 0 : _a.sort((a, b) => (b === null || b === void 0 ? void 0 : b.stargazers_count) - (a === null || a === void 0 ? void 0 : a.stargazers_count));
+    this.repos = (_a = repos === null || repos === void 0 ? void 0 : repos.filter(repo => !repo.fork && !filter.includes(repo.name))) === null || _a === void 0 ? void 0 : _a.sort((a, b) => (b === null || b === void 0 ? void 0 : b.stargazers_count) - (a === null || a === void 0 ? void 0 : a.stargazers_count));
   },
   head() {
     const title = "GitHub Repositories";
@@ -600,7 +600,7 @@ installComponents(component, {SkeletonLoader: __webpack_require__(76).default})
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/PageLayout.vue?vue&type=template&id=238cef4c&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/PageLayout.vue?vue&type=template&id=25d503b0&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
@@ -613,7 +613,7 @@ var render = function render() {
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/components/PageLayout.vue?vue&type=template&id=238cef4c&
+// CONCATENATED MODULE: ./src/components/PageLayout.vue?vue&type=template&id=25d503b0&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -635,7 +635,7 @@ var external_vue_default = /*#__PURE__*/__webpack_require__.n(external_vue_);
   },
   computed: {
     getDescriptions() {
-      return typeof this.description === "string" ? [this.description] : this.description;
+      return [this.description];
     }
   }
 }));
@@ -674,12 +674,12 @@ var component = Object(componentNormalizer["a" /* default */])(
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Icon/Star.vue?vue&type=template&id=3a11b7dd&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Icon/Star.vue?vue&type=template&id=967a1c9c&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
     _setup = _vm._self._setupProxy;
-  return _vm.filled === false ? _c('svg', {
+  return !_vm.filled ? _c('svg', {
     attrs: {
       "xmlns": "http://www.w3.org/2000/svg",
       "fill": "none",
@@ -696,7 +696,7 @@ var render = function render() {
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/components/Icon/Star.vue?vue&type=template&id=3a11b7dd&
+// CONCATENATED MODULE: ./src/components/Icon/Star.vue?vue&type=template&id=967a1c9c&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);
@@ -748,7 +748,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Icon/Dev.vue?vue&type=template&id=09b2f521&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Icon/Dev.vue?vue&type=template&id=3146cd30&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
@@ -2062,7 +2062,7 @@ var render = function render() {
     }
   }, [_c('dc:format', [_vm._v("image/svg+xml")]), _vm._v(" "), _c('dc:type', {
     attrs: {
-      "rdf:resource": "http://purl.org/dc/dcmitype/StillImage"
+      "rdf:resource": "https://purl.org/dc/dcmitype/StillImage"
     }
   }), _vm._v(" "), _c('dc:title')], 1)], 1)], 1), _vm._ssrNode(" <defs id=\"defs14\"></defs> "), _c('sodipodi:namedview', {
     attrs: {
@@ -2209,7 +2209,7 @@ var render = function render() {
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/components/Icon/Dev.vue?vue&type=template&id=09b2f521&
+// CONCATENATED MODULE: ./src/components/Icon/Dev.vue?vue&type=template&id=3146cd30&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);

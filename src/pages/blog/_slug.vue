@@ -41,7 +41,7 @@ export default Vue.extend({
     ).fetch()) as Post
 
     if (!post) {
-      this.$router.push("/blog")
+      await this.$router.push("/blog")
       return
     }
 
@@ -160,7 +160,7 @@ export default Vue.extend({
                                 el.querySelector("pre")?.classList.remove("!border-green-500" )
                             }, 2000 )
 
-                        }).catch( ( err ) => {
+                        }).catch( ( ) => {
 
                             button.textContent = "error";
                             button.classList.add( "!text-red-500" )
@@ -210,8 +210,8 @@ export default Vue.extend({
 <template>
   <Transition name="fade">
 
-    <LoadersContent v-if="$fetchState.pending === true || $fetchState.error !== null"
-      :error="$fetchState.pending === false && $fetchState.error !== null" />
+    <LoadersContent v-if="$fetchState.pending || $fetchState.error !== null"
+      :error="!$fetchState.pending && $fetchState.error !== null" />
 
     <div v-else class="pt-4 mt-10">
 

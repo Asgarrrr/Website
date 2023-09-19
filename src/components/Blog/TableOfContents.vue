@@ -31,7 +31,7 @@ export default Vue.extend({
       </transition>
     </div>
 
-    <ul v-show="tocToggled === true" class="flex flex-wrap gap-2 items-center grid">
+    <ul v-show="tocToggled" class="flex flex-wrap gap-2 items-center grid">
       <li v-for="link of toc || []" :key="link.id" class="text-sm transition-colors text-dark-400 dark:text-white/30 hover:text-dark-700 dark:hover:text-white/60" :style="`padding-left: ${ ( link.depth - 1 ) * 1.5 }rem`">
         <a v-if="link.id" :href="`#${link.id}`">
           {{ link.text }}

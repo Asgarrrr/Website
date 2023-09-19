@@ -8,12 +8,12 @@ exports.modules = {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Icon/Star.vue?vue&type=template&id=3a11b7dd&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Icon/Star.vue?vue&type=template&id=967a1c9c&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
     _setup = _vm._self._setupProxy;
-  return _vm.filled === false ? _c('svg', {
+  return !_vm.filled ? _c('svg', {
     attrs: {
       "xmlns": "http://www.w3.org/2000/svg",
       "fill": "none",
@@ -30,7 +30,7 @@ var render = function render() {
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/components/Icon/Star.vue?vue&type=template&id=3a11b7dd&
+// CONCATENATED MODULE: ./src/components/Icon/Star.vue?vue&type=template&id=967a1c9c&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);

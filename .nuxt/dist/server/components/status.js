@@ -8,7 +8,7 @@ exports.modules = {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Status.vue?vue&type=template&id=6d994c6b&
+// CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib/loaders/templateLoader.js??ref--6!./node_modules/@nuxt/components/dist/loader.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./node_modules/windicss-webpack-plugin/dist/loaders/windicss-template.cjs!./src/components/Status.vue?vue&type=template&id=30622afc&
 var render = function render() {
   var _vm = this,
     _c = _vm._self._c,
@@ -45,7 +45,7 @@ var render = function render() {
       "name": "fade",
       "mode": "out-in"
     }
-  }, [_vm.newData === false ? _c('div', {
+  }, [!_vm.newData ? _c('div', {
     key: "notNewData",
     staticClass: "text-sm leading-tight truncate",
     attrs: {
@@ -67,7 +67,7 @@ var render = function render() {
 };
 var staticRenderFns = [];
 
-// CONCATENATED MODULE: ./src/components/Status.vue?vue&type=template&id=6d994c6b&
+// CONCATENATED MODULE: ./src/components/Status.vue?vue&type=template&id=30622afc&
 
 // EXTERNAL MODULE: external "vue"
 var external_vue_ = __webpack_require__(0);

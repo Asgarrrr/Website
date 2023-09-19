@@ -25,7 +25,7 @@ export default Vue.extend({
     ).data
 
     this.repos = repos
-      ?.filter((repo) => repo.fork === false && !filter.includes(repo.name))
+      ?.filter((repo) => !repo.fork && !filter.includes(repo.name))
       ?.sort((a, b) => b?.stargazers_count - a?.stargazers_count)
   },
   head() {
@@ -45,7 +45,7 @@ export default Vue.extend({
 
 <template>
   <PageLayout title="Repositories" description="My public projects on GitHub.">
-    <div v-if="$fetchState.pending === true" class="grid gap-4 md:grid-cols-2">
+    <div v-if="$fetchState.pending" class="grid gap-4 md:grid-cols-2">
       <SkeletonLoader v-for="i in 9" :key="`skeleton-${i}`" type="repository" />
     </div>
 

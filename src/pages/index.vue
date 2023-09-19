@@ -2,7 +2,7 @@
 import Vue from "vue"
 
 /* Interfaces */
-import type { Repository } from "../types/Response/GitHub"
+import type { Repository } from "@/types/Response/GitHub"
 import Fire from "@/components/Fire.vue";
 
 interface Project {
@@ -66,12 +66,12 @@ export default Vue.extend({
             date: "2020 › 2022",
           }, {
             title: "Bachelor's in Web and Mobile Development",
-            url: "http://www.insset.u-picardie.fr/",
+            url: "https://www.insset.u-picardie.fr/",
             position: "INSSET / France, Saint-Quentin",
             date: "2022 › 2023",
           }, {
             title: "Master's in Cloud Computing & Mobility",
-            url: "http://www.insset.u-picardie.fr/",
+            url: "https://www.insset.u-picardie.fr/",
             position: "INSSET / France, Saint-Quentin",
             date: "2023 › 2025",
           }

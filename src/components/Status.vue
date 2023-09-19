@@ -124,7 +124,7 @@ export default Vue.extend({
 
     <transition name="fade" mode="out-in">
       <div
-        v-if="newData === false"
+        v-if="!newData"
         key="notNewData"
         class="text-sm leading-tight truncate"
         :title="getStatusDetails.replaceAll('**', '')"

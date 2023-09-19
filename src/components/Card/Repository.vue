@@ -60,7 +60,7 @@ export default Vue.extend({
         </h3>
 
         <IconStar
-          v-if="top === true"
+          v-if="top"
           class="h-6 text-yellow-600 w-6"
           title="Top repository"
           filled
