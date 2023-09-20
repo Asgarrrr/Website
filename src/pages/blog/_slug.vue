@@ -138,47 +138,47 @@ export default Vue.extend({
 
         if ( window.isSecureContext ) {
 
-            document.querySelectorAll(".nuxt-content-highlight").forEach( ( el ) => {
-                const button = document.createElement( "button" )
-                button.className = "copy-button"
-                button.textContent = "ctrl+c ?"
-                el.appendChild( button )
+          document.querySelectorAll(".nuxt-content-highlight").forEach( ( el ) => {
+            const button = document.createElement( "button" )
+            button.className = "copy-button"
+            button.textContent = "ctrl+c ?"
+            el.appendChild( button )
 
-                button.addEventListener( "click", () => {
+            button.addEventListener( "click", () => {
 
-                    if ( el.querySelector("pre")?.textContent ) {
+              if ( el.querySelector("pre")?.textContent ) {
 
-                        navigator.clipboard.writeText( el.querySelector("pre")?.textContent || "" ).then(() => {
+                navigator.clipboard.writeText( el.querySelector("pre")?.textContent || "" ).then(() => {
 
-                            button.textContent = "copied 🔥";
-                            button.classList.add( "!text-green-500" )
-                            el.querySelector("pre")?.classList.add( "!border-green-500" )
+                  button.textContent = "copied 🔥";
+                  button.classList.add( "!text-green-500" )
+                  el.querySelector("pre")?.classList.add( "!border-green-500" )
 
-                            setTimeout( () => {
-                                button.textContent = "ctrl+c ?"
-                                button.classList.remove( "!text-green-500" )
-                                el.querySelector("pre")?.classList.remove("!border-green-500" )
-                            }, 2000 )
+                  setTimeout( () => {
+                    button.textContent = "ctrl+c ?"
+                    button.classList.remove( "!text-green-500" )
+                    el.querySelector("pre")?.classList.remove("!border-green-500" )
+                  }, 2000 )
 
-                        }).catch( ( ) => {
+                }).catch( ( ) => {
 
-                            button.textContent = "error";
-                            button.classList.add( "!text-red-500" )
-                            el.querySelector("pre")?.classList.add( "!border-red-500" )
+                  button.textContent = "error";
+                  button.classList.add( "!text-red-500" )
+                  el.querySelector("pre")?.classList.add( "!border-red-500" )
 
-                            setTimeout( () => {
-                                button.textContent = "ctrl+c ?"
-                                button.classList.remove( "!text-red-500" )
-                                el.querySelector("pre")?.classList.remove("!border-red-500" )
-                            }, 2000 )
-
-                        })
-
-                    }
+                  setTimeout( () => {
+                    button.textContent = "ctrl+c ?"
+                    button.classList.remove( "!text-red-500" )
+                    el.querySelector("pre")?.classList.remove("!border-red-500" )
+                  }, 2000 )
 
                 })
 
-            });
+              }
+
+            })
+
+          });
 
         }
 
@@ -211,7 +211,7 @@ export default Vue.extend({
   <Transition name="fade">
 
     <LoadersContent v-if="$fetchState.pending || $fetchState.error !== null"
-      :error="!$fetchState.pending && $fetchState.error !== null" />
+                    :error="!$fetchState.pending && $fetchState.error !== null" />
 
     <div v-else class="pt-4 mt-10">
 
@@ -239,10 +239,14 @@ export default Vue.extend({
                   {{ post.title }}
                 </h1>
 
-                <div class="flex space-x-2 text-black/50 dark:text-white/50">
+                <div class="flex space-x-2 text-black/50 dark:text-white/50 items-center">
                   <span>{{ getReadableDate }}</span>
-                  <span>/</span>
+                  <span> / </span>
                   <span>{{ getReadingTime }} min read </span>
+                  <span v-if="post.createdAt !== post.updatedAt">—</span>
+                <span v-if="post.createdAt !== post.updatedAt" class="px-2 py-1 rounded-md bg-blue-100 text-blue-600 dark:bg-white/5 dark:text-white/50">
+                      Updated {{ $getReadableDate(new Date(post.updatedAt || Date.now())) }}
+                  </span>
                 </div>
 
               </div>
@@ -255,17 +259,15 @@ export default Vue.extend({
 
         </header>
 
-
         <div class="mt-4">
+
           <template v-if="!post.indicatorsHidden">
 
-            <div class="sticky z-10 hidden float-right text-left -mr-14 top-4 md:block">
-              <BlogReadingIndicator selector=".nuxt-content" />
+            <div class="fixed z-10 hidden text-left top-100px transform-gpu translate-y-1/2 md:block left-10 max-w-250px">
+              <BlogReadingIndicator selector=".nuxt-content" :toc="post.toc" />
             </div>
 
           </template>
-
-        <!-- <BlogTableOfContents :toc="post.toc" /> -->
 
           <NuxtContent :document="post" class="max-w-full prose prose-black dark:prose-light" />
 
@@ -275,7 +277,7 @@ export default Vue.extend({
       <blog-separator class="max-w-screen-md mx-auto" />
 
       <div class="max-w-screen-md mx-auto">
-          <giscus-widget id="comments" repo="Asgarrrr/blog_comments" repoid="R_kgDOJd9fSg" category="Announcements" categoryid="DIC_kwDOJd9fSs4CWNQy" mapping="pathname" term="Welcome to giscus!" reactionsenabled="1" emitmetadata="0" inputposition="top" :theme="$colorMode.value === 'dark' ? 'https://foregoing-chocolate-newt.glitch.me/dark.css' : 'https://foregoing-chocolate-newt.glitch.me/light.css'" lang="en" loading="lazy" />
+        <giscus-widget id="comments" repo="Asgarrrr/blog_comments" repoid="R_kgDOJd9fSg" category="Announcements" categoryid="DIC_kwDOJd9fSs4CWNQy" mapping="pathname" term="Welcome to giscus!" reactionsenabled="1" emitmetadata="0" inputposition="top" :theme="$colorMode.value === 'dark' ? 'https://foregoing-chocolate-newt.glitch.me/dark.css' : 'https://foregoing-chocolate-newt.glitch.me/light.css'" lang="en" loading="lazy" />
       </div>
 
       <div class="mt-16 space-y-10 max-w-screen-md mx-auto">
@@ -286,8 +288,8 @@ export default Vue.extend({
 
           <div v-if="getRelatedPosts.length" class="grid gap-4 sm:grid-cols-2">
             <NuxtLink v-for="(relatedPost, index) in getRelatedPosts" :key="`related-${index}`"
-              :to="`/blog/${relatedPost.slug}`"
-              class="rounded-lg border-[0.1px] p-4 bg-opacity-25 bg-neutral-300 border-neutral-200 dark:(bg-neutral-800/30 border-neutral-800) flex items-center space-x-2 hover:bg-opacity-40 transition-colors dark:text-white/80 dark:hover:text-white transition-colors">
+                      :to="`/blog/${relatedPost.slug}`"
+                      class="rounded-lg border-[0.1px] p-4 bg-opacity-25 bg-neutral-300 border-neutral-200 dark:(bg-neutral-800/30 border-neutral-800) flex items-center space-x-2 hover:bg-opacity-40 transition-colors dark:text-white/80 dark:hover:text-white transition-colors">
               <IconDocument class="w-4 h-4" />
               <span class="truncate">{{ relatedPost.title }}</span>
             </NuxtLink>
@@ -308,44 +310,44 @@ export default Vue.extend({
 
 <style lang="scss">
 
-  ::selection {
-    @apply dark:(bg-white/10 text-white/90) bg-black/10 text-black/90;
+::selection {
+  @apply dark:(bg-white/10 text-white/90) bg-black/10 text-black/90;
+}
+
+::-moz-selection {
+  @apply dark:(bg-white/10 text-white/90) bg-black/10 text-black/90;
+}
+
+.prose > p {
+  @apply text-black/70 dark:text-white/50 md:text-18px text-16px;
+  letter-spacing: 0px;
+  line-height: 1.9 !important;
+  font-weight: 400;
+}
+
+.prose > ul,
+.prose > ol {
+  @apply text-black/60 dark:text-white/50 md:text-18px text-16px;
+  letter-spacing: 0px;
+  line-height: 1.9 !important;
+  font-weight: 400;
+}
+
+.prose > ol > li:before,
+.prose > ul > li:before {
+  @apply text-black/50 dark:(text-white/50);
+}
+
+.nuxt-content {
+
+  a {
+    @apply decoration-2 decoration-transparent transition-all duration-400 ease-in-out underline-offset-4;
+    color: #5686f5 !important;
   }
 
-  ::-moz-selection {
-    @apply dark:(bg-white/10 text-white/90) bg-black/10 text-black/90;
+  a:hover {
+    text-decoration-color: #5686f5;
   }
-
-  .prose > p {
-    @apply text-black/70 dark:text-white/50 md:text-18px text-16px;
-    letter-spacing: 0.3px;
-    line-height: 1.9 !important;
-    font-weight: 400;
-  }
-
-  .prose > ul,
-  .prose > ol {
-    @apply text-black/70 dark:text-white/50 md:text-18px text-16px;
-    letter-spacing: 0.3px;
-    line-height: 1.9 !important;
-    font-weight: 400;
-  }
-
-  .prose > ol > li:before,
-  .prose > ul > li:before {
-    @apply text-black/50 dark:(text-white/50);
-  }
-
-  .nuxt-content {
-
-    a {
-      @apply decoration-2 decoration-transparent transition-all duration-400 ease-in-out underline-offset-4;
-      color: #5686f5 !important;
-    }
-
-    a:hover {
-      text-decoration-color: #5686f5;
-    }
 
   .nuxt-content-highlight {
 
@@ -382,9 +384,9 @@ export default Vue.extend({
 
   }
 
-    code {
-      @apply bg-blue-100 py-px px-1 text-blue-600 dark:bg-white/5 rounded-sm;
-    }
+  code {
+    @apply bg-blue-100 py-px px-1 text-blue-600 dark:bg-white/5 rounded-sm;
+  }
 
 }
 
@@ -398,7 +400,7 @@ code[class*="language-"], pre[class*="language-"] {
 }
 
 .copy-button {
-    @apply font-light mt-3 mr-3 text-xs bottom-4 right-0 text-neutral-500 z-10 absolute opacity-0 transition-opacity duration-200 cursor-pointer hover:(text-neutral-600 opacity-100) dark:(text-white/50 hover:text-white/80);
+  @apply font-light mt-3 mr-3 text-xs bottom-4 right-0 text-neutral-500 z-10 absolute opacity-0 transition-opacity duration-200 cursor-pointer hover:(text-neutral-600 opacity-100) dark:(text-white/50 hover:text-white/80);
 
 }
 
