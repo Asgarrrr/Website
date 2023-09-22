@@ -43,12 +43,17 @@ export default Vue.extend({
 
           <div class="flex flex-row items-center gap-x-2 justify-between">
 
-            <SmartLink :href="url" blank style="text-decoration: none;">
+            <!-- If url is empty, don't render the link -->
+            <SmartLink v-if="url" :href="url" blank style="text-decoration: none;">
               <div class="flex space-x-2 items-center decoration-wavy decoration-1 decoration-gray-500">
                 <h1 class="hover:underline decoration-wavy decoration-1 decoration-gray-500">{{ product }}</h1>
                 <IconLink class="h-4 w-4" />
               </div>
             </SmartLink>
+
+            <div v-else>
+              <h1 class="hover:underline decoration-wavy decoration-1 decoration-gray-500">{{ product }}</h1>
+            </div>
 
           </div>
 

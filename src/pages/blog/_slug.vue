@@ -319,7 +319,7 @@ export default Vue.extend({
 }
 
 .prose > p {
-  @apply text-black/70 dark:text-white/50 md:text-18px text-16px;
+  @apply text-black/70 dark:text-white/60 md:text-18px text-16px;
   letter-spacing: 0px;
   line-height: 1.9 !important;
   font-weight: 400;
@@ -327,7 +327,7 @@ export default Vue.extend({
 
 .prose > ul,
 .prose > ol {
-  @apply text-black/60 dark:text-white/50 md:text-18px text-16px;
+  @apply text-black/60 dark:text-white/60 md:text-18px text-16px;
   letter-spacing: 0px;
   line-height: 1.9 !important;
   font-weight: 400;
@@ -335,7 +335,7 @@ export default Vue.extend({
 
 .prose > ol > li:before,
 .prose > ul > li:before {
-  @apply text-black/50 dark:(text-white/50);
+  @apply text-black/50 dark:(text-white/60);
 }
 
 .nuxt-content {

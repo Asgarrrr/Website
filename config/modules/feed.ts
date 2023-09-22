@@ -1,52 +1,57 @@
-const Feed = () => {
-  const baseUrlArticles = "https://jeremycaruelle.com/blog"
+const { $content } = require("@nuxt/content");
 
-  const feedFormats = {
+const baseUrlArticles = "https://jeremycaruelle.com/blog";
+
+const feedFormats = {
     rss: { type: "rss2", file: "rss.xml" },
     json: { type: "json1", file: "feed.json" },
-  }
+};
 
-  const { $content } = require("@nuxt/content")
-
-  const createFeedArticles = async function (feed: any) {
+// Function to create st
+const createFeedArticles = async function ( feed : any ) {
+    // Set the feed's meta data
     feed.options = {
-      title: "Asgarrrr's Blog",
-      description:
-        " --- ",
-      link: baseUrlArticles,
-    }
+        title       : "Asgarrrr's Blog",
+        description : "Asgarrrr's Blog",
+        link        : baseUrlArticles,
+    };
 
-    const articles = await $content("blog").fetch()
+    // Fetch the articles
+    const articles = await $content( "blog" ).fetch();
 
-    articles.forEach((article: any) => {
-      const url = `${baseUrlArticles}/${article.slug}`
+    // Set the content of each article
+    const hostName = process.env.NODE_ENV === "production" ? "https://jeremycaruelle.com" : "http://localhost:3000";
 
-      const hostName =
-        process.env.NODE_ENV === "production"
-          ? "https://jeremycaruelle.com"
-          : "http://localhost:3000"
+    // Add each article to the feed
+    articles.forEach( ( article : any ) => {
+        const url = `${ baseUrlArticles }/${ article.slug }`;
 
-      const postImagesPath = `${hostName}/assets/images/posts`
+        // Set the image url
+        const postImagesPath = `${ hostName }/assets/images/posts`;
+        const imageUrl = article.image
+            ? `${ hostName }${ article.image }`
+            : `${ postImagesPath }/${ url?.split( "/" )?.at( -1 ) }.jpg`;
 
-      feed.addItem({
-        title: article.title,
-        slug: article.slug,
-        link: url,
-        image: article.image
-          ? `${hostName}${article.image}`
-          : `${postImagesPath}/${url?.split("/")?.at(-1)}.jpg`,
-        date: new Date(article.createdAt),
-        description: article.description,
-        content: article.summary,
-      })
-    })
-  }
+        // Add the article to the feed
+        feed.addItem({
+            title       : article.title,
+            slug        : article.slug,
+            link        : url,
+            image       : imageUrl,
+            date        : new Date(article.createdAt),
+            description : article.description,
+            content     : article.summary,
+        });
+    });
+};
 
-  return Object.values(feedFormats).map(({ file, type }) => ({
-    path: `${file}`,
-    create: createFeedArticles,
-    type,
-  }))
-}
+// Function to generate the feeds
+const generateFeeds = ( ) => {
+    return Object.values( feedFormats ).map(({ file, type }) => ({
+        path: file,
+        type,
+        create: createFeedArticles,
+    }));
+};
 
-export default Feed
+export default generateFeeds;

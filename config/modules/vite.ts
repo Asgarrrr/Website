@@ -1,5 +1,5 @@
 export default {
-  experimentWarning: false,
-  build: false,
-  ssr: false,
+    experimentWarning: false,
+    build: false,
+    ssr: false,
 }

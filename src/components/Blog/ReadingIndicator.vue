@@ -140,7 +140,7 @@ export default Vue.extend({
       <div class="xl:block hidden">
         <ul class="flex flex-wrap gap-2 items-center grid">
           <li v-for="link of toc || []" :id="`toc-${link.id}`" :key="link.id" class="text-sm transition-colors text-dark-400 dark:text-white/50 hover:text-dark-700 dark:hover:text-white/80" :style="`padding-left: ${ ( link.depth - 1 ) * 1.5 }rem`">
-            <a v-if="link.id" :href="`#${link.id}`">
+            <a v-if="link.id" :href="`#${ link.id }`">
               {{ link.text }}
             </a>
           </li>

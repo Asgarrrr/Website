@@ -23,51 +23,56 @@ import { generateDone } from "./hooks/generate/done"
 const isDev = process.env.NODE_ENV === "development"
 
 const Config: NuxtConfig = {
+    global: true,
+    security: {
+        xFrameOptions: 'SAMEORIGIN',
+        xContentTypeOptions: 'nosniff',
+    },
 
-  server: {
-    port: process.env.PORT || 3000,
-    host: "0.0.0.0"
-  },
+    server: {
+        port: process.env.PORT || 3000,
+        host: "0.0.0.0"
+    },
 
-  render: {
-    resourceHints: true,
-  },
+    render: {
+        resourceHints: true,
+    },
 
-  // Constant options
-  rootDir: "./",
-  srcDir: "src",
-  target: "static",
+    // Constant options
+    rootDir: "./",
+    srcDir: "src",
+    target: "static",
 
-  /*
-    Disabling server-side rendering on development mode because
-    Vite module currently doesn't work when SSR is enabled. This
-    might cause some issues and/or hydration errors but will be
-    effective enough to help you develop easier.
-  */
+    /*
+        Disabling server-side rendering on development mode because
+        Vite module currently doesn't work when SSR is enabled. This
+        might cause some issues and/or hydration errors but will be
+        effective enough to help you develop easier.
+    */
   ssr: !isDev,
 
-  // Imported options
-  head,
-  loading,
-  buildModules,
-  components,
-  generate,
-  css,
-  modules,
-  plugins,
-  publicRuntimeConfig,
+    // Imported options
+    head,
+    loading,
+    buildModules,
+    components,
+    generate,
+    css,
+    modules,
+    plugins,
+    publicRuntimeConfig,
 
-  hooks: {
-    generate: {
-      async done(generator) {
-        await generateDone(generator)
-      },
+    hooks: {
+        generate: {
+            async done(generator) {
+                await generateDone(generator)
+            },
+        },
     },
-  },
 
-  // Modules
-  vite,
-  feed,
+    // Modules
+    vite,
+    feed,
 }
 
 export default Config

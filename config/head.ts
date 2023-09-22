@@ -74,7 +74,7 @@ const Head: NuxtOptionsHead = {
     },
   ].map((i) => {
     // @ts-ignore-next-line
-    if (i.name && !i.property) i.property = i.name
+    if ( i.name && !i.property ) i.property = i.name
     return i
   }),
   link: [
