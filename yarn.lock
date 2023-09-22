@@ -1811,12 +1811,12 @@
   optionalDependencies:
     "ipx" "^0.9.9"
 
-"@nuxt/kit@^3.7.1":
-  "integrity" "sha512-z3oW52Ar/nQvyUR2/s5AemcQJDv/EeRto6OUYa7/J9oMOmSpXJ39eldiggn4GV+2jSFCPAYozS/yIKtXYiPo/A=="
-  "resolved" "https://registry.npmjs.org/@nuxt/kit/-/kit-3.7.2.tgz"
-  "version" "3.7.2"
+"@nuxt/kit@^3.7.3":
+  "integrity" "sha512-bhP02i6CNti15Z4ix3LpR3fd1ANtTcpfS3CDSaCja24hDt3UxIasyp52mqD9LRC+OxrUVHJziB18EwUtS6RLDQ=="
+  "resolved" "https://registry.npmjs.org/@nuxt/kit/-/kit-3.7.3.tgz"
+  "version" "3.7.3"
   dependencies:
-    "@nuxt/schema" "3.7.2"
+    "@nuxt/schema" "3.7.3"
     "c12" "^1.4.2"
     "consola" "^3.2.3"
     "defu" "^6.1.2"
@@ -1879,10 +1879,10 @@
     "consola" "^2.15.0"
     "node-fetch" "^2.6.7"
 
-"@nuxt/schema@^3.7.1", "@nuxt/schema@3.7.2":
-  "integrity" "sha512-hajUPjpXD3TYfv1PL1UO2wCp8YOasMAnQI9keAYbO3gvMdvyf1SyIUWr2nQOmJDIC0bW4+mLNHFGhGf1dgUVoQ=="
-  "resolved" "https://registry.npmjs.org/@nuxt/schema/-/schema-3.7.2.tgz"
-  "version" "3.7.2"
+"@nuxt/schema@^3.7.1", "@nuxt/schema@3.7.3":
+  "integrity" "sha512-Uqe3Z9RnAROzv5owQo//PztD9d4csKK6ulwQO1hIAinCh34X7z2zrv9lhm14hlRYU1n7ISEi4S7UeHgL/r8d8A=="
+  "resolved" "https://registry.npmjs.org/@nuxt/schema/-/schema-3.7.3.tgz"
+  "version" "3.7.3"
   dependencies:
     "@nuxt/ui-templates" "^1.3.1"
     "defu" "^6.1.2"
@@ -3499,13 +3499,21 @@
     "ieee754" "^1.1.4"
     "isarray" "^1.0.0"
 
-"buffer@^5.5.0", "buffer@>=6.0.3":
+"buffer@^5.5.0":
   "integrity" "sha512-EHcyIPBQ4BSGlvjB16k5KgAJ27CIsHY/2JBmCRReo48y9rQ3MaUzWX3KVlBa4U7MyX02HdVj0K7C3WaB3ju7FQ=="
   "resolved" "https://registry.npmjs.org/buffer/-/buffer-5.7.1.tgz"
   "version" "5.7.1"
   dependencies:
     "base64-js" "^1.3.1"
     "ieee754" "^1.1.13"
+
+"buffer@>=6.0.3":
+  "integrity" "sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA=="
+  "resolved" "https://registry.npmjs.org/buffer/-/buffer-6.0.3.tgz"
+  "version" "6.0.3"
+  dependencies:
+    "base64-js" "^1.3.1"
+    "ieee754" "^1.2.1"
 
 "builtin-status-codes@^3.0.0":
   "integrity" "sha512-HpGFw18DgFWlncDfjTa2rcQ4W88O1mC8e8yZ2AvQY5KDaktSTwo+KRf6nHK6FRI5FyRyb/5T6+TSxfP7QyGsmQ=="
@@ -6244,7 +6252,7 @@
   "resolved" "https://registry.npmjs.org/icss-utils/-/icss-utils-5.1.0.tgz"
   "version" "5.1.0"
 
-"ieee754@^1.1.13", "ieee754@^1.1.4":
+"ieee754@^1.1.13", "ieee754@^1.1.4", "ieee754@^1.2.1":
   "integrity" "sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA=="
   "resolved" "https://registry.npmjs.org/ieee754/-/ieee754-1.2.1.tgz"
   "version" "1.2.1"
