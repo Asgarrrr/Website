@@ -196,7 +196,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var TextTitle = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {IconFire: __webpack_require__(104).default,IconClock: __webpack_require__(103).default,SmartLink: __webpack_require__(16).default})
+installComponents(component, {IconFire: __webpack_require__(104).default,IconClock: __webpack_require__(103).default,SmartLink: __webpack_require__(27).default})
 
 
 /***/ })

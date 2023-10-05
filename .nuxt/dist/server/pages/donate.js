@@ -82,7 +82,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Sponsor = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SmartImage: __webpack_require__(27).default,SmartLink: __webpack_require__(16).default})
+installComponents(component, {SmartImage: __webpack_require__(26).default,SmartLink: __webpack_require__(27).default})
 
 
 /***/ }),
@@ -299,7 +299,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var donate = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Title: __webpack_require__(28).default,IconBrand: __webpack_require__(88).default,Button: __webpack_require__(7).default,SkeletonLoader: __webpack_require__(76).default,CardSponsor: __webpack_require__(118).default,SmartImage: __webpack_require__(27).default,PageLayout: __webpack_require__(83).default})
+installComponents(component, {Title: __webpack_require__(28).default,IconBrand: __webpack_require__(88).default,Button: __webpack_require__(7).default,SkeletonLoader: __webpack_require__(76).default,CardSponsor: __webpack_require__(118).default,SmartImage: __webpack_require__(26).default,PageLayout: __webpack_require__(83).default})
 
 
 /***/ }),

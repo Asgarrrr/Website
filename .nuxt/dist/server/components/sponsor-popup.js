@@ -208,7 +208,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var SponsorPopup = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SmartLink: __webpack_require__(16).default,IconX: __webpack_require__(135).default,Button: __webpack_require__(7).default})
+installComponents(component, {SmartLink: __webpack_require__(27).default,IconX: __webpack_require__(135).default,Button: __webpack_require__(7).default})
 
 
 /***/ })

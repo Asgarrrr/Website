@@ -348,7 +348,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Experience = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {IconPlus: __webpack_require__(102).default,SmartLink: __webpack_require__(16).default})
+installComponents(component, {IconPlus: __webpack_require__(102).default,SmartLink: __webpack_require__(27).default})
 
 
 /***/ }),
@@ -436,7 +436,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var Skill = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {SmartImage: __webpack_require__(27).default})
+installComponents(component, {SmartImage: __webpack_require__(26).default})
 
 
 /***/ }),
@@ -798,7 +798,7 @@ var component = Object(componentNormalizer["a" /* default */])(
 /* harmony default export */ var pages = __webpack_exports__["default"] = (component.exports);
 
 /* nuxt-component-imports */
-installComponents(component, {Status: __webpack_require__(121).default,IconDev: __webpack_require__(94).default,IconEllipsis: __webpack_require__(133).default,SmartImage: __webpack_require__(27).default,Title: __webpack_require__(28).default,Card: __webpack_require__(99).default,Button: __webpack_require__(7).default,CardExperience: __webpack_require__(122).default,CardSkill: __webpack_require__(123).default})
+installComponents(component, {Status: __webpack_require__(121).default,IconDev: __webpack_require__(94).default,IconEllipsis: __webpack_require__(133).default,SmartImage: __webpack_require__(26).default,Title: __webpack_require__(28).default,Card: __webpack_require__(99).default,Button: __webpack_require__(7).default,CardExperience: __webpack_require__(122).default,CardSkill: __webpack_require__(123).default})
 
 
 /***/ }),

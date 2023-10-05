@@ -19,9 +19,9 @@ export default Vue.extend({
       default: null,
     },
     imageClass: {
-      type: String,
+      type: Array,
       required: false,
-      default: null,
+      default: () => [],
     },
     border: {
       type: Boolean,

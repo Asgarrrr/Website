@@ -31,20 +31,13 @@ export default Vue.extend({
   <nav class="w-full">
     <div class="responsive-screen relative">
       <div class="flex items-center gap-6 justify-between">
-        <SmartLink
-          :href="getTargetLink"
-          class="flex-shrink-0 flex items-center space-x-4"
-        >
+        <div class="flex-shrink-0 flex items-center space-x-4" >
 
           <Transition name="fade" mode="out-in">
-
-            <span v-if="!routeIsIndex && !routeIsBlogPost" key="home" class="text-black/90 text-sm font-medium dark:text-white/90 flex items-center space-x-2">
-              <Back>Back</Back>
-            </span>
-
+              <Back v-if="!routeIsIndex && !routeIsBlogPost" key="home" class="text-black/90 text-sm font-medium dark:text-white/90 flex items-center space-x-2">Back</Back>
           </Transition>
 
-        </SmartLink>
+        </div>
 
         <div class="flex space-x-2 items-center">
           <OmnibarButton />

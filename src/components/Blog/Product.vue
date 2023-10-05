@@ -2,7 +2,12 @@
 import Vue from "vue"
 
 export default Vue.extend({
+
   props: {
+    vertical: {
+      type   : Boolean,
+      default: false,
+    },
     product: {
       type    : String,
       required: true,
@@ -23,19 +28,26 @@ export default Vue.extend({
       required: true,
       default : "",
     },
+    figclass: {
+      type    : String,
+      required: false,
+      default : "",
+    },
   },
 })
 
 </script>
 
 <template>
-    <div class="notification flex flex-col md:(items-left flex-row) gap-x-4 gap-y-2 justify-between">
-      <div class="flex flex-row gap-x-6">
+    <div class="notification flex flex-col md:(items-left flex-row) gap-x-4 gap-y-2 justify-between min-w-[190px] relative">
+      <div class="flex flex-row gap-x-6" :class="vertical ? 'flex-col' : ''">
         <div class="hidden md:block">
           <smart-figure
             :src="image"
-            imageClass="w-16"
-            style="width: 100px; margin: 0;"
+            :imageClass="[ figclass, vertical ? 'h-[200px] object-scale-down' : '' ]"
+            :class="vertical ? '' : 'max-w-[230px] m-0 p-0'"
+            :alt="product"
+            :title="product"
           ></smart-figure>
         </div>
 
@@ -57,13 +69,17 @@ export default Vue.extend({
 
           </div>
 
-            <p class="text-black/60 dark:text-white/60 w-full md:w-11/12">
+          <div class="flex flex-col gap-y-2">
+
+            <p class="text-black/60 dark:text-white/40 w-full !mt-1" :class="vertical ? '' : 'md:w-11/12'">
               <slot />
             </p>
 
-            <span class="text-black/50 dark:text-white/30 text-sm">
+            <span class="text-black/50 dark:text-white/30 text-sm absolute bottom-5 right-5">
               {{ price }}
             </span>
+
+          </div>
 
         </div>
       </div>
@@ -71,9 +87,10 @@ export default Vue.extend({
 </template>
 
 <style lang="scss" scoped>
+
   .notification,
   .nuxt-content .notification {
-    @apply rounded-lg border-[0.1px] my-5 p-4 bg-opacity-25 bg-neutral-300 border-neutral-200 dark:(bg-neutral-800/30 border-neutral-800);
+    @apply rounded-lg border-[0.1px] my-3 p-4 bg-opacity-25 bg-neutral-300 border-neutral-200 dark:(bg-neutral-800/30 border-neutral-800);
 
     h1 {
       @apply font-medium text-lg m-0 hover:no-underline;
@@ -82,9 +99,12 @@ export default Vue.extend({
     p,
     p strong,
     a {
-      @apply m-0 dark:text-white/70;
+      //@apply m-0 dark:text-white/70;
     }
 
+    figure {
+      @apply m-0 p-0;
+    }
 
   }
 </style>

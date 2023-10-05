@@ -210,8 +210,9 @@ export default Vue.extend({
 <template>
   <Transition name="fade">
 
-    <LoadersContent v-if="$fetchState.pending || $fetchState.error !== null"
-                    :error="!$fetchState.pending && $fetchState.error !== null" />
+    <LoadersContent
+      v-if="$fetchState.pending || $fetchState.error !== null"
+      :error="!$fetchState.pending && $fetchState.error !== null" />
 
     <div v-else class="pt-4 mt-10">
 
